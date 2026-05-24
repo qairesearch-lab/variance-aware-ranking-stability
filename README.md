@@ -125,4 +125,8 @@ research-lab/experiments/registered-workflow/stats/scripts/README.md
 
 ## License
 
-Add the project license before publishing the GitHub repository.
+This repository is released under the MIT License. See `LICENSE` for details.
+
+The original SIPaKMeD and OrganAMNIST image datasets are not redistributed in
+this repository and remain subject to their own source licenses and terms of
+use.
