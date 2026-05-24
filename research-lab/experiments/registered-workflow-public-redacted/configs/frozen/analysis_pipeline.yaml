@@ -1,0 +1,62 @@
+config_id: analysis_pipeline_v1
+status: frozen_interface
+frozen_on: protocol_freeze
+basis:
+  - https://osf.io/avnp9 (Statistical Analysis Plan)
+  - project protocol freeze notes
+
+primary_inputs:
+  run_manifest: research-lab/experiments/registered-workflow/run-manifests/primary_run_manifest.csv
+  run_outputs: research-lab/experiments/registered-workflow/outputs/primary
+  split_definitions: research-lab/experiments/registered-workflow/splits
+
+primary_outputs:
+  tables: research-lab/experiments/registered-workflow/stats/tables
+  figures: research-lab/experiments/registered-workflow/stats/figures
+  model_objects: research-lab/experiments/registered-workflow/stats/model-objects
+
+planned_scripts:
+  - order: 1
+    path: research-lab/experiments/registered-workflow/stats/scripts/01_collect_run_outputs.py
+    purpose: Collect per-run metrics and metadata into a locked analysis table.
+  - order: 2
+    path: research-lab/experiments/registered-workflow/stats/scripts/02_compute_ranking_metrics.py
+    purpose: Compute model rankings, winner consistency, and rank stability summaries.
+  - order: 3
+    path: research-lab/experiments/registered-workflow/stats/scripts/03_paired_bootstrap.py
+    purpose: Run paired bootstrap comparisons using paired split/seed/policy units.
+  - order: 4
+    path: research-lab/experiments/registered-workflow/stats/scripts/04_probability_of_being_best.py
+    purpose: Estimate probability of each model being best under each workflow context.
+  - order: 5
+    path: research-lab/experiments/registered-workflow/stats/scripts/05_prepare_mixed_model_data.py
+    purpose: Prepare fixed-schema data for the mixed-effects model.
+  - order: 6
+    path: research-lab/experiments/registered-workflow/stats/scripts/mixed_effects_lme4.R
+    purpose: Fit the SAP-aligned mixed-effects model using lme4.
+  - order: 7
+    path: research-lab/experiments/registered-workflow/stats/scripts/06_generate_primary_tables.py
+    purpose: Generate final primary tables and audit summaries.
+
+mixed_effects_model:
+  implementation: R_lme4
+  formula_skeleton: "metric ~ model + (1 | split) + (1 | seed) + (1 | model:split)"
+  note: >
+    Python scripts may prepare analysis inputs, but the registered mixed-model
+    implementation should use the lme4-style model specification unless an
+    amendment is recorded.
+
+script_status:
+  interface_frozen: true
+  implementation_complete: false
+  note: >
+    This file freezes the formal analysis-script interface and expected
+    sequence. Script implementations must be created and versioned before
+    primary analysis is run.
+
+pre_primary_run_blockers:
+  - formal_analysis_scripts_implemented
+  - script_input_output_smoke_test_passed
+  - split_files_generated_and_hashed
+  - primary_run_manifest_generated_after_split_hashes
+  - dataset_manifest_completed_after_download_verification

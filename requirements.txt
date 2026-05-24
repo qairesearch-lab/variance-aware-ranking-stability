@@ -1,0 +1,26 @@
+# Python dependencies for registered workflow training and data processing
+# Python runtime requirement: 3.9 or newer.
+
+# Core deep learning libraries
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Medical imaging datasets
+medmnist>=3.0.0
+
+# Data processing and analysis
+numpy>=2.0.0
+pandas>=2.0.0
+scikit-learn>=1.5.0
+pillow>=9.0.0
+PyYAML>=6.0
+
+# Training utilities
+tqdm>=4.65.0
+
+# Optional dependencies for visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# R dependencies are tracked separately in:
+# research-lab/environment/R_requirements_registered.txt

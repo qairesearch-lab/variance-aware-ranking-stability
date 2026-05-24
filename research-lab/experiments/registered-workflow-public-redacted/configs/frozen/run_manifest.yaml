@@ -1,0 +1,76 @@
+config_id: run_manifest_v1
+status: frozen_schema
+frozen_on: protocol_freeze
+basis:
+  - https://osf.io/avnp9 (Study Protocol Frozen v1.0)
+  - research-lab/experiments/registered-workflow/configs/frozen/datasets.yaml
+  - research-lab/experiments/registered-workflow/configs/frozen/models.yaml
+  - research-lab/experiments/registered-workflow/configs/frozen/random_seeds.yaml
+  - research-lab/experiments/registered-workflow/configs/frozen/checkpoint_policies.yaml
+  - research-lab/experiments/registered-workflow/configs/frozen/split_plan.yaml
+
+experiment_matrix:
+  datasets: [sipakmed, organamnist]
+  models: [resnet18, resnet50, densenet121, efficientnet_b0]
+  splits:
+    - split_01
+    - split_02
+    - split_03
+    - split_04
+    - split_05
+    - split_06
+    - split_07
+    - split_08
+    - split_09
+    - split_10
+  training_seeds: [42, 52, 62, 72, 82]
+  checkpoint_policies: [A, B]
+  runs_per_condition: 1
+
+total_runs: 800
+total_runs_formula: "2 datasets x 4 models x 10 splits x 5 training seeds x 2 checkpoint policies x 1 run per condition"
+
+run_assignment:
+  strategy: all_combinations_crossed
+  stratification: none_required
+  execution_order: to_be_determined_by_compute_scheduler
+  randomization_required_for_execution_order: false
+  note: >
+    Execution order may be determined by compute availability. The run manifest
+    must contain all crossed combinations before primary training starts.
+
+manifest_files:
+  smoke_test_manifest:
+    path: research-lab/experiments/registered-workflow/run-manifests/smoke_test_manifest.csv
+    status: created
+    analysis_role: smoke_test_only
+    include_in_primary_analysis: false
+  primary_run_manifest:
+    path: research-lab/experiments/registered-workflow/run-manifests/primary_run_manifest.csv
+    status: pending_split_generation_and_hashing
+    analysis_role: primary_analysis
+    include_in_primary_analysis: true
+  primary_run_manifest_template:
+    path: research-lab/experiments/registered-workflow/run-manifests/primary_run_manifest_template.csv
+    status: created
+
+manifest_schema:
+  required_columns:
+    - run_id
+    - dataset
+    - split_id
+    - split_seed
+    - training_seed
+    - model
+    - checkpoint_policy
+    - config_hash
+    - split_hash
+    - output_dir
+    - status
+    - analysis_role
+
+constraints:
+  - The complete primary_run_manifest.csv must be generated after split files and split hashes are available.
+  - The primary run manifest must not be edited based on model performance.
+  - Any post-generation manifest change after formal execution starts requires amendment or deviation logging.
+  - split_seed must be copied explicitly from split_plan.yaml into every manifest row for auditability.

@@ -1,0 +1,77 @@
+config_id: split_plan_v1
+status: frozen
+frozen_on: protocol_freeze
+basis:
+  - https://osf.io/avnp9 (Study Protocol Frozen v1.0)
+  - project protocol freeze notes
+
+split_design:
+  type: repeated_random_holdout
+  number_of_splits: 10
+  split_ids:
+    - id: split_01
+      generation_seed: 1001
+    - id: split_02
+      generation_seed: 1002
+    - id: split_03
+      generation_seed: 1003
+    - id: split_04
+      generation_seed: 1004
+    - id: split_05
+      generation_seed: 1005
+    - id: split_06
+      generation_seed: 1006
+    - id: split_07
+      generation_seed: 1007
+    - id: split_08
+      generation_seed: 1008
+    - id: split_09
+      generation_seed: 1009
+    - id: split_10
+      generation_seed: 1010
+  split_generation_seeds: [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010]
+  split_ratio:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+  stratification: class_label
+  group_aware_priority: true
+
+datasets:
+  sipakmed:
+    split_directory: research-lab/experiments/registered-workflow/splits/sipakmed
+    expected_split_files:
+      pattern: split_XX.csv
+      count: 10
+    group_id_policy: unavailable_after_manifest_verification
+    split_unit: image
+    limitation_if_no_group_ids: image_level_repeated_random_holdout_only
+
+  organamnist:
+    split_directory: research-lab/experiments/registered-workflow/splits/organamnist
+    expected_split_files:
+      pattern: split_XX.csv
+      count: 10
+    official_split_used_for_primary_analysis: false
+    group_id_policy: unavailable_after_manifest_verification
+    split_unit: image
+    limitation_if_no_group_ids: image_level_repeated_random_holdout_only
+
+split_file_schema:
+  required_columns:
+    - dataset
+    - split_id
+    - sample_id
+    - relative_path
+    - label
+    - subset
+    - split_seed
+  allowed_subset_values:
+    - train
+    - validation
+    - test
+
+constraints:
+  - Split files must be generated before primary training starts.
+  - Split definitions must not be changed after performance results are inspected.
+  - Any split regeneration after formal execution starts requires amendment or deviation logging.

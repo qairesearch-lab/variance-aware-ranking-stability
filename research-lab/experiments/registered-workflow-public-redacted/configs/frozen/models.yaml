@@ -1,0 +1,74 @@
+config_id: model_pool_v1
+status: frozen
+frozen_on: protocol_freeze
+basis:
+  - https://osf.io/avnp9 (Study Protocol Frozen v1.0)
+  - research-lab/plan/decisions/02_Model_Pool_Freeze_Proposal.md
+  - project protocol freeze notes
+
+model_pool:
+  - name: resnet18
+    full_name: ResNet-18
+    family: CNN-ResNet
+    torch_name: torchvision.models.resnet18
+    weights: IMAGENET1K_V1
+    trainable_scope: layer4_plus_classifier
+  - name: resnet50
+    full_name: ResNet-50
+    family: CNN-ResNet
+    torch_name: torchvision.models.resnet50
+    weights: IMAGENET1K_V1
+    trainable_scope: layer4_plus_classifier
+  - name: densenet121
+    full_name: DenseNet-121
+    family: CNN-DenseNet
+    torch_name: torchvision.models.densenet121
+    weights: IMAGENET1K_V1
+    trainable_scope: denseblock4_plus_classifier
+  - name: efficientnet_b0
+    full_name: EfficientNet-B0
+    family: EfficientNet
+    torch_name: torchvision.models.efficientnet_b0
+    weights: IMAGENET1K_V1
+    trainable_scope: final_feature_stage_plus_classifier
+
+not_retained_models:
+  - name: mobilenet_v3_small
+    full_name: MobileNetV3-Small
+    status: not_retained_in_primary_matrix
+    rationale: >
+      MobileNetV3-Small overlaps with EfficientNet-B0 as a lightweight efficient
+      CNN representative. Because this study focuses on workflow design rather
+      than mobile deployment, model compression, or resource-constrained
+      inference, EfficientNet-B0 is retained as the lightweight modern CNN
+      baseline and MobileNetV3-Small is excluded from the primary matrix.
+  - name: attention_based_variant
+    examples: [vit, swin_transformer]
+    status: optional_in_registered_protocol_not_retained_in_primary_matrix
+    rationale: >
+      The OSF protocol describes an attention-based variant as optional. The
+      current primary model pool already spans multiple CNN structural biases:
+      residual depth gradient, dense connections, and compound scaling. Adding
+      attention-based models would increase training cost without proportional
+      methodological benefit for the current workflow-design research question.
+
+decision:
+  model_ids_in_primary_analysis: [resnet18, resnet50, densenet121, efficientnet_b0]
+  model_count: 4
+  registered_range: "three to four representative models"
+  decision_type: post_registration_execution_specification
+  amendment_required: false
+  note: >
+    Four models are within the OSF-registered range. The absence of an
+    attention-based model is not an amendment because the registered protocol
+    defines that variant as optional.
+
+weights_info:
+  source: PyTorch official model zoo (torchvision.models)
+  cache_location: $TORCH_HOME/hub/checkpoints/  # Respect TORCH_HOME environment variable
+  weights_enum: IMAGENET1K_V1
+  note: Weights will be automatically downloaded on first run if not present in cache
+  verification:
+    - Ensure torch and torchvision versions are consistent across all runs
+    - Record weights enum and cache location in experiment logs
+    - Do not manually copy weights files to project directory

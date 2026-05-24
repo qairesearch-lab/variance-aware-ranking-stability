@@ -1,0 +1,56 @@
+config_id: checkpoint_policies_v1
+status: frozen
+frozen_on: 2026-04-25
+basis:
+  - https://osf.io/avnp9 (Study Protocol Frozen v1.0)
+  - research-lab/plan/decisions/04_Checkpoint_Policy_Freeze_Proposal.md
+  - research-lab/notes/2026-04-25_Pre_Execution_Issues_and_Freeze_Proposal.md
+
+primary_checkpoint_policies:
+  A:
+    name: validation_best_checkpointing_with_early_stopping
+    display_name: Validation-Best Checkpointing with Early Stopping
+    max_epochs: 60
+    monitor: val_loss
+    monitor_mode: min
+    selection_rule: minimum_val_loss
+    min_delta: 0.001
+    min_delta_mode: absolute
+    patience: 7
+    early_stopping: true
+    checkpoint_used_for_evaluation: best_validation_loss_epoch
+    applies_to:
+      - sipakmed
+      - organamnist
+
+  B:
+    name: fixed_last_epoch_checkpointing
+    display_name: Fixed Last-Epoch Checkpointing
+    max_epochs: 60
+    monitor: null
+    monitor_mode: null
+    selection_rule: last_epoch
+    min_delta: null
+    min_delta_mode: null
+    patience: null
+    early_stopping: false
+    checkpoint_used_for_evaluation: epoch_60_last
+    applies_to:
+      - sipakmed
+      - organamnist
+
+optional_checkpoint_policies:
+  C:
+    name: unified_early_stopping
+    status: not_retained_in_primary_matrix
+    primary_matrix: false
+    rationale: >
+      Policy C is optional in the frozen protocol. It is not retained in the
+      current primary matrix because Policy A already implements validation-best
+      checkpointing with a unified early-stopping rule.
+
+decision:
+  policy_ids_in_primary_analysis: [A, B]
+  policy_ids_not_in_primary_analysis: [C]
+  decision_type: post_registration_execution_specification
+  amendment_required: false

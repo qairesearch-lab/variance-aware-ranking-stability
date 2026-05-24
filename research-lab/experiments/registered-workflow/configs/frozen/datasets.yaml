@@ -1,0 +1,84 @@
+config_id: datasets_primary_matrix_v1
+status: frozen
+frozen_on: 2026-04-25
+basis:
+  - https://osf.io/avnp9 (Study Protocol Frozen v1.0)
+  - research-lab/plan/decisions/01_Dataset_List_Freeze_Proposal.md
+  - research-lab/notes/2026-04-25_Pre_Execution_Issues_and_Freeze_Proposal.md
+
+primary_datasets:
+  - dataset_id: sipakmed
+    name: SIPaKMeD
+    version: original_release_icip_2018
+    task_type: multiclass_classification
+    modality: cervical_cytology_microscopy
+    classes: 5
+    expected_samples: 4049
+    observed_samples_after_download: 4049
+    primary_image_glob: ../../../../data/sipakmed/raw/im_*/CROPPED/*.bmp
+    source_url: https://www.cs.uoi.gr/~marina/sipakmed.html
+    primary_matrix: true
+    split_source: generated_image_level_repeated_random_holdout
+    official_split_used_for_primary_analysis: false
+    grouping_policy:
+      group_aware_split_required_if_group_ids_available: true
+      current_group_id_status: unavailable_after_dataset_manifest_verification
+      group_id_available: false
+      limitation_if_no_group_ids: image_level_repeated_random_holdout_required
+
+  - dataset_id: organamnist
+    name: OrganAMNIST
+    version: medmnist_v2
+    task_type: multiclass_classification
+    modality: abdominal_ct_2d_slices
+    classes: 11
+    registered_or_prior_expected_samples: 58850
+    current_medmnist_info_expected_samples: 58830
+    expected_samples: 58830
+    observed_samples_after_download: 58830
+    observed_split_samples:
+      train: 34561
+      val: 6491
+      test: 17778
+    sample_count_difference_vs_registered_or_prior_expected: -20
+    sample_count_difference_explanation: >
+      The earlier 58,850 count reflects the preselection/prior documentation
+      count. Current medmnist 3.0.2 INFO reports 58,830 samples after the
+      upstream v2.2.4 removal of a small number of blank OrganAMNIST samples;
+      local CSV and PNG counts match the current package metadata.
+    source_url: https://github.com/MedMNIST/MedMNIST
+    primary_matrix: true
+    split_source: generated_image_level_repeated_random_holdout
+    official_split_used_for_primary_analysis: false
+    official_split_recorded_for_traceability: true
+    grouping_policy:
+      group_aware_split_required_if_group_ids_available: true
+      current_group_id_status: unavailable_after_dataset_manifest_verification
+      group_id_available: false
+      limitation_if_no_group_ids: image_level_repeated_random_holdout_required
+
+excluded_or_deferred_datasets:
+  - dataset_id: autopet
+    name: FDG-PET-CT-Lesions / autoPET
+    version: scientific_data_2022_tcia
+    task_type: original_task_segmentation
+    status: future_extension_not_in_primary_matrix
+    primary_matrix: false
+    run_manifest_inclusion: prohibited_for_current_primary_analysis
+    rationale: >
+      The original autoPET task is closer to lesion segmentation than direct
+      medical image classification. It will not enter the current primary run
+      manifest. Any future inclusion requires a separate pre-execution
+      amendment or extension with frozen classification endpoint, input unit,
+      label construction rule, model compatibility, computational feasibility,
+      and classification-only boundary.
+
+primary_matrix_decision:
+  datasets_in_primary_analysis: [sipakmed, organamnist]
+  datasets_not_in_primary_analysis: [autopet]
+  decision_type: post_registration_execution_specification
+  amendment_required: false
+  note: >
+    This file specifies the concrete datasets for the OSF-registered design.
+    It does not alter the registered allowance of two to three medical image
+    classification datasets.

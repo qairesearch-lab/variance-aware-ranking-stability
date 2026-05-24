@@ -1,0 +1,47 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Original data
+research-lab/data/sipakmed/
+research-lab/data/organamnist/
+
+# Training artifacts
+research-lab/experiments/registered-workflow/runs/primary/
+research-lab/experiments/registered-workflow/runs/smoke/
+research-lab/experiments/registered-workflow/outputs/primary/
+research-lab/experiments/registered-workflow-public-redacted/runs/primary/
+research-lab/experiments/registered-workflow-public-redacted/runs/smoke/
+research-lab/experiments/registered-workflow-public-redacted/outputs/primary/
+research-lab/experiments/scripts/outputs/
+research-lab/experiments/registered-workflow/splits/split_hashes.generated.csv
+research-lab/experiments/registered-workflow-public-redacted/splits/split_hashes.generated.csv
+
+# Model and analysis artifacts
+*.pt
+*.pth
+*.ckpt
+*.rds
+*.RData
+*.pkl
+*.pickle
+*.zip
+*.tar
+*.tar.gz
+*.7z
+research-lab/experiments/registered-workflow/stats/model-objects/
+research-lab/experiments/registered-workflow/stats/tables/
+research-lab/experiments/registered-workflow/stats/figures/
+research-lab/experiments/registered-workflow-public-redacted/stats/model-objects/
+research-lab/experiments/registered-workflow-public-redacted/stats/tables/
+research-lab/experiments/registered-workflow-public-redacted/stats/figures/
+
+# Local caches
+research-lab/.matplotlib-cache/
+research-lab/experiments/.matplotlib-cache/

@@ -1,0 +1,13 @@
+# Windows CUDA runtime dependencies for workstation execution.
+# Install torch/torchvision first with the PyTorch CUDA wheel command.
+#
+# This file intentionally excludes torch, torchvision, matplotlib, seaborn,
+# macOS wheels, split-regeneration tools, and development-only packages.
+
+medmnist>=3.0.0
+numpy>=2.0.0
+pandas>=2.0.0
+scikit-learn>=1.5.0
+pillow>=9.0.0
+PyYAML>=6.0
+tqdm>=4.65.0
