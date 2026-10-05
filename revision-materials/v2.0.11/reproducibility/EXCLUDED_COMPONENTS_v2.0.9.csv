@@ -1,6 +1,0 @@
-﻿component,reason,retention,purpose
-Original/extension image datasets,Acquire independently from original dataset sources and apply their access terms,Existing local image directories retained,Required for retraining or per-image prediction verification
-300 extension checkpoints,Large binary weights held separately,CHECKPOINT_RETENTION_v2.0.9.csv; all 300 present,Required for model-level inference/selected-epoch or parameter verification
-Per-image predictions and image galleries,Local records retained; public scope limited to aggregate metrics until disclosure review,Existing run directories and quality gallery retained,Per-image recomputation; not required by B1 metric-based analysis
-Pretrained weights and caches,External source weights/cache binaries,Existing local cache retained; pretrained hashes in run configs,Required for exact fresh training
-"Private manuscript, full reviewer letters and credentials",Not part of this reproducibility package,Revision workspace and original records retained,Editorial work managed separately

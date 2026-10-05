@@ -4,7 +4,7 @@ This directory stores formal split definitions, indexes, hash manifests, and aud
 
 ## Current Status
 
-Formal split generation and split-hash verification were completed before primary training.
+Formal split generation and split-hash verification were completed on 2026-04-27 before primary training.
 
 Split-generation validation result:
 

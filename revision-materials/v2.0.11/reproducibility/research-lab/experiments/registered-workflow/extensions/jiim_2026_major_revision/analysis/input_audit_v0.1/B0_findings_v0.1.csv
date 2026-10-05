@@ -1,4 +1,0 @@
-﻿item,severity,finding,source
-D07,DISCLOSE,Training software differs by dataset: OrganAMNIST torch2.10/python3.12 vs SIPaKMeD and extension torch2.4/python3.10; fixed within each dataset; no claim that 1100 runs share one environment.,D07_environment_by_dataset_v0.1.csv
-D07,DISCLOSE,"num_workers execution overrides and timing origins differ; retain factual metadata only, no speed/hardware comparison.",D07_epoch_timing_config_by_run_v0.1.csv
-D06,LIMIT,Original NPZ not present in dataset folder. Historical frozen hashes identify all actual training PNGs; do not assert NPZ regeneration or array-to-PNG pixel equivalence was verified.,D06_organamnist_image_audit_v0.1.csv

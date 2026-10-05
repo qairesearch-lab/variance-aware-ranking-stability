@@ -4,7 +4,7 @@ This directory stores formal workflow run manifests.
 
 ## Status
 
-The run-manifest schema and smoke-test-first strategy were frozen with the registered workflow. Formal split generation, split-hash verification, primary run-manifest draft validation, and smoke-test manifest hash validation were completed before primary training.
+The run-manifest schema and smoke-test-first strategy were frozen on 2026-04-25. Formal split generation, split-hash verification, primary run-manifest draft validation, and smoke-test manifest hash validation were completed on 2026-04-27.
 
 `smoke_test_manifest.csv` contains the current SIPaKMeD `split_01` hash and the execution config hash used by the primary run-manifest draft. The full `primary_run_manifest.csv` has been created and locked after training/schema smoke and analysis I/O smoke validations passed.
 

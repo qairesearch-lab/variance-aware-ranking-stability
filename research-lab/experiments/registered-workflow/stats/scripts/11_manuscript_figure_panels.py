@@ -40,6 +40,12 @@ STRATUM_COLORS = {
     ("sipakmed", "A"): "#2D8C5B",
     ("sipakmed", "B"): "#B54A4A",
 }
+STRATUM_STYLES = {
+    ("organamnist", "A"): {"linestyle": "-", "marker": "o"},
+    ("organamnist", "B"): {"linestyle": "--", "marker": "s"},
+    ("sipakmed", "A"): {"linestyle": "-.", "marker": "^"},
+    ("sipakmed", "B"): {"linestyle": ":", "marker": "D"},
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -86,7 +92,7 @@ def save_figure(fig: plt.Figure, path_base: Path) -> list[Path]:
         path_base.with_suffix(".svg"),
         path_base.with_suffix(".pdf"),
     ]
-    fig.savefig(outputs[0], dpi=300, bbox_inches="tight")
+    fig.savefig(outputs[0], dpi=600, bbox_inches="tight")
     fig.savefig(outputs[1], bbox_inches="tight")
     fig.savefig(outputs[2], bbox_inches="tight")
     plt.close(fig)
@@ -131,7 +137,6 @@ def make_selection_frequency_figure(selection: pd.DataFrame, figures_dir: Path) 
         ax.set_ylabel("Selection frequency" if ax in (axes[0], axes[2]) else "")
         ax.grid(axis="x", visible=False)
 
-    fig.suptitle("Top-ranked model selection frequency across single split-seed contexts", fontsize=11, y=1.02)
     fig.tight_layout()
     return save_figure(fig, figures_dir / "figure1_selection_frequency")
 
@@ -163,10 +168,16 @@ def make_subsampling_recovery_figure(subsampling: pd.DataFrame, figures_dir: Pat
         lo = sub["recovered_full_reference_ci_low"].to_numpy(dtype=float)
         hi = sub["recovered_full_reference_ci_high"].to_numpy(dtype=float)
         color = STRATUM_COLORS[(dataset, rule)]
-        ax.plot(x, y, marker="o", linewidth=1.8, color=color, label=stratum_label(dataset, rule))
+        ax.plot(
+            x,
+            y,
+            linewidth=1.8,
+            color=color,
+            label=stratum_label(dataset, rule),
+            **STRATUM_STYLES[(dataset, rule)],
+        )
         ax.fill_between(x, lo, hi, color=color, alpha=0.12, linewidth=0)
 
-    ax.set_title("Subsampling recovery of the full repeated-evaluation reference", fontsize=11, pad=8)
     ax.set_ylabel("Subsampling recovery rate")
     ax.set_xlabel("Repeated-evaluation budget (splits x seeds)")
     ax.set_xticks(x)
@@ -226,7 +237,6 @@ def make_top_two_margin_figure(
         label="Full-reference margin",
         zorder=3,
     )
-    ax.set_title("Distribution of top-two balanced-accuracy margins", fontsize=11, pad=8)
     ax.set_ylabel("Top-two margin")
     ax.set_xticks(positions)
     ax.set_xticklabels(labels, rotation=20, ha="right")

@@ -1,0 +1,6 @@
+{
+  "scope": "Completed input verification metadata; per-run inputs are in run_records.zip.",
+  "input_runs": 1100,
+  "original_runs": 800,
+  "extension_runs": 300
+}

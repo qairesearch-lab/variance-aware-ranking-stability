@@ -1,2 +1,0 @@
-term,odds_ratio,cluster_bootstrap_95CI_low,cluster_bootstrap_95CI_high,clusters,contexts,dataset_fixed_effects,cluster_bootstrap_replicates,epsilon,interpretation
-one_SD_decrease_in_log10_top_two_margin,2.022464446304802,0.7469480686238749,6.492956185411795,40,160,included,10000,1e-06,associational; discordance is defined against leave-one-split-out comparator

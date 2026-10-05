@@ -1,4 +1,0 @@
-﻿subset,rows,sha256,source_path
-train,34561,8a03cb31b92c2e1c28f5f34e212c27e0190f6848a94db5aa5427a410d9cbc33c,research-lab/data/organamnist/train/organamnist.csv
-val,6491,b75ab075c2062941fa81929658f421527a6836f3b3f0496455911a2d1b28dcad,research-lab/data/organamnist/val/organamnist.csv
-test,17778,1df015e2a15b9801ae8df189a7e44171208ac03bdb8546b77c1d57b7b6e50be4,research-lab/data/organamnist/test/organamnist.csv

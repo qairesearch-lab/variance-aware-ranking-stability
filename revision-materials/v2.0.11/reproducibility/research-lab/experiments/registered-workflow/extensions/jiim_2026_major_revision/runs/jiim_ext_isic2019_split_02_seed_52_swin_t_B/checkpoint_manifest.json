@@ -1,7 +1,0 @@
-{
-  "best_epoch": 3,
-  "best_validation_loss": 0.794162447253863,
-  "rule": "A",
-  "selected_checkpoint": "/root/autodl-tmp/CervicalCancerV2/research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/runs/jiim_ext_isic2019_split_02_seed_52_swin_t_B/checkpoints/best_validation_loss.pt",
-  "selected_checkpoint_sha256": "f2720d838d35fe9b91b061add9f6af814d8b9a17335fe778e32e135621d6eb0b"
-}

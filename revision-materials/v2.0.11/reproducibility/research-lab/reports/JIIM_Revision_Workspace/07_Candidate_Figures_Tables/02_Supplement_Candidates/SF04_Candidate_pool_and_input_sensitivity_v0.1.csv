@@ -1,7 +1,0 @@
-﻿dataset,swin_variant,contexts,split_clusters,selected_identity_changed_fraction,CI_low,CI_high,observed_mean_top_two_difference_four,observed_mean_top_two_difference_five,interpretation,display_object,paired_contexts,mean_BA_difference_weight_eval_minus_shared,sign_flip_p_raw_conditional,sign_assignments,minimum_two_sided_p,holm_p_two_input_comparisons
-isic2019,shared,15.0,5,0.4,0.0666666666666666,0.7333333333333332,0.0283279501474144,0.0252679631862803,paired candidate-pool sensitivity; no cross-architecture superiority claim,candidate pool,,,,,,
-isic2019,swin_weight_eval,15.0,5,0.6666666666666666,0.4,0.9333333333333332,0.0283279501474144,0.0272578320686045,paired candidate-pool sensitivity; no cross-architecture superiority claim,candidate pool,,,,,,
-mura,shared,15.0,5,0.8,0.5333333333333333,1.0,0.0098627293302618,0.0108769532683854,paired candidate-pool sensitivity; no cross-architecture superiority claim,candidate pool,,,,,,
-mura,swin_weight_eval,15.0,5,0.8666666666666667,0.5999999999999999,1.0,0.0098627293302618,0.0108354490937945,paired candidate-pool sensitivity; no cross-architecture superiority claim,candidate pool,,,,,,
-isic2019,,,5,,0.0116511060580839,0.032260522569123,,,same architecture and weights; input-recipe sensitivity; five split clusters,Swin input,15.0,0.0195961997431088,0.0625,32.0,0.0625,0.125
-mura,,,5,,-0.0056151382087832,0.0050027435263057,,,same architecture and weights; input-recipe sensitivity; five split clusters,Swin input,15.0,-0.0007684623648081,0.75,32.0,0.0625,0.75

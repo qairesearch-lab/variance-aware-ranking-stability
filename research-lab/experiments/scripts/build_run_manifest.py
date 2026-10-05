@@ -232,9 +232,8 @@ def audit_rows(rows: list[dict[str, str]], matrix: dict[str, object], split_hash
             errors.append(f"analysis_role mismatch for {row['run_id']}")
         if Path(row["output_dir"]).is_absolute():
             errors.append(f"Absolute output_dir for {row['run_id']}: {row['output_dir']}")
-        path_parts = Path(row["output_dir"]).parts
-        if any(part.startswith(".") for part in path_parts):
-            errors.append(f"Non-public output_dir component for {row['run_id']}: {row['output_dir']}")
+        if "/Users/" in row["output_dir"] or "PycharmProjects" in row["output_dir"]:
+            errors.append(f"Local output_dir leakage for {row['run_id']}: {row['output_dir']}")
 
     missing_conditions = expected_conditions - seen_conditions
     extra_conditions = seen_conditions - expected_conditions

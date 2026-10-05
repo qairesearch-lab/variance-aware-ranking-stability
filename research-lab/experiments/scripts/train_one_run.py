@@ -35,7 +35,7 @@ from torch.utils.data import DataLoader, Dataset
 from torchvision import models, transforms
 
 
-SCRIPT_VERSION = "train_one_run_public_v2"
+SCRIPT_VERSION = "train_one_run_cuda_strict_2026-04-29_v2"
 REPO_ROOT = Path(__file__).resolve().parents[3]
 EXPERIMENTS_DIR = REPO_ROOT / "research-lab" / "experiments"
 CONFIG_DIR = EXPERIMENTS_DIR / "registered-workflow" / "configs" / "frozen"
@@ -186,7 +186,7 @@ def device_info(device: torch.device) -> dict:
     if cuda_available:
         gpu_models = [torch.cuda.get_device_name(index) for index in range(torch.cuda.device_count())]
     return {
-        "hostname": "not_recorded",
+        "hostname": platform.node(),
         "platform": platform.platform(),
         "device": str(device),
         "cuda_available": cuda_available,
@@ -553,7 +553,7 @@ def emit_schema_smoke_outputs(row: dict[str, str], output_dir: Path, sample_limi
             "resolved_frozen_config": config,
             "package_versions": package_versions(),
             "device_info": {
-                "hostname": "not_recorded",
+                "hostname": platform.node(),
                 "platform": platform.platform(),
                 "cuda_available": None,
                 "cuda_version": None,

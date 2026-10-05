@@ -1,3 +1,0 @@
-dataset,independent_split_blocks,cross_fitted_contexts_scored,cross_fitted_agreement,min_partition_agreement,max_partition_agreement,note
-isic2019,"5 discovery / 5 reference; all 252 partitions, both directions",7560,0.9,0.8,1.0,exact finite-grid descriptive estimate; 5-split block reference
-mura,"5 discovery / 5 reference; all 252 partitions, both directions",7560,0.49074074074074076,0.06666666666666667,0.7333333333333333,exact finite-grid descriptive estimate; 5-split block reference

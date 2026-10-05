@@ -123,9 +123,8 @@ def generate_split_hashes(splits_dir, output_path, frozen_dir):
 
 def main():
     script_dir = Path(__file__).resolve().parent
-    workflow_splits_dir = script_dir.parent / "registered-workflow" / "splits"
-    splits_dir = workflow_splits_dir if workflow_splits_dir.exists() else script_dir / "splits"
-    output_path = splits_dir / "split_hashes.generated.csv"
+    splits_dir = script_dir / "splits"
+    output_path = script_dir / "split_hashes.csv"
     frozen_dir = script_dir.parent / "registered-workflow" / "configs" / "frozen"
     generate_split_hashes(splits_dir, output_path, frozen_dir)
 

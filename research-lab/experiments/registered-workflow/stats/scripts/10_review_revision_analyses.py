@@ -433,7 +433,7 @@ def _load_training_env(run_dir: Path) -> dict:
             "python_version": pkg_versions.get("python", ""),
             "cuda_version": device_info.get("cuda_version", ""),
             "gpu_models": ", ".join(device_info.get("gpu_models", [])) or "",
-            "hostname": "not_recorded",
+            "hostname": device_info.get("hostname", ""),
         }
     return {}
 
@@ -596,9 +596,8 @@ def save_matrix_figure(figures_dir: Path) -> Path:
         ax.add_patch(plt.Rectangle((x - 0.065, 0.22), 0.13, 0.48, fill=False, linewidth=1.4, edgecolor="#4C78A8"))
         if i < len(labels) - 1:
             ax.annotate("", xy=(xs[i + 1] - 0.08, 0.48), xytext=(x + 0.08, 0.48), arrowprops={"arrowstyle": "->", "lw": 1.2})
-    ax.set_title("Prespecified repeated-evaluation workflow matrix", fontsize=12)
     fig.tight_layout()
-    fig.savefig(path, dpi=200)
+    fig.savefig(path, dpi=1200)
     plt.close(fig)
     return path
 

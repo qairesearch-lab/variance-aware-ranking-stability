@@ -2,7 +2,7 @@
 
 This directory stores the formal OrganAMNIST repeated random holdout splits.
 
-Status: generated and validated before primary training.
+Status: generated and validated before primary training on 2026-04-27.
 
 Expected files:
 
