@@ -1,6 +1,6 @@
 # CT01: Model selection stability Table1
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset / rule | Reference top model | Single-context agreement (95% CI) | Discordance (95% CI) | Paired bootstrap frequency q | 5×3 budget agreement |
 | --- | --- | --- | --- | --- | --- |

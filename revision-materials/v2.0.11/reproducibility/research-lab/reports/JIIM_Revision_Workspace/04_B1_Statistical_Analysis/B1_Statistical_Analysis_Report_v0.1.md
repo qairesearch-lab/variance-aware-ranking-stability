@@ -1,17 +1,9 @@
 # B1统计计算与来源核对报告 v0.1
 
-## Material Passport
+## Analysis provenance
 
-- ID：JIIM-B1-REPORT-v0.1；日期：2026-10-03
-- 状态：计算完成、同代理不同实现数值/来源核对通过；独立人员方法审查待完成
-- 授权范围：B1 D01–D04及D05共同seed统计敏感性；研究问题保持原RQ1–RQ3
-- 输入：完整800原run与300扩展run；原提交文件、训练配置和run结果未修改
-- 输出：扩展analysis/results_v0.3；机器manifest保存实际来源、算法、seed、运行时及hash
-- 本报告是修订证据，未将新数字直接写入原投稿主文、图或审稿回复。
+Completed revision-stage analysis of the original 800 and extension 300 runs. Numerical summaries below describe the original nested implementation; the subsequent design-aligned crossed resampling results are separately recorded in `D02_resampling_design_sensitivity_v0.1.csv`. These schemes are not interchangeable.
 
-## B0到B1的验收界面
-
-B0的输入/来源核验批次完成。D05的共同seed统计在本轮落实；D06/D07的稿件与回信用途继续追踪。B0完成不等于D05–D07在整篇修订中的所有事项都关闭。
 
 本轮主分析保留800原run的全部A/B层；扩展240个共同四CNN run、30个共享输入Swin run及30个权重专用输入Swin run均进入对应分层。16个分析stratum包括复用的共同seed与候选池子集，不能把stratum行数相加当作新的独立样本数。
 
@@ -20,7 +12,7 @@ B0的输入/来源核验批次完成。D05的共同seed统计在本轮落实；D
 四数据集Rule A的160个context重新按原split身份排除，向量化另一实现重放10000次抽样，点估计及LSO区间与v0.2的差异均小于1e-12。新写批量IRLS重放关联模型，10000次均收敛，未丢弃拟合；OR和区间最大差异小于1e-6。
 分差关联模型 OR=2.022，95%重采样区间[0.597, 5.763]。区间包含1，不能声称该关联已达到明确的统计支持；也不能据此断言不存在关联。它是补充关联分析，不能成为新的普遍分差阈值或取代原RQ。
 
-这次核对解决数值实现与来源问题；同一代理的新实现不构成独立人员审查，CK14/D01的独立方法复核仍开放。
+Implementation cross-checks do not constitute independent personnel review.
 
 ## D02：原A/B与扩展数据的统一不确定性
 
@@ -65,7 +57,7 @@ policy的每模型BA差和选择频率差保存为配对输出；不能据此比
 
 六行覆盖矩阵在运行之前登记，明确各图表科学问题、单位、效应/区间、零假设适用性、多重性family和对应输出。Table1、Figure1的选择频率、Figure2的order-statistic分差、Figure3的聚合预算分别有完整证据定位。配对BA检验按stratum全对比Holm，原policy八比较另作一个family，并保留36主模型比较的全局Holm敏感性。
 
-不机械为每个柱/曲线附p值：Figure2的context前两名差由选择产生且非负，检验它是否大于零不能证明某个指定模型更优；Figure3的反复subset/partition计分也不是独立二项试验。适当使用描述、配对效应及区间并在回信说明理由。具体矩阵与双语说明已落盘；实际稿件图与回信位置仍留待B4整合。
+不机械为每个柱/曲线附p值：Figure2的context前两名差由选择产生且非负，检验它是否大于零不能证明某个指定模型更优；Figure3的反复subset/partition计分也不是独立二项试验。适当使用描述、配对效应及区间。科学问题、比较单位与输出定位见覆盖矩阵。
 
 ## D04：RQ3真实聚合预算与参考敏感性
 
@@ -105,8 +97,6 @@ ISIC四CNN的5×3观察值为1.0，只说明在当前完成split网格及候选�
 
 **RQ3：** 预算可在已完成网格内用实际聚合和参考敏感性估计。聚合常有帮助，但效果依数据集、seed池及参考定义而变；支持按研究条件报告预算与不确定性，不支持统一最低预算或必然收敛。
 
-修订重点是补充并限定原RQ答案：保留“高常规性能不保证稳定的模型选择”及重复评估质量控制意义；修改有关泛化、预算恢复率与参考解释的过强表述。扩展结果不是只加一张表即可，也不要求引入新的理论名词或改变研究为模型优劣比赛。实际正文/摘要/结论改写仍待B2/B4按统一索引落实。
-
 ## 分析运行时与追溯
 
 本轮计算Python 3.12.14、NumPy 2.3.5、pandas 2.2.3。未使用PyTorch或GPU训练；scipy/statsmodels/matplotlib未安装且未用于本轮数值计算。sign-flip与IRLS用NumPy直接实现，代码和交叉核对实现均保存。此运行时不能倒填到历史训练run。
@@ -130,7 +120,3 @@ ISIC四CNN的5×3观察值为1.0，只说明在当前完成split网格及候选�
 | 分析自由度 | 本轮在既有结果之后冻结说明，明确修订重分析而非追称预注册；旧结果不覆盖 |
 | 因果误读 | checkpoint/分差/软件记录不作不稳定性单一因果归因 |
 | 反向因果 | 分差与discordance同context关联不写因果方向或普遍机制 |
-
-## 下一验收门
-
-B1计算及同代理数值/来源核查完成，可供B2证据覆盖登记。独立方法审查仍待；实际图表、主文和审稿回复整合分别登记，不能把计算完成当作修回稿已完成。

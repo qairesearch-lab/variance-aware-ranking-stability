@@ -1,6 +1,6 @@
 # CF04：选择规则与候选池变化下的首位模型身份变化（候选）
 
-版本v2.0.4；拟正文Figure4，尚未获作者采用。只重排ST04/ST05既有统计结果，没有新检验、重采样或拟合。
+Historical rendering v2.0.4 from ST04/ST05; source for Figure 2b.
 
 **English caption:** Changes in selected model identity under alternative evaluation conditions. (A) Fraction of matched split–seed contexts selecting different models under checkpoint selection Rules A and B, using 10 splits and five training seeds per original dataset. (B) Fraction selecting a different model after adding shared-input Swin-T to the four-CNN candidate pool, using five splits and three training seeds per extension dataset. Points show observed changed-context fractions; horizontal bars retain the existing paired nested percentile 95% intervals. Comparisons are paired within each panel; the panels represent different evaluation changes and are interpreted separately.
 

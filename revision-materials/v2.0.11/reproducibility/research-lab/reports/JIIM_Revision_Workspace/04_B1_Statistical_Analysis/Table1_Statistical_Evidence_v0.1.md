@@ -1,6 +1,6 @@
 # Table1统计证据候选表 v0.1
 
-状态：供B2/B4整合；不是已修改的投稿Table1。原800的主设计保留，新增两数据集另行标注。
+Historical nested-bootstrap summary; subsequent crossed resampling is saved separately.
 
 | Dataset / rule | Full-grid reference top model | Observed contexts | Agreement with full-grid reference [95% hierarchical interval] | Identity-correct LSO agreement [95% hierarchical interval] | Paired hierarchical bootstrap selection frequency of full-grid reference model | Aggregate5×3 agreement with disjoint split-ID block |
 |---|---|---:|---|---|---:|---:|

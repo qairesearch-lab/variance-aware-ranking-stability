@@ -1,14 +1,12 @@
 # D03 图表统计覆盖说明 v0.1
 
-## Material Passport
+## Scope
 
-- ID：JIIM-D03-COVERAGE-v0.1；日期：2026-10-03
-- 状态：方法与输出定位完成；实际图/稿/回信整合待B4
-- 本说明对应运行前登记的D03覆盖CSV；不虚构实际修回稿页行。
+Mapping of statistical questions, evaluation units, uncertainty summaries and saved outputs.
+
 
 ## Table 1 — RQ1/RQ3
 
-- 关联意见：E.1;R2.7;R3.5
 - 科学问题：Within-stratum selection stability and budget/reference sensitivity
 - 单位：split x seed within dataset/policy
 - 效应：full-grid and LSO agreement; paired bootstrap selection frequency; disjoint aggregate budget agreement
@@ -20,7 +18,6 @@
 
 ## Figure 1 — RQ1
 
-- 关联意见：E.1;R2.7
 - 科学问题：How often does each candidate rank first across observed contexts?
 - 单位：paired context indicators resampled by split then seed
 - 效应：observed selection frequency
@@ -32,7 +29,6 @@
 
 ## Figure 2 — RQ1/RQ2
 
-- 关联意见：E.1;R2.7;R3.5
 - 科学问题：Distribution of BA difference between the two highest-ranked candidates
 - 单位：paired candidate vector per context; top two reselected in each context
 - 效应：nonnegative context order-statistic difference
@@ -44,7 +40,6 @@
 
 ## Figure 3 — RQ3
 
-- 关联意见：E.1;R2.3;R3.4
 - 科学问题：Does aggregating more split/seed evaluations recover the held-out block ranking?
 - 单位：252 oriented 5/5 split partitions; aggregate candidate means per budget subset
 - 效应：aggregate winner agreement and full-rank/tau sensitivity
@@ -56,7 +51,6 @@
 
 ## Policy supplementary table — RQ2
 
-- 关联意见：E.1;R2.7;R2.4
 - 科学问题：Checkpoint-rule sensitivity within identical split/seed/model
 - 单位：paired A/B runs; split-average contrasts for conditional sign flip
 - 效应：BA B-minus-A and selected-identity change fraction
@@ -68,7 +62,6 @@
 
 ## Swin supplementary sensitivity — RQ1/RQ2 generalization boundary
 
-- 关联意见：R1.1;R2.2;R3.3
 - 科学问题：Candidate pool and input-recipe dependence at the same15 contexts
 - 单位：5 splits x3 seeds, shared contexts/labels
 - 效应：selected-identity switch fraction and paired input-recipe BA difference
@@ -77,4 +70,3 @@
 - 多重性：2 dataset input-recipe contrasts: Holm; pool comparison is descriptive
 - 输出：D02_candidate_pool_sensitivity_v0.1.csv;D02_swin_input_sensitivity_v0.1.csv
 - 限制：Only5 split clusters; smallest two-sided exact p=.0625; not an architecture contest
-

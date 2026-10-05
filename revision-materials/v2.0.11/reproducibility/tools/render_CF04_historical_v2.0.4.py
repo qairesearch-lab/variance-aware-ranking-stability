@@ -3,7 +3,7 @@ import csv,re,json,hashlib
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-ROOT=Path('/Users/qijiansheng/PycharmProjects/CevicalCancerV2')
+ROOT=Path(__file__).resolve().parents[1]
 ASSET=ROOT/'research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables'
 OUT=ASSET/'01_Main_Candidates';V='v2.0.4';stem='CF04_Selected_identity_sensitivity_Figure4_'+V
 policy=ASSET/'02_Supplement_Candidates/ST04_Checkpoint_selected_identity_sensitivity_v0.1.csv'
@@ -37,7 +37,7 @@ for ext in ['png','pdf','svg']:fig.savefig(OUT/(stem+'.'+ext),dpi=300,facecolor=
 plt.close(fig)
 (OUT/(stem+'.md')).write_text('''# CF04：选择规则与候选池变化下的首位模型身份变化（候选）
 
-版本v2.0.4；拟正文Figure4，尚未获作者采用。只重排ST04/ST05既有统计结果，没有新检验、重采样或拟合。
+Historical standalone rendering v2.0.4 from ST04/ST05; these existing results supply Figure 2b. No new inferential analysis.
 
 **English caption:** Changes in selected model identity under alternative evaluation conditions. (A) Fraction of matched split–seed contexts selecting different models under checkpoint selection Rules A and B, using 10 splits and five training seeds per original dataset. (B) Fraction selecting a different model after adding shared-input Swin-T to the four-CNN candidate pool, using five splits and three training seeds per extension dataset. Points show observed changed-context fractions; horizontal bars retain the existing paired nested percentile 95% intervals. Comparisons are paired within each panel; the panels represent different evaluation changes and are interpreted separately.
 

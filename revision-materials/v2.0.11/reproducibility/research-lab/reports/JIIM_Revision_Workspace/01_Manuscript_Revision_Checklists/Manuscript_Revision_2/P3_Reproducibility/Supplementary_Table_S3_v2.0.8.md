@@ -1,13 +1,10 @@
 # Supplementary Table S3：复现规格素材 v2.0.8
 
-## Material Passport
+## Metadata provenance
 
-- 日期：2026-10-04；目标正文v2.0；当前修订材料/索引v2.0.8。
-- 作者已确认Q05：9补表＋2既有补图＋CSV附件。此S3为可移入素材，正式补充材料/Word/PDF尚未编辑。
-- 承接[作者授权的S3 v0.2](../../Supplementary_Tables/Supplementary_Table_S3_v0.2.md)；本次扩充模型定义、参数量、实际训练epoch与计时，并回填已经完成的B1分析环境。
-- 来源：1100正式run；300扩展checkpoint形状；12代表checkpoint完整hash；原8行参数表、历史pilot与执行源代码。以下分面可在I1调整跨页版式，来源CSV完整保留。
+Recorded specifications from 1100 formal runs, parameter-shape checks of 300 extension checkpoints, 12 representative complete checkpoint hashes and the archived original parameter records. Training and statistical-analysis runtimes are reported separately.
 
-## Candidate body
+## Recorded specifications
 
 ### Supplementary Table S3. Model definitions, parameter counts, training settings and execution records
 
@@ -149,7 +146,7 @@ The original analysis-host record (Python 3.9.6, PyTorch 2.8.0, torchvision 0.23
 4. Core optimizer, learning rate, weight decay, batch size and maximum epoch settings match the recorded configurations. Worker overrides were 0 for original SIPaKMeD, 24 for original OrganAMNIST and 4 for extensions. Training software versions are fixed within each dataset's formal runs and reported as recorded; the common training YAML does not imply identical package installations across all datasets. CUDA denotes the PyTorch runtime-reported version.
 5. ImageNet mean/std normalization was used throughout. Preprocessing and augmentation are dataset- and branch-specific as listed; the shared Swin branch uses the dataset transform, whereas the weight-specific branch changes Swin validation/test processing. Model selection is repeated under the applicable branch. Further exact interpolation, decoder and worker-seed details remain in the source/configuration files.
 
-## 管理附件（不作为投稿正文）
+## Supporting metadata
 
 - [18行完整参数记录](P3a_Model_Parameter_Counts_v2.0.8.csv)
 - [300 checkpoint形状核算](P3a_Parameter_Checkpoint_By_Run_v2.0.8.csv)
@@ -158,5 +155,3 @@ The original analysis-host record (Python 3.9.6, PyTorch 2.8.0, torchvision 0.23
 - [1100 run事实核对](P3a_Run_Metadata_Check_v2.0.8.csv)
 - [已完成B1分析运行时](P3a_Revised_Analysis_Runtime_v2.0.8.json)
 - [源hash与核对详情](P3a_Metadata_Audit_v2.0.8.json)
-
-本轮P3a是事实汇编，不改变既有BA/排序/统计结果。P3b本地增量分享包、P4文献及声明、I1正式稿件整合仍单独追踪。

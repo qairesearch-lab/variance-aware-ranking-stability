@@ -1,6 +1,6 @@
 # ST03: Checkpoint policy BA sensitivity
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset | Model | B − A ΔBA (pp) | 95% paired CI (pp) | Holm p (eight pairs) |
 | --- | --- | --- | --- | --- |

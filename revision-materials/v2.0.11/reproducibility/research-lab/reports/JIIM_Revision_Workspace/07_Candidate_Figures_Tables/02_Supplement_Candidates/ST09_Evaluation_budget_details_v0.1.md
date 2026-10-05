@@ -1,6 +1,6 @@
 # ST09: Evaluation budget details
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Stratum | Budget s×k | Four-model runs | Top agreement | Partition 2.5–97.5% spread | Complete-rank agreement | Mean-rank ref / bootstrap ref |
 | --- | --- | --- | --- | --- | --- | --- |

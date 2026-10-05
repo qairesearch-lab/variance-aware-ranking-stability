@@ -1,6 +1,6 @@
 # ST08: Reference definition sensitivity
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Stratum | Full-grid agreement (nested CI) | Identity-correct LSO agreement (crossed CI) |
 | --- | --- | --- |

@@ -12,7 +12,7 @@
   "base_seed": 2026100301,
   "rng_seed_derivation": "SHA256(stratum:purpose) first8bytes big endian XOR base_seed; D01 replays legacy20261003",
   "python": "3.12.14",
-  "python_executable": "/Users/qijiansheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "python_executable": "[machine-specific executable path omitted in public export]",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "package_versions": {
     "numpy": "2.3.5",
@@ -3433,5 +3433,6 @@
     "Sign-flip p values require sign symmetry/exchangeability; Holm does not remove dependence.",
     "Budget partitions/subsets are finite reused calculations, not independent patient samples; partition spread is not CI.",
     "No new training, manuscript rewrite, universal winner or universal evaluation budget claim."
-  ]
+  ],
+  "public_export_note": "v2.0.19: executable location normalized; all source/output hashes and numerical settings are original execution provenance. Consult PUBLIC_EXPORT_MAP_v2.0.19.csv for current-file correspondence."
 }

@@ -1,6 +1,6 @@
 # P3a复现规格核查结果 v2.0.8
 
-## Material Passport
+## Metadata audit scope
 
 日期2026-10-04；仅已有模型/执行元数据核查和修订素材，未训练、未做新推断统计、未改原稿。参数核算为CPU上受限读取checkpoint元数据，不读取张量数值、不调用torch，也不下载权重。
 
@@ -12,11 +12,11 @@
 - 实际训练和selected epoch的28行汇总、28行计时汇总已经按原run核对；SD只是描述性记录。
 - 训练环境4行保留事实，已完成B1分析环境单独回填。新[S3完整英文素材](Supplementary_Table_S3_v2.0.8.md)覆盖模型、参数、执行设置、epoch、计时和输入处理。
 
-## 需要在修订中写清的事实
+## Recorded execution facts
 
 1. 原Rule B的400个run均训练60 epoch；扩展300个run全部Rule A。Swin名称`_B`表示weight-specific input branch，不能解释成固定epoch Rule B。
 2. actual trained epoch不是selected checkpoint epoch；两列分别给出。
 3. 软件版本仍按正式run记录；硬件和workers用于复现说明，不构成研究比较对象。
 4. 原训练与扩展计时起止范围不同，原始范围一并保留。没有合并GPU速度排名或补做成本预测。
 
-核对输出0错误。P3a材料准备已完成，无需新增作者科学决策；正式S3排版及实际页行在I1。下一批P3b本地增量分享包尚未验收；P4及正式稿件/回信仍未完成。
+Metadata audit completed with zero reported errors.

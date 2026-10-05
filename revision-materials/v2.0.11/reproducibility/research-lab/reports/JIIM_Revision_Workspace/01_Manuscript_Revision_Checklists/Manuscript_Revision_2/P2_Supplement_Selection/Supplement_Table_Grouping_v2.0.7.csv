@@ -1,10 +1,10 @@
-﻿proposed_table,title,placement_action,source_assets,reviewer_ids,revision_ids,RQ,preparation,adoption_state
-S1,Experimental evaluation matrix,保留原S1；原800与扩展240+30+30分面列示，不追称1100原预注册,RT04,R3.1;R3.3,M11;M12;M13,RQ1–3,I1设计图同步；无新增科学选择,Q05待作者确认；Q01–Q04沿用
-S2,Dataset features and evaluation units,保留原S2，扩展两数据集的分组单位/终点和数据来源,原S2+B0数据记录,R2.2;R3.2;R3.3,M15;M16;M17,RQ1–2,P3/P4来源与规格汇编后整合,Q05待作者确认；Q01–Q04沿用
-S3,"Model, training and environment specification",保留已获授权S3 v0.2基础；参数/actual trained epoch/selected epoch/计时分别列示,ST12;ST13;ST14,R2.4;R2.9;R3.3,M18;M20;M21;M39;M42,RQ2–3,P3a仍待；ST14不能代表Swin/扩展参数，selected epoch不能替代实际训练epoch,Q05待作者确认；Q01–Q04沿用
-S4,Absolute performance uncertainty,保留原S4主要性能汇总，加BA均值crossed区间；原16+扩展8共24主模型行，44敏感性行放附件,ST01,R2.7;E.1,M29;M35;M38,RQ1–2,主/敏感性24/44行候选已分开；原Median/Min/Max整合时核对保留,Q05待作者确认；Q01–Q04沿用
-S5,Model-level summaries and statistical comparisons,保留原S5 A/B指标功能；C增全部36固定配对及两种Holm；D按Q01披露现成关联结果和完整方法,ST02;RT03;T87,E.1;R1.1;R2.7,M25;M28;M29;M31;M36,RQ2,C/D候选已生成；不据显著性删行或声称普遍最优模型,Q05待作者确认；Q01–Q04沿用
-S6,Observed computational cost,保留原S6原800-run硬件相关预算记录；计时规格并入S3，不拼接不同GPU构成速度比较,原S6,R2.9,M21;M39,RQ3,沿用原记录并说明硬件；本轮不重算历史成本,Q05待作者确认；Q01–Q04沿用
-S7,Reference and training-seed sensitivity,保留原S7参考身份记录；B加full-grid/LSO，C加common3，D列18行代表预算/参考敏感性；完整130行入CSV,ST07;ST08;ST09,R2.3;R3.1;R3.4,M12;M23;M27;M33;M35;M43,RQ1/3,B/C/D候选已生成；finite分位范围与nested reference bootstrap按实标注,Q05待作者确认；Q01–Q04沿用
-S8,"Selection-rule, candidate-pool and input sensitivity",新增一表四Panel：规则配对BA、规则身份/参考变化、同15context候选池、Swin输入方案,ST03;ST04;ST05;ST06;T88,E.1;R1.3;R2.4;R2.5;R3.3,M20;M34;M37;M38;M44,RQ2,24源行（8+10+4+2）保留各自比较对象与配对算法；候选已生成,Q05待作者确认；Q01–Q04沿用
-S9,Variance components and model-fitting status,新增一表两Panel：原方差组成和full/fallback拟合状态,ST10;ST11,R2.1;R2.8,M26;M32;M44,RQ2,12源行（4+8）；原归档拟合，不能标成扩展新拟合,Q05待作者确认；Q01–Q04沿用
+﻿proposed_table,title,source_assets,RQ
+S1,Experimental evaluation matrix,RT04,RQ1–3
+S2,Dataset features and evaluation units,原S2+B0数据记录,RQ1–2
+S3,"Model, training and environment specification",ST12;ST13;ST14,RQ2–3
+S4,Absolute performance uncertainty,ST01,RQ1–2
+S5,Model-level summaries and statistical comparisons,ST02;RT03;T87,RQ2
+S6,Observed computational cost,原S6,RQ3
+S7,Reference and training-seed sensitivity,ST07;ST08;ST09,RQ1/3
+S8,"Selection-rule, candidate-pool and input sensitivity",ST03;ST04;ST05;ST06;T88,RQ2
+S9,Variance components and model-fitting status,ST10;ST11,RQ2

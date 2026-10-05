@@ -1,9 +1,12 @@
 import os
+import argparse
 import json
 import pandas as pd
 
 # 定义数据目录
-data_dir = "/Users/qijiansheng/PycharmProjects/CevicalCancerV2/research-lab/experiments/cervical-cancer-sipakmed/results/unified_experiment_v3_1/cv"
+parser = argparse.ArgumentParser(description="Extract legacy cross-validation metric records")
+parser.add_argument("--data-dir", required=True, help="Directory containing legacy per-fold metric folders")
+data_dir = parser.parse_args().data_dir
 
 # 模型列表
 models = ["baseline", "se_layer4", "se_avgpool"]

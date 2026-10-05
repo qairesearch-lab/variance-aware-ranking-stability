@@ -1,6 +1,6 @@
 # ST14: Original model parameter counts
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Original dataset | Model | Class count | Total parameters | Trainable parameters | Fine-tuning scope |
 | --- | --- | --- | --- | --- | --- |

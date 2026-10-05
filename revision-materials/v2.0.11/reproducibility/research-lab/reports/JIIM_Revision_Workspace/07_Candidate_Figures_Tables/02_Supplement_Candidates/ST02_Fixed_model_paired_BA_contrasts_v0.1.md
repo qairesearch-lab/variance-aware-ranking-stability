@@ -1,6 +1,6 @@
 # ST02: Fixed model paired BA contrasts
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Stratum | Paired contrast | ΔBA (pp) | 95% paired CI (pp) | Conditional p | Holm p (six pairs) |
 | --- | --- | --- | --- | --- | --- |

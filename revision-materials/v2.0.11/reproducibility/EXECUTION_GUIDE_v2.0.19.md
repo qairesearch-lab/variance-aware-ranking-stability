@@ -1,14 +1,14 @@
-# Execution guide v2.0.9
+# Execution guide v2.0.19
 
 ## 1. Existing results: verification only
 
-Unzip into a new directory and use the package directory containing `research-lab/` as root. All copied source files preserve their relative paths and bytes. Historical server absolute paths in run records identify the training host; the B1 reader uses package-relative manifest/output paths.
+Unzip into a new directory and use the package directory containing `research-lab/` as root. Numerical source files preserve their relative paths and bytes; documentation and wrappers are normalized as listed in PUBLIC_EXPORT_MAP_v2.0.19.csv. Historical server absolute paths in run records identify the training host; the B1 reader uses package-relative manifest/output paths.
 
 ```bash
 python3 tools/verify_package.py
 ```
 
-This uses the standard library and checks the copied files against `FILE_MANIFEST_v2.0.9.json`. It performs no training or statistical analysis. Original training environment versions, actual epochs and timing remain in the included P3a source tables. The original release reference remains `v1.0-submission` at commit `2cc72ccdb0fafe0269a8c890891a779032beac9c`; baseline comparison here is against the local public snapshot, not a new remote-access audit.
+This uses the standard library and checks the copied files against `FILE_MANIFEST_v2.0.19.json`. It performs no training or statistical analysis. Original training environment versions, actual epochs and timing remain in the included P3a source tables. The original release reference remains `v1.0-submission` at commit `2cc72ccdb0fafe0269a8c890891a779032beac9c`; baseline comparison here is against the local public snapshot, not a new remote-access audit.
 
 ## 2. Optional statistical reproduction in a disposable copy
 
@@ -22,7 +22,7 @@ python research-lab/experiments/registered-workflow/extensions/jiim_2026_major_r
 python research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/audit_b1_computations_v0.1.py
 ```
 
-Compare the new CSV hashes/numeric fields with archived results. UTC/runtime manifest fields naturally change. This procedure is documented, **not executed in P3b**. B1 uses saved run metrics and does not require images or checkpoints. Earlier `results_v0.1/v0.2` are dependencies/historical analyses, not competing current results. The frozen resampling specifications are included; q remains a point estimate, without a new outer data CI.
+Compare the new CSV hashes/numeric fields with archived results. UTC/runtime manifest fields naturally change. This procedure is documented, **not executed in this public export**. B1 uses saved run metrics and does not require images or checkpoints. Earlier `results_v0.1/v0.2` are dependencies/historical analyses, not competing current results. The frozen resampling specifications are included; q remains a point estimate, without a new outer data CI.
 
 ## 3. Optional existing-figure rendering
 
@@ -34,13 +34,13 @@ python tools/render_existing_figure.py --figure CF04
 python tools/render_existing_figure.py --figure CF02
 ```
 
-CF04 is an archived intermediate; its existing results supply Figure2b. The expanded CF02 is the adopted Figure2a/b candidate. `tools/` stores the original temporary rendering source unchanged; the wrapper only relocates the root. Adopted layout: one main table/three main figures; nine supplementary tables/two existing supplementary figures/CSV attachments. Package inventory includes reserve assets; inventory does not mean all assets enter the manuscript. P2 grouping files and asset IDs retain their selection decisions.
+CF04 is an archived intermediate; its existing results supply Figure2b. The expanded CF02 is the adopted Figure2a/b candidate. `tools/` contains public derivatives of the original rendering sources with a package-relative root. Numerical plotting definitions are unchanged. Adopted layout: one main table/three main figures; nine supplementary tables/two existing supplementary figures/CSV attachments. Package inventory includes reserve assets; inventory does not mean all assets enter the manuscript. Asset IDs and the scientific catalogue preserve source correspondence.
 
 ## 4. Optional fresh extension training
 
 Use a **separate new training checkout**, since training does not overwrite completed outputs. Copy the exact included code, configs, sealed manifest, final dataset indices and split files. Acquire image data independently. Restore the relative paths recorded in the dataset indices (`isic2019/`, `mura/`); inspect those index files before moving data. Retain the original selected checkpoint files separately for inference verification.
 
-Recorded environment: Python3.10.21, torch2.4.1+cu121, torchvision0.19.1+cu121, CUDA12.1 runtime; other observed package versions are in `ENVIRONMENT_RECORD_v2.0.9.json`. Use the exact environment rather than generic original-release requirements. Installation example:
+Recorded environment: Python3.10.21, torch2.4.1+cu121, torchvision0.19.1+cu121, CUDA12.1 runtime; other observed package versions are in `ENVIRONMENT_RECORD_v2.0.19.json`. Use the exact environment rather than generic original-release requirements. Installation example:
 
 ```bash
 python -m pip install torch==2.4.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cu121

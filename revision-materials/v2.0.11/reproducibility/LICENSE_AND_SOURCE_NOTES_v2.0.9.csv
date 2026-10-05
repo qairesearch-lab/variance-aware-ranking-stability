@@ -1,8 +1,0 @@
-﻿component,existing_basis,package_action,release_action
-Original public snapshot software/documentation,"github/LICENSE: MIT, copyright 2026 qairesearch-lab",Original license copied unchanged,Retain the notice and original release identity
-New extension/statistical/rendering/package code,No separate confirmed new-code release license found,Local author review copy; no new license assigned,Recommend same MIT scope for original/new authored code; author confirmation at publication
-"Saved run aggregates, splits, source benchmark identifiers and derived tables",Author-generated results mixed with benchmark-derived metadata,Local review copy preserving provenance; no broad redistribution permission asserted,Choose release terms and verify benchmark metadata disclosure before upload
-ISIC2019 source images/metadata,Original source/access terms apply; package does not grant dataset rights,Image files excluded; final source-index and quality records included locally,Obtain data from ISIC challenge source; review metadata scope
-MURA source images/metadata,Original Stanford MURA source/access terms apply,Images excluded; benchmark path/group identifiers included locally,Acquire MURA independently and review metadata scope
-SIPaKMeD and OrganAMNIST images,Original source terms apply,Images excluded; original split records included locally,Acquire independently under source terms
-Pretrained weights/checkpoints,Training records retain source/weight hashes; no new rights determination made,Binary weight/checkpoint files excluded and retained locally,Treat optional model release as separate scope

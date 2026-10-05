@@ -1,6 +1,6 @@
 # ST10: Original mixed effects variance structure
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Stratum | Split variance share | Model×split share | Residual share | Model |
 | --- | --- | --- | --- | --- |

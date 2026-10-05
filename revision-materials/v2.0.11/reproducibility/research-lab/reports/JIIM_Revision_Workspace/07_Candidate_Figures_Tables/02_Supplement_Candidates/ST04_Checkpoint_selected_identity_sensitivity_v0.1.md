@@ -1,6 +1,6 @@
 # ST04: Checkpoint selected identity sensitivity
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset | Target | Statistic | Estimate | 95% paired CI |
 | --- | --- | --- | --- | --- |

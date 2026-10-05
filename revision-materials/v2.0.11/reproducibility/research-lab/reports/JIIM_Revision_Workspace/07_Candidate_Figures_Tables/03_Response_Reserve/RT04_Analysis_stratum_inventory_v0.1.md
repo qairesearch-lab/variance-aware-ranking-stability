@@ -1,6 +1,6 @@
 # RT04: Analysis stratum inventory
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Stratum | Split×seed | Models | Contexts | Runs in reused stratum | Role |
 | --- | --- | --- | --- | --- | --- |

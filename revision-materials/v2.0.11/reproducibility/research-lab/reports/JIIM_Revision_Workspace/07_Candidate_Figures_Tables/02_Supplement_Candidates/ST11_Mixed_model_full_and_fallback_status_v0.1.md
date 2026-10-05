@@ -1,6 +1,6 @@
 # ST11: Mixed model full and fallback status
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset / rule | Specification | Converged | Singular | Splits / seeds |
 | --- | --- | --- | --- | --- |

@@ -1,6 +1,6 @@
 # ST05: Candidate pool sensitivity
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset | Swin input | Contexts | Selection changed | 95% paired CI | Mean top-two ΔBA: four / five (pp) |
 | --- | --- | --- | --- | --- | --- |

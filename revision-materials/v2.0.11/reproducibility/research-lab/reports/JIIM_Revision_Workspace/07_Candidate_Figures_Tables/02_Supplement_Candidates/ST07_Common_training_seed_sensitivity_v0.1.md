@@ -1,6 +1,6 @@
 # ST07: Common training seed sensitivity
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset / rule | Reference: all5 / common3 | LSO agreement: all5 / common3 | 5×3 agreement: all5 / common3 pool |
 | --- | --- | --- | --- |

@@ -4,7 +4,7 @@ This directory contains scripts for generating splits, building run manifests, a
 
 ## Current Status
 
-Todo 1 passed the split freeze gate on 2026-04-27, and Todo 2 passed the split-hash gate on the same date. Todo 3 now generates an audited 800-row `primary_run_manifest_draft.csv` with relative output paths and split hashes copied from the formal `../registered-workflow/splits/split_hashes.csv`.
+Completed phase 1 passed the split freeze gate on 2026-04-27, and Completed phase 2 passed the split-hash gate on the same date. Completed phase 3 now generates an audited 800-row `primary_run_manifest_draft.csv` with relative output paths and split hashes copied from the formal `../registered-workflow/splits/split_hashes.csv`.
 
 ## Scripts Overview
 
@@ -12,7 +12,7 @@ Todo 1 passed the split freeze gate on 2026-04-27, and Todo 2 passed the split-h
 |------------|-------------|-------|
 | `generate_splits.py` | Validate frozen split configuration and generate stratified repeated random holdout splits for SIPaKMeD and OrganAMNIST | `python3 generate_splits.py` |
 | `hash_splits.py` | Validate split files, compute SHA-256 hashes, and generate the stable split hash manifest | `python3 hash_splits.py` |
-| `build_run_manifest.py` | Generate and audit the Todo 3 primary run manifest draft from frozen configs and formal split hashes | `python3 build_run_manifest.py` |
+| `build_run_manifest.py` | Generate and audit the Completed phase 3 primary run manifest draft from frozen configs and formal split hashes | `python3 build_run_manifest.py` |
 | `train_one_run.py` | Read one manifest row, validate it against frozen configs, and emit fixed-schema run outputs for pre-execution validation | `python3 train_one_run.py --manifest <manifest.csv> --run-id <run_id>` |
 | `run_smoke_test.py` | Execute the smoke-test manifest in schema-validation mode and validate per-run outputs | `python3 run_smoke_test.py` |
 | `validate_outputs.py` | Validate fixed-schema run output directories against a manifest | `python3 validate_outputs.py --manifest <manifest.csv>` |
@@ -136,4 +136,4 @@ After completing all runs, use the formal analysis scripts in `../registered-wor
 - Audit class-count fields are stable JSON strings and should be parsed with `json.loads()` when read back from CSV.
 - `hash_splits.py` writes `split_hashes.csv` with fixed column order, dataset/split ordering, UTF-8 encoding, and LF newlines.
 - `build_run_manifest.py` writes `run-manifests/primary_run_manifest_draft.csv` and `run-manifests/primary_run_manifest_audit.json`; the draft remains non-final until the smoke-test gates pass.
-- Todo 3 config hash: `5e203de9913a10ae47f75aab7d778e21e9a142a0699f4a4a6c374b725d67c1ae`.
+- Completed phase 3 config hash: `5e203de9913a10ae47f75aab7d778e21e9a142a0699f4a4a6c374b725d67c1ae`.

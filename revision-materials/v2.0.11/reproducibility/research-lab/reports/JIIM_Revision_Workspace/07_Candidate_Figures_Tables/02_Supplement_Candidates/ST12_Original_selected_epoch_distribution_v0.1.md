@@ -1,6 +1,6 @@
 # ST12: Original selected epoch distribution
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset / rule | Model | Runs | Selected epoch mean / SD | Median [min, max] |
 | --- | --- | --- | --- | --- |

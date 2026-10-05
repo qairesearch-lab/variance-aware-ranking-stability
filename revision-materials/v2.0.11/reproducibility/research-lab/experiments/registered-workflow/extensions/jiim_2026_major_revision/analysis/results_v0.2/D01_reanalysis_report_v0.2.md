@@ -1,6 +1,6 @@
 # D01 重分析：按原 split 身份排除重复抽样
 
-## Material Passport
+## Analysis provenance
 
 - ID：JIIM-D01-v0.2
 - 类型：split-cluster bootstrap sensitivity reanalysis

@@ -1,14 +1,9 @@
 # B1 分析执行说明
 
-## Material Passport
+## Analysis scope
 
-- ID：JIIM-B1-SPEC-v0.1；日期：2026-10-03
-- 授权：作者要求完成B0后推进B1；保留原10×5，并追加42/52/62共同三seed敏感性
-- 范围：D01→D02→D03→D04，以及D05统计敏感性
-- 定位：已知原结果及扩展预览后的修订重分析说明，不能追称原始预注册
-- 输入：B0核验的800原实验和300扩展run；不改冻结训练设计或原始结果
-- 主问题：原RQ1排名稳定性、RQ2评估因素信号、RQ3重复评估预算；不研究模型普遍优劣或硬件速度
-- 验收边界：本轮执行、来源核对及另一实现的计算交叉核对由同一Codex完成；不能称独立人员审查。独立方法审查、整稿与回信落实分别保持可追踪状态。
+Revision-stage reanalysis of 800 original and 300 extension runs, specified after earlier results were available; it is not the original preregistration. The original RQ1–RQ3 and frozen training design are retained. Numerical cross-checks used different implementations in the same workflow, not an independent personnel review. See the package research-tool-use statement.
+
 
 ## 分层与比较单位
 
@@ -20,7 +15,7 @@
 
 ## D01：来源及算法复核
 
-重新从raw metric构建四数据集Rule A四CNN张量，核对160个context的原split身份排除点估计。按原v0.2的seed和随机调用顺序，用向量化身份掩码实现重放10000次LSO bootstrap；每个held-out原split的全部重复抽样副本均排除。参考集不足两个不同原split时重抽并记录。用独立编写的批量IRLS重算既有分差关联模型，记录收敛/失败情况并与v0.2比较。仍为同一代理的不同实现核对；不以此冒充独立人员审查。
+重新从raw metric构建四数据集Rule A四CNN张量，核对160个context的原split身份排除点估计。按原v0.2的seed和随机调用顺序，用向量化身份掩码实现重放10000次LSO bootstrap；每个held-out原split的全部重复抽样副本均排除。参考集不足两个不同原split时重抽并记录。用独立编写的批量IRLS重算既有分差关联模型，记录收敛/失败情况并与v0.2比较。This is an implementation cross-check, not an independent personnel review.
 
 ## D02：统一不确定性
 
@@ -52,9 +47,9 @@
 - 保留原全网格in-sample recovery来源表及点值作为历史estimand复现；明确其参考包含discovery。10×5的自比较1.0不作为收敛证据。
 - 共同三seed敏感性采用相同5/5定义。有限网格最多验证五个discovery split，不能宣称发现普遍最低预算或真实总体最佳模型。
 
-## 交付与状态
+## Output provenance
 
-分析代码和机器输出保存于扩展analysis的 `results_v0.3/`；本工作区保存方法、验收、图表覆盖及RQ回答报告。每个正式输出保存输入/代码/协议hash、随机seed、实际分析运行时和统计定位。更新统一索引，保留原v0.1/v0.2、原投稿表/图和S3草稿。
+Saved machine outputs are in `analysis/results_v0.3/`. Recorded source hashes describe the original analysis inputs; the public export mapping identifies documentation changes. Numerical inputs and statistical CSVs are unchanged.
 
 ## 方法来源及适用边界
 

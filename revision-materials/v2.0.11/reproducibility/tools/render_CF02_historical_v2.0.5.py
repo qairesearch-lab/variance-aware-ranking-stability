@@ -4,7 +4,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
-ROOT=Path('/Users/qijiansheng/PycharmProjects/CevicalCancerV2');A=ROOT/'research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables';OUT=A/'01_Main_Candidates';V='v2.0.5';stem='CF02_Expanded_Figure2_'+V
+ROOT=Path(__file__).resolve().parents[1];A=ROOT/'research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables';OUT=A/'01_Main_Candidates';V='v2.0.5';stem='CF02_Expanded_Figure2_'+V
 srca=OUT/'CF02_Context_top_two_BA_difference_Figure2_v0.1.csv';srcb=OUT/'CF04_Selected_identity_sensitivity_Figure4_v2.0.4.csv'
 ra=list(csv.DictReader(srca.open(encoding='utf-8-sig')));rb=list(csv.DictReader(srcb.open(encoding='utf-8-sig')))
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'pdf.fonttype':42,'ps.fonttype':42,'svg.fonttype':'none'})
@@ -35,7 +35,7 @@ plt.close(fig)
 pa=OUT/(stem+'_panel_a.csv');pb=OUT/(stem+'_panel_b.csv');pa.write_bytes(srca.read_bytes());pb.write_bytes(srcb.read_bytes())
 caption='''# Figure2扩展候选：2a与2b v2.0.5
 
-作者确认Figure2合并展示；正文仍1表3图，不另列Figure4。原前二BA差为2a，新增规则/候选池敏感性为2b。当前是候选排图，正文v2.0未整合。
+Figure 2 combines the context top-two BA difference (panel a) and selection-rule/candidate-pool sensitivity (panel b).
 
 **English caption:** Performance separation and sensitivity of model selection to evaluation conditions. (a) Distribution of the difference between the two highest balanced-accuracy (BA) values within each observed split–seed context, in percentage points (pp). The leading pair is reselected within each context. Boxes show the median and interquartile range; whiskers extend to 1.5 interquartile ranges, and points show all observed contexts. Subplot y-ranges differ. (b) Fractions of matched split–seed contexts selecting a different model under alternative evaluation conditions. The checkpoint selection rule comparison uses 10 splits and five seeds per original dataset. The candidate-pool comparison adds shared-input Swin-T to four CNNs using five splits and three seeds per extension dataset. Horizontal bars retain existing paired nested percentile 95% intervals. The two condition comparisons are interpreted separately; their fractions describe changes in selected model identity, not changes in discordance rates.
 

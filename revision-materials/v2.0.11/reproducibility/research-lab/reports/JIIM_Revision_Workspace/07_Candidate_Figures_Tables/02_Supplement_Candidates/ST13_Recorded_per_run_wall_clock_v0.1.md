@@ -1,6 +1,6 @@
 # ST13: Recorded per run wall clock
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset / rule | Model / input | GPU | Runs | Seconds mean / SD | Median seconds |
 | --- | --- | --- | --- | --- | --- |

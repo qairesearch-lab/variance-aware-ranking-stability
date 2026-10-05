@@ -1,6 +1,6 @@
 # ST06: Swin input recipe sensitivity
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Dataset | Paired contexts | Input ΔBA (pp) | 95% paired CI (pp) | Holm p (two pairs) |
 | --- | --- | --- | --- | --- |

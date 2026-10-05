@@ -1,6 +1,6 @@
 # RT02: Observed and aggregate selection evidence
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Stratum | Observed f | Crossed q | Full-grid top-two ΔBA (pp) |
 | --- | --- | --- | --- |

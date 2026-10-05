@@ -2,7 +2,7 @@
 from pathlib import Path
 import hashlib,json,sys
 root=Path(__file__).resolve().parents[1]
-manifest=json.loads((root/'FILE_MANIFEST_v2.0.9.json').read_text())
+manifest=json.loads((root/'FILE_MANIFEST_v2.0.19.json').read_text())
 errors=[]
 for row in manifest['files']:
  p=root/row['path'];h=hashlib.sha256()

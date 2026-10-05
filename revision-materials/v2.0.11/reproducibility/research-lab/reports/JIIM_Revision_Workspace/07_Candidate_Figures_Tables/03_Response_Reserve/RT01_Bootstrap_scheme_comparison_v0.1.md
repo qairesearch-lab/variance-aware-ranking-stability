@@ -1,6 +1,6 @@
 # RT01: Bootstrap scheme comparison
 
-Candidate v0.1; not yet inserted in the manuscript.
+Archived table rendering v0.1.
 
 | Stratum | Adopted crossed q | Nested q | Split-only q | Original flat q |
 | --- | --- | --- | --- | --- |

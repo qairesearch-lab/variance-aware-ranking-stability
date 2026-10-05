@@ -1,6 +1,6 @@
 # Figure2扩展候选：2a与2b v2.0.5
 
-作者确认Figure2合并展示；正文仍1表3图，不另列Figure4。原前二BA差为2a，新增规则/候选池敏感性为2b。当前是候选排图，正文v2.0未整合。
+Figure 2: context top-two BA difference (a) and rule/pool sensitivity (b).
 
 **English caption:** Performance separation and sensitivity of model selection to evaluation conditions. (a) Distribution of the difference between the two highest balanced-accuracy (BA) values within each observed split–seed context, in percentage points (pp). The leading pair is reselected within each context. Boxes show the median and interquartile range; whiskers extend to 1.5 interquartile ranges, and points show all observed contexts. Subplot y-ranges differ. (b) Fractions of matched split–seed contexts selecting a different model under alternative evaluation conditions. The checkpoint selection rule comparison uses 10 splits and five seeds per original dataset. The candidate-pool comparison adds shared-input Swin-T to four CNNs using five splits and three seeds per extension dataset. Horizontal bars retain existing paired nested percentile 95% intervals. The two condition comparisons are interpreted separately; their fractions describe changes in selected model identity, not changes in discordance rates.
 
