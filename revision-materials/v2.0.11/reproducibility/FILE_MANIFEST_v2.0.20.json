@@ -1,5 +1,5 @@
 {
-  "version": "v2.0.19",
+  "version": "v2.0.20",
   "files": [
     {
       "path": "CHECKPOINT_RETENTION_v2.0.9.csv",
@@ -21,8 +21,8 @@
     },
     {
       "path": "EXECUTION_GUIDE_v2.0.19.md",
-      "bytes": 5783,
-      "sha256": "fca709fa3887943ad1ffb2458895a83c0c271222d267a707f1b505aa23804785",
+      "bytes": 5823,
+      "sha256": "1606ca7c91fb569666dbda3c090d0e5e4ed9b0fe781ff17333c5d88191f2cd50",
       "category": "public_export_documentation_or_tool"
     },
     {
@@ -32,16 +32,34 @@
       "category": "public_export_documentation_or_tool"
     },
     {
+      "path": "PUBLIC_EXPORT_MAP_v2.0.20.csv",
+      "bytes": 1174472,
+      "sha256": "f6c56f496d981179e3dee83baf7777b3207c9bd920ab3bfb36ec25e52d4e7ba3",
+      "category": "public_export_documentation"
+    },
+    {
       "path": "README_v2.0.19.md",
-      "bytes": 982,
-      "sha256": "8cbd40ea30cf5502e357bb7b5a69cbfb4561f898ac64d3cde6ceb67fcdb7cc5b",
+      "bytes": 148,
+      "sha256": "bc60fe120e8ef55f1e92ebcbdf6fb34d9a57e05c85b5d5804bc0c22bddb10534",
       "category": "public_export_documentation_or_tool"
     },
     {
+      "path": "README_v2.0.20.md",
+      "bytes": 850,
+      "sha256": "5d3bad03c2bc01d612089e17bc53c7612d368cf7baafe7468e658cb9f317ae51",
+      "category": "public_export_documentation"
+    },
+    {
       "path": "RESEARCH_TOOL_USE_v2.0.19.md",
-      "bytes": 408,
-      "sha256": "b4bb0726caba67cb69a49057c9c3ef06c347ea0c797e0ffa988349728ea24a0d",
+      "bytes": 211,
+      "sha256": "1c6a67eec7c3b76574d5a3a53e64647227b2a48e8a06aa4ed79a133e0cf603ff",
       "category": "public_export_documentation_or_tool"
+    },
+    {
+      "path": "RESEARCH_TOOL_USE_v2.0.20.md",
+      "bytes": 817,
+      "sha256": "6dc335f2ce35581bc4531f8f0e91092a7d3cff064c279dfa2a0eb54d2d584339",
+      "category": "public_export_documentation"
     },
     {
       "path": "SOURCE_CLOSURE_CHECK_v2.0.19.csv",
@@ -28072,13 +28090,13 @@
     {
       "path": "tools/verify_package.py",
       "bytes": 662,
-      "sha256": "7c25732675a0328053fffd9708830b6ea02c3d48c8309bcc166217b785f50f8e",
+      "sha256": "e727a222ec1f703006062abdad3ad7b1692b108df84d57a8c57a3541e0eba534",
       "category": "package_documentation_or_tool"
     }
   ],
   "manifest_exclusions": [
-    "FILE_MANIFEST_v2.0.19.json",
-    "SHA256SUMS_v2.0.19.txt"
+    "FILE_MANIFEST_v2.0.20.json",
+    "SHA256SUMS_v2.0.20.txt"
   ],
-  "historical_input_snapshot": "06d7d9daca2ffc30de37e1eafb2b2e0b75d4c7a4"
+  "previous_public_commit": "358c7e5cea129578ed947eae7cb9bdb9899d3ba7"
 }

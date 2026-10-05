@@ -1,3 +1,3 @@
 # Research tool use
 
-During revision, Codex (OpenAI) assisted with code development, statistical and visualization materials, literature-source checks and manuscript-revision materials. Scientific decisions and responsibility for the study remain with the authors. Computational cross-checks used different implementations within this assisted workflow and are not described as independent personnel review.
+[Current corrected statement](RESEARCH_TOOL_USE_v2.0.20.md). The broad code-development phrase in the earlier statement has been replaced by a specific account of revision-stage assistance.

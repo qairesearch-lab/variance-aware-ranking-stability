@@ -1,4 +1,4 @@
-# Execution guide v2.0.19
+# Execution guide (origin v2.0.19; current documentation v2.0.20)
 
 ## 1. Existing results: verification only
 
@@ -8,7 +8,7 @@ Unzip into a new directory and use the package directory containing `research-la
 python3 tools/verify_package.py
 ```
 
-This uses the standard library and checks the copied files against `FILE_MANIFEST_v2.0.19.json`. It performs no training or statistical analysis. Original training environment versions, actual epochs and timing remain in the included P3a source tables. The original release reference remains `v1.0-submission` at commit `2cc72ccdb0fafe0269a8c890891a779032beac9c`; baseline comparison here is against the local public snapshot, not a new remote-access audit.
+This uses the standard library and checks the copied files against `FILE_MANIFEST_v2.0.20.json`. It performs no training or statistical analysis. Original training environment versions, actual epochs and timing remain in the included P3a source tables. The original release reference remains `v1.0-submission` at commit `2cc72ccdb0fafe0269a8c890891a779032beac9c`; baseline comparison here is against the local public snapshot, not a new remote-access audit.
 
 ## 2. Optional statistical reproduction in a disposable copy
 
