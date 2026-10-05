@@ -1,0 +1,3 @@
+dataset,paired_contexts,split_clusters,mean_BA_difference_weight_eval_minus_shared,CI_low,CI_high,sign_flip_p_raw_conditional,sign_assignments,minimum_two_sided_p,interpretation,holm_p_two_input_comparisons
+isic2019,15,5,0.019596199743108826,0.011651106058083938,0.032260522569123054,0.0625,32,0.0625,same architecture and weights; input-recipe sensitivity; five split clusters,0.125
+mura,15,5,-0.0007684623648081053,-0.0056151382087832628,0.0050027435263057017,0.75,32,0.0625,same architecture and weights; input-recipe sensitivity; five split clusters,0.75

@@ -1,0 +1,102 @@
+{
+  "accuracy": 0.9358552631578947,
+  "analysis_role": "primary_analysis",
+  "balanced_accuracy": 0.9362814489522291,
+  "brier_score_multiclass": 0.018182888411156027,
+  "calibration_intercept": null,
+  "calibration_slope": null,
+  "checkpoint_policy": "A",
+  "config_hash": "5e203de9913a10ae47f75aab7d778e21e9a142a0699f4a4a6c374b725d67c1ae",
+  "confusion_matrix": [
+    [
+      113,
+      1,
+      2,
+      0,
+      2
+    ],
+    [
+      0,
+      124,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      99,
+      12,
+      11
+    ],
+    [
+      1,
+      0,
+      2,
+      119,
+      0
+    ],
+    [
+      2,
+      1,
+      2,
+      0,
+      114
+    ]
+  ],
+  "dataset": "sipakmed",
+  "metric_source": "primary_train",
+  "model": "efficientnet_b0",
+  "per_class_metrics": {
+    "0": {
+      "f1-score": 0.9658119658119658,
+      "precision": 0.9741379310344828,
+      "recall": 0.9576271186440678,
+      "support": 118.0
+    },
+    "1": {
+      "f1-score": 0.9802371541501976,
+      "precision": 0.96875,
+      "recall": 0.992,
+      "support": 125.0
+    },
+    "2": {
+      "f1-score": 0.8646288209606987,
+      "precision": 0.9428571428571428,
+      "recall": 0.7983870967741935,
+      "support": 124.0
+    },
+    "3": {
+      "f1-score": 0.9407114624505929,
+      "precision": 0.9083969465648855,
+      "recall": 0.9754098360655737,
+      "support": 122.0
+    },
+    "4": {
+      "f1-score": 0.9230769230769231,
+      "precision": 0.890625,
+      "recall": 0.957983193277311,
+      "support": 119.0
+    },
+    "accuracy": 0.9358552631578947,
+    "macro avg": {
+      "f1-score": 0.9348932652900757,
+      "precision": 0.936953404091302,
+      "recall": 0.9362814489522291,
+      "support": 608.0
+    },
+    "weighted avg": {
+      "f1-score": 0.9347407603599333,
+      "precision": 0.9371136744363004,
+      "recall": 0.9358552631578947,
+      "support": 608.0
+    }
+  },
+  "pr_auc_macro": 0.9853189858954974,
+  "roc_auc_macro_ovr": 0.9955336098696579,
+  "run_id": "run_0047",
+  "split_hash": "c7cdebd9ca3573584f75bb37e740e028efa50549eca00308df18d1cf3d9b446b",
+  "split_id": "split_02",
+  "split_seed": "1002",
+  "training_seed": "42"
+}

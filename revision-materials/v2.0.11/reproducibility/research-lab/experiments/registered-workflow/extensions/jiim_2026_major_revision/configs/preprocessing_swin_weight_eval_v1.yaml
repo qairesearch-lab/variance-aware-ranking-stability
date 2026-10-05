@@ -1,0 +1,21 @@
+# Predeclared sensitivity branch. Train augmentation/optimizer/splits/seeds remain
+# identical to the primary branch. Swin validation AND test use the official
+# torchvision Swin_T_Weights.IMAGENET1K_V1 inference transform. Checkpoint
+# selection must therefore be repeated under this validation recipe.
+variant_id: swin_weight_eval_v1
+role: preprocessing_sensitivity_only
+design_lock: extension_protocol_design_locked_v0.3.yaml
+train_transform: dataset_specific_shared_across_models
+eval_transform:
+  isic2019: swin_t_imagenet1k_v1_official_for_swin_only
+  mura: pad_square_then_swin_t_imagenet1k_v1_official_for_swin_only
+swin_pretrained_weight_enum: IMAGENET1K_V1
+swin_weight_specific_eval: true
+official_swin_eval_expectation:
+  resize_short_edge: 232
+  resize_interpolation: BICUBIC
+  center_crop: 224
+  imagenet_normalization: true
+interpretation: pipeline_sensitivity_not_architecture_only_effect
+formal_scope_if_authorized: paired_swin_only_first_5_splits_3_seeds_2_datasets_30_additional_runs
+

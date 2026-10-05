@@ -1,0 +1,5 @@
+﻿stage,dataset,runs,python,torch,torchvision,cuda,gpu,source_kind
+extension,isic2019,150,3.10.21,2.4.1+cu121,0.19.1+cu121,12.1,NVIDIA GeForce RTX 4090 D,formal run runtime metadata
+extension,mura,150,3.10.21,2.4.1+cu121,0.19.1+cu121,12.1,NVIDIA GeForce RTX 4090 D,formal run runtime metadata
+original,organamnist,400,3.12.7,2.10.0+cu128,0.25.0+cu128,12.8,NVIDIA GeForce RTX 5070 Ti,formal run runtime metadata
+original,sipakmed,400,3.10.14,2.4.1+cu121,0.19.1,12.1,NVIDIA GeForce RTX 3060,formal run runtime metadata

@@ -1,0 +1,54 @@
+{
+  "analysis_output_dir": "research-lab/experiments/registered-workflow/outputs/primary/analysis_io",
+  "created_at_utc": "2026-05-16T08:55:07+00:00",
+  "figures": [
+    "research-lab/experiments/registered-workflow/stats/figures/workflow_match_flip_intervals.png",
+    "research-lab/experiments/registered-workflow/stats/figures/top_model_entropy_by_workflow_context.png",
+    "research-lab/experiments/registered-workflow/stats/figures/top_two_gap_distribution_by_workflow_context.png",
+    "research-lab/experiments/registered-workflow/stats/figures/subsampling_resource_stability_curves.png"
+  ],
+  "figures_dir": "research-lab/experiments/registered-workflow/stats/figures",
+  "interpretation_boundary": "RQ evidence enhancement outputs are derived from existing 800 primary runs; they do not rerun training or alter the OSF-registered analysis matrix.",
+  "metric": "balanced_accuracy",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "python": "3.9.6",
+  "resamples": 5000,
+  "resampling_seed": 2026051331,
+  "results_file_update_status": "not_updated_pending_user_review",
+  "row_counts": {
+    "calibration_missingness_summary.csv": 2,
+    "subsampling_resource_stability_detail.csv": 17884,
+    "subsampling_resource_stability_summary.csv": 24,
+    "top_model_entropy_summary.csv": 4,
+    "top_two_context_gap_table.csv": 200,
+    "top_two_gap_instability_summary.csv": 4,
+    "workflow_stability_interval_summary.csv": 48
+  },
+  "script": "08_rq_evidence_enhancement.py",
+  "status": "completed",
+  "tables_dir": "research-lab/experiments/registered-workflow/stats/tables",
+  "validation": {
+    "calibration_missingness": {
+      "calibration_intercept": {
+        "excluded_from_rq_enhancement": true,
+        "missing_rows": 800,
+        "non_missing_rows": 0,
+        "rows": 800
+      },
+      "calibration_slope": {
+        "excluded_from_rq_enhancement": true,
+        "missing_rows": 800,
+        "non_missing_rows": 0,
+        "rows": 800
+      }
+    },
+    "model_ranking_table_role": "ignored_primary_intermediate_output",
+    "selection_probability_ci_columns": [
+      "bootstrap_ci_high",
+      "bootstrap_ci_low",
+      "bootstrap_resamples",
+      "bootstrap_seed"
+    ],
+    "selection_probability_ci_columns_present": true
+  }
+}

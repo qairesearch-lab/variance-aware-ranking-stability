@@ -1,0 +1,9 @@
+﻿Dataset / rule,Specification,Converged,Singular,Splits / seeds
+SIPaKMeD / A,sap_full_formula_attempt,True,True,10 / 5
+SIPaKMeD / A,primary_reported_fallback_model,True,False,10 / 5
+SIPaKMeD / B,sap_full_formula_attempt,True,True,10 / 5
+SIPaKMeD / B,primary_reported_fallback_model,True,False,10 / 5
+OrganAMNIST / A,sap_full_formula_attempt,True,True,10 / 5
+OrganAMNIST / A,primary_reported_fallback_model,True,False,10 / 5
+OrganAMNIST / B,sap_full_formula_attempt,True,True,10 / 5
+OrganAMNIST / B,primary_reported_fallback_model,True,False,10 / 5

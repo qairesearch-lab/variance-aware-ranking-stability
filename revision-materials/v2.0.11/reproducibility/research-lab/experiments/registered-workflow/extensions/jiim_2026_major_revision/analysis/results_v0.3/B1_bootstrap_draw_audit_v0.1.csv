@@ -1,0 +1,93 @@
+stratum,purpose,resampling,requested,accepted,degenerate_draws_resampled
+organamnist_A_cnn4_all5,D02 summaries,nested,10000,10000,0
+organamnist_A_cnn4_all5,D02 resampling sensitivity,split_only,10000,10000,0
+organamnist_A_cnn4_all5,D02 resampling sensitivity,crossed,10000,10000,0
+organamnist_A_cnn4_common3,D02 summaries,nested,10000,10000,0
+organamnist_A_cnn4_common3,D02 resampling sensitivity,split_only,10000,10000,0
+organamnist_A_cnn4_common3,D02 resampling sensitivity,crossed,10000,10000,0
+organamnist_B_cnn4_all5,D02 summaries,nested,10000,10000,0
+organamnist_B_cnn4_all5,D02 resampling sensitivity,split_only,10000,10000,0
+organamnist_B_cnn4_all5,D02 resampling sensitivity,crossed,10000,10000,0
+organamnist_B_cnn4_common3,D02 summaries,nested,10000,10000,0
+organamnist_B_cnn4_common3,D02 resampling sensitivity,split_only,10000,10000,0
+organamnist_B_cnn4_common3,D02 resampling sensitivity,crossed,10000,10000,0
+sipakmed_A_cnn4_all5,D02 summaries,nested,10000,10000,0
+sipakmed_A_cnn4_all5,D02 resampling sensitivity,split_only,10000,10000,0
+sipakmed_A_cnn4_all5,D02 resampling sensitivity,crossed,10000,10000,0
+sipakmed_A_cnn4_common3,D02 summaries,nested,10000,10000,0
+sipakmed_A_cnn4_common3,D02 resampling sensitivity,split_only,10000,10000,0
+sipakmed_A_cnn4_common3,D02 resampling sensitivity,crossed,10000,10000,0
+sipakmed_B_cnn4_all5,D02 summaries,nested,10000,10000,0
+sipakmed_B_cnn4_all5,D02 resampling sensitivity,split_only,10000,10000,0
+sipakmed_B_cnn4_all5,D02 resampling sensitivity,crossed,10000,10000,0
+sipakmed_B_cnn4_common3,D02 summaries,nested,10000,10000,0
+sipakmed_B_cnn4_common3,D02 resampling sensitivity,split_only,10000,10000,0
+sipakmed_B_cnn4_common3,D02 resampling sensitivity,crossed,10000,10000,0
+isic2019_A_cnn4_all3,D02 summaries,nested,10000,10000,0
+isic2019_A_cnn4_all3,D02 resampling sensitivity,split_only,10000,10000,0
+isic2019_A_cnn4_all3,D02 resampling sensitivity,crossed,10000,10000,0
+isic2019_A_cnn4_pool_contexts,D02 summaries,nested,10000,10000,0
+isic2019_A_cnn4_pool_contexts,D02 LSO degenerate replacements,nested,20,20,0
+isic2019_A_cnn4_pool_contexts,D02 LSO rejects from unconditional draws,nested,10000,10000,20
+isic2019_A_cnn4_pool_contexts,D02 resampling sensitivity,split_only,10000,10000,0
+isic2019_A_cnn4_pool_contexts,D02 sensitivity LSO degenerate replacements,split_only,18,18,0
+isic2019_A_cnn4_pool_contexts,D02 sensitivity LSO rejects from unconditional draws,split_only,10000,10000,18
+isic2019_A_cnn4_pool_contexts,D02 resampling sensitivity,crossed,10000,10000,0
+isic2019_A_cnn4_pool_contexts,D02 sensitivity LSO degenerate replacements,crossed,22,22,0
+isic2019_A_cnn4_pool_contexts,D02 sensitivity LSO rejects from unconditional draws,crossed,10000,10000,22
+isic2019_A_pool5_shared,D02 summaries,nested,10000,10000,0
+isic2019_A_pool5_shared,D02 LSO degenerate replacements,nested,18,18,0
+isic2019_A_pool5_shared,D02 LSO rejects from unconditional draws,nested,10000,10000,18
+isic2019_A_pool5_shared,D02 resampling sensitivity,split_only,10000,10000,0
+isic2019_A_pool5_shared,D02 sensitivity LSO degenerate replacements,split_only,9,9,0
+isic2019_A_pool5_shared,D02 sensitivity LSO rejects from unconditional draws,split_only,10000,10000,9
+isic2019_A_pool5_shared,D02 resampling sensitivity,crossed,10000,10000,0
+isic2019_A_pool5_shared,D02 sensitivity LSO degenerate replacements,crossed,25,25,0
+isic2019_A_pool5_shared,D02 sensitivity LSO rejects from unconditional draws,crossed,10000,10000,25
+isic2019_A_pool5_swin_weight_eval,D02 summaries,nested,10000,10000,0
+isic2019_A_pool5_swin_weight_eval,D02 LSO degenerate replacements,nested,15,15,0
+isic2019_A_pool5_swin_weight_eval,D02 LSO rejects from unconditional draws,nested,10000,10000,15
+isic2019_A_pool5_swin_weight_eval,D02 resampling sensitivity,split_only,10000,10000,0
+isic2019_A_pool5_swin_weight_eval,D02 sensitivity LSO degenerate replacements,split_only,17,17,0
+isic2019_A_pool5_swin_weight_eval,D02 sensitivity LSO rejects from unconditional draws,split_only,10000,10000,17
+isic2019_A_pool5_swin_weight_eval,D02 resampling sensitivity,crossed,10000,10000,0
+isic2019_A_pool5_swin_weight_eval,D02 sensitivity LSO degenerate replacements,crossed,15,15,0
+isic2019_A_pool5_swin_weight_eval,D02 sensitivity LSO rejects from unconditional draws,crossed,10000,10000,15
+mura_A_cnn4_all3,D02 summaries,nested,10000,10000,0
+mura_A_cnn4_all3,D02 resampling sensitivity,split_only,10000,10000,0
+mura_A_cnn4_all3,D02 resampling sensitivity,crossed,10000,10000,0
+mura_A_cnn4_pool_contexts,D02 summaries,nested,10000,10000,0
+mura_A_cnn4_pool_contexts,D02 LSO degenerate replacements,nested,9,9,0
+mura_A_cnn4_pool_contexts,D02 LSO rejects from unconditional draws,nested,10000,10000,9
+mura_A_cnn4_pool_contexts,D02 resampling sensitivity,split_only,10000,10000,0
+mura_A_cnn4_pool_contexts,D02 sensitivity LSO degenerate replacements,split_only,8,8,0
+mura_A_cnn4_pool_contexts,D02 sensitivity LSO rejects from unconditional draws,split_only,10000,10000,8
+mura_A_cnn4_pool_contexts,D02 resampling sensitivity,crossed,10000,10000,0
+mura_A_cnn4_pool_contexts,D02 sensitivity LSO degenerate replacements,crossed,15,15,0
+mura_A_cnn4_pool_contexts,D02 sensitivity LSO rejects from unconditional draws,crossed,10000,10000,15
+mura_A_pool5_shared,D02 summaries,nested,10000,10000,0
+mura_A_pool5_shared,D02 LSO degenerate replacements,nested,22,22,0
+mura_A_pool5_shared,D02 LSO rejects from unconditional draws,nested,10000,10000,22
+mura_A_pool5_shared,D02 resampling sensitivity,split_only,10000,10000,0
+mura_A_pool5_shared,D02 sensitivity LSO degenerate replacements,split_only,14,14,0
+mura_A_pool5_shared,D02 sensitivity LSO rejects from unconditional draws,split_only,10000,10000,14
+mura_A_pool5_shared,D02 resampling sensitivity,crossed,10000,10000,0
+mura_A_pool5_shared,D02 sensitivity LSO degenerate replacements,crossed,19,19,0
+mura_A_pool5_shared,D02 sensitivity LSO rejects from unconditional draws,crossed,10000,10000,19
+mura_A_pool5_swin_weight_eval,D02 summaries,nested,10000,10000,0
+mura_A_pool5_swin_weight_eval,D02 LSO degenerate replacements,nested,20,20,0
+mura_A_pool5_swin_weight_eval,D02 LSO rejects from unconditional draws,nested,10000,10000,20
+mura_A_pool5_swin_weight_eval,D02 resampling sensitivity,split_only,10000,10000,0
+mura_A_pool5_swin_weight_eval,D02 sensitivity LSO degenerate replacements,split_only,13,13,0
+mura_A_pool5_swin_weight_eval,D02 sensitivity LSO rejects from unconditional draws,split_only,10000,10000,13
+mura_A_pool5_swin_weight_eval,D02 resampling sensitivity,crossed,10000,10000,0
+mura_A_pool5_swin_weight_eval,D02 sensitivity LSO degenerate replacements,crossed,16,16,0
+mura_A_pool5_swin_weight_eval,D02 sensitivity LSO rejects from unconditional draws,crossed,10000,10000,16
+organamnist_A_cnn4_all5,D02 paired A/B,nested,10000,10000,0
+organamnist_A_cnn4_common3,D02 paired A/B,nested,10000,10000,0
+sipakmed_A_cnn4_all5,D02 paired A/B,nested,10000,10000,0
+sipakmed_A_cnn4_common3,D02 paired A/B,nested,10000,10000,0
+isic2019_A_cnn4_pool_contexts,D02 candidate pool paired sensitivity,nested,10000,10000,0
+isic2019_A_cnn4_pool_contexts,D02 candidate pool paired sensitivity,nested,10000,10000,0
+mura_A_cnn4_pool_contexts,D02 candidate pool paired sensitivity,nested,10000,10000,0
+mura_A_cnn4_pool_contexts,D02 candidate pool paired sensitivity,nested,10000,10000,0

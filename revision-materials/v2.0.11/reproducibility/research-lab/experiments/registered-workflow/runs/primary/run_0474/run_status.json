@@ -1,0 +1,8 @@
+{
+  "ended_at_utc": "2026-05-05T19:04:09+00:00",
+  "execution_mode": "primary_train",
+  "message": "Training run completed. Performance values do not determine run success/failure.",
+  "run_id": "run_0474",
+  "started_at_utc": "2026-05-05T18:42:43+00:00",
+  "status": "completed"
+}

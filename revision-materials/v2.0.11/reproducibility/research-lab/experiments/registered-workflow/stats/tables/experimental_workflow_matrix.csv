@@ -1,0 +1,4 @@
+dataset,runs,splits,split_ids,training_seeds,models,checkpoint_policies,analysis_role,execution_mode,primary_metric,workflow_role
+organamnist,400,10,split_01;split_02;split_03;split_04;split_05;split_06;split_07;split_08;split_09;split_10,42;52;62;72;82,resnet18;resnet50;densenet121;efficientnet_b0,A;B,primary_analysis,primary_train,balanced_accuracy,proof_of_concept_methodology_matrix
+sipakmed,400,10,split_01;split_02;split_03;split_04;split_05;split_06;split_07;split_08;split_09;split_10,42;52;62;72;82,resnet18;resnet50;densenet121;efficientnet_b0,A;B,primary_analysis,primary_train,balanced_accuracy,proof_of_concept_methodology_matrix
+all_primary_datasets,800,10,split_01;split_02;split_03;split_04;split_05;split_06;split_07;split_08;split_09;split_10,42;52;62;72;82,resnet18;resnet50;densenet121;efficientnet_b0,A;B,primary_analysis,primary_train,balanced_accuracy,combined_primary_methodology_matrix

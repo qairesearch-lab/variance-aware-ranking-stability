@@ -1,0 +1,17 @@
+dataset,checkpoint_policy,model,top_ranked_count,context_denominator,selection_probability,bootstrap_ci_low,bootstrap_ci_high,bootstrap_resamples,bootstrap_seed
+organamnist,A,densenet121,0,50,0.0,0.0,0.0,2000,20260512
+organamnist,A,efficientnet_b0,0,50,0.0,0.0,0.0,2000,20260513
+organamnist,A,resnet18,31,50,0.62,0.48,0.74,2000,20260514
+organamnist,A,resnet50,19,50,0.38,0.24,0.52,2000,20260515
+organamnist,B,densenet121,0,50,0.0,0.0,0.0,2000,20260516
+organamnist,B,efficientnet_b0,0,50,0.0,0.0,0.0,2000,20260517
+organamnist,B,resnet18,20,50,0.4,0.26,0.54,2000,20260518
+organamnist,B,resnet50,30,50,0.6,0.46,0.72,2000,20260519
+sipakmed,A,densenet121,5,50,0.1,0.04,0.18,2000,20260520
+sipakmed,A,efficientnet_b0,0,50,0.0,0.0,0.0,2000,20260521
+sipakmed,A,resnet18,26,50,0.52,0.38,0.66,2000,20260522
+sipakmed,A,resnet50,19,50,0.38,0.24,0.5,2000,20260523
+sipakmed,B,densenet121,6,50,0.12,0.04,0.22,2000,20260524
+sipakmed,B,efficientnet_b0,0,50,0.0,0.0,0.0,2000,20260525
+sipakmed,B,resnet18,22,50,0.44,0.3,0.58,2000,20260526
+sipakmed,B,resnet50,22,50,0.44,0.3,0.58,2000,20260527

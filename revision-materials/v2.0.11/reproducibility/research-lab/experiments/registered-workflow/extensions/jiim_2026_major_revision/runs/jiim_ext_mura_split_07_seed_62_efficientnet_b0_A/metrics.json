@@ -1,0 +1,21 @@
+{
+  "balanced_accuracy": 0.7800362444760108,
+  "confusion_matrix": [
+    [
+      1195,
+      142
+    ],
+    [
+      288,
+      575
+    ]
+  ],
+  "dataset": "mura",
+  "prediction_unit": "study",
+  "run_id": "jiim_ext_mura_split_07_seed_62_efficientnet_b0_A",
+  "selected_epoch": 20,
+  "technical_smoke_not_research_result": false,
+  "test_loss": 0.4672917127609253,
+  "test_units": 2200,
+  "variant": "shared"
+}

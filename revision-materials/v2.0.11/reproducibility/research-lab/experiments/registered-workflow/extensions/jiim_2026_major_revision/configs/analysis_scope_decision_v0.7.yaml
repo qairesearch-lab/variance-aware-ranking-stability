@@ -1,0 +1,38 @@
+# Author decision made before formal extension model outcomes (2026-09-29).
+# This is an analysis-scope overlay, not a change to training inputs or the
+# already sealed v0.6 manifest. Preserve all earlier artifacts and hashes.
+decision_id: jiim_2026_extension_analysis_scope_v0.7
+status: AUTHOR_CONFIRMED_BEFORE_FORMAL_OUTCOMES
+author_confirmation_date: '2026-09-29'
+applies_to_manifest: jiim_extension_300_v0.6.csv
+applies_to_manifest_sha256: 0f27ea6240e2570e035d5226faa3216ea32b3cc8eca69833bab011162e1d28b9
+applies_to_data_quality_amendment: data_quality_amendment_v0.6.yaml
+applies_to_data_quality_amendment_sha256: 20431f979a781e84b44e9b964ce95839159061af1cc2e7b4e1f89b1fd34785ed
+effective_precedence:
+  - original_submitted_800_run_bundle_remains_unchanged
+  - extension_design_v0.3_except_superseded_data_quality_clauses
+  - swin_sensitivity_decision_v0.5
+  - data_quality_amendment_v0.6_overrides_v0.3_human_adjudication_clauses
+  - this_v0.7_decision_controls_optional_phash_test_filter_analysis
+effective_split_evidence_contract:
+  # v0.3 listed three separate export filenames that were never generated.
+  # The sealed v0.6 evidence stores the same checks in these actual artifacts.
+  split_and_index_hashes: formal_splits_v0.6/split_generation_audit.json_and_run_manifest_seal
+  exact_group_nonoverlap: generator_assertion_and_split_csv_group_ids
+  source_and_output_hashes: candidate_indices/final_objective_v0.6/data_quality_audit.json_and_run_manifest_seal
+  legacy_unproduced_exports_not_required_for_training: [split_hashes.csv, source_and_output_sha256_manifest.txt, zero_group_leakage_report.json]
+primary_analysis: original_800_run_reanalysis_plus_extension_E1_270_shared_preprocessing_runs
+retained_sensitivity: 30_swin_weight_specific_eval_runs
+total_sealed_extension_runs: 300
+phash_candidate_screen:
+  max_hamming_distance_inclusive: 4
+  role: descriptive_cross_partition_risk_reporting_only
+  remove_test_images_or_studies_by_phash: false
+  rerank_on_phash_filtered_test_set: false
+  additional_gpu_runs: 0
+  rationale: visual_similarity_is_not_verified_common_source_and_filtering_does_not_establish_absence_of_leakage
+reporting:
+  disclose_cross_partition_candidate_counts_and_residual_unverified_related_image_risk: true
+  do_not_claim_zero_near_duplicate_leakage: true
+  do_not_present_phash_screen_as_new_algorithm_or_clinical_annotation: true
+  any_later_phash_filtered_analysis_requires_separate_version_and_exploratory_label: true

@@ -1,0 +1,14 @@
+dataset,top_model_policy_A,top_model_policy_B,contexts,context_denominator,transition_probability,same_top_model_transition
+organamnist,resnet18,resnet50,17,50,0.34,False
+organamnist,resnet18,resnet18,14,50,0.28,True
+organamnist,resnet50,resnet50,13,50,0.26,True
+organamnist,resnet50,resnet18,6,50,0.12,False
+sipakmed,resnet18,resnet18,12,50,0.24,True
+sipakmed,resnet18,resnet50,11,50,0.22,False
+sipakmed,resnet50,resnet50,9,50,0.18,True
+sipakmed,resnet50,resnet18,8,50,0.16,False
+sipakmed,resnet18,densenet121,3,50,0.06,False
+sipakmed,densenet121,resnet18,2,50,0.04,False
+sipakmed,densenet121,resnet50,2,50,0.04,False
+sipakmed,resnet50,densenet121,2,50,0.04,False
+sipakmed,densenet121,densenet121,1,50,0.02,True

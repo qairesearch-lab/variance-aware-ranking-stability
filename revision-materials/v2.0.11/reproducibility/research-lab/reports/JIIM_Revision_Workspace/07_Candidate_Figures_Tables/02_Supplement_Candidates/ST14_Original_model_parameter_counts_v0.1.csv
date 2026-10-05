@@ -1,0 +1,9 @@
+﻿Original dataset,Model,Class count,Total parameters,Trainable parameters,Fine-tuning scope
+SIPaKMeD,ResNet-18,5,"11,179,077","8,396,293",layer4 + fc
+OrganAMNIST,ResNet-18,11,"11,182,155","8,399,371",layer4 + fc
+SIPaKMeD,ResNet-50,5,"23,518,277","14,974,981",layer4 + fc
+OrganAMNIST,ResNet-50,11,"23,530,571","14,987,275",layer4 + fc
+SIPaKMeD,DenseNet-121,5,"6,958,981","2,165,253",features.denseblock4 + features.norm5 + classifier
+OrganAMNIST,DenseNet-121,11,"6,965,131","2,171,403",features.denseblock4 + features.norm5 + classifier
+SIPaKMeD,EfficientNet-B0,5,"4,013,953","418,565",features[-1] + classifier
+OrganAMNIST,EfficientNet-B0,11,"4,021,639","426,251",features[-1] + classifier

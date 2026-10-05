@@ -1,0 +1,21 @@
+{
+  "balanced_accuracy": 0.786178082431628,
+  "confusion_matrix": [
+    [
+      1185,
+      151
+    ],
+    [
+      269,
+      586
+    ]
+  ],
+  "dataset": "mura",
+  "prediction_unit": "study",
+  "run_id": "jiim_ext_mura_split_04_seed_52_densenet121_A",
+  "selected_epoch": 5,
+  "technical_smoke_not_research_result": false,
+  "test_loss": 0.4477846920490265,
+  "test_units": 2191,
+  "variant": "shared"
+}

@@ -1,0 +1,13 @@
+selection_rule,dataset,checkpoint_policy,split_id,training_seed,top_model,top_metric_value,runner_up_model,runner_up_metric_value,top_margin,full_repeated_reference_top_model,matches_full_repeated_reference
+first_split_first_seed,organamnist,A,split_01,42,resnet50,0.9939120436158428,densenet121,0.9926923228359968,0.0012197207798460008,resnet18,False
+median_top_margin_context,organamnist,A,split_01,42,resnet50,0.9939120436158428,densenet121,0.9926923228359968,0.0012197207798460008,resnet18,False
+largest_margin_disagreement_context,organamnist,A,split_10,42,resnet50,0.9964908610951416,resnet18,0.9921720643731562,0.0043187967219854295,resnet18,False
+first_split_first_seed,organamnist,B,split_01,42,resnet50,0.9966665614978688,resnet18,0.9962656046362938,0.0004009568615750414,resnet50,True
+median_top_margin_context,organamnist,B,split_08,82,resnet50,0.9966993874258284,resnet18,0.995872880763804,0.0008265066620244399,resnet50,True
+largest_margin_disagreement_context,organamnist,B,split_04,82,resnet18,0.994696218224389,resnet50,0.9918435523445244,0.0028526658798646576,resnet50,False
+first_split_first_seed,sipakmed,A,split_01,42,resnet18,0.973881788192874,resnet50,0.9655075568037896,0.00837423138908433,resnet18,True
+median_top_margin_context,sipakmed,A,split_06,62,resnet18,0.9707277888627688,resnet50,0.9657766586317952,0.004951130230973599,resnet18,True
+largest_margin_disagreement_context,sipakmed,A,split_04,52,densenet121,0.9835185847157476,resnet50,0.970263610467984,0.013254974247763562,resnet18,False
+first_split_first_seed,sipakmed,B,split_01,42,resnet18,0.9722546419817378,resnet50,0.9624179324231732,0.009836709558564638,resnet50,False
+median_top_margin_context,sipakmed,B,split_05,62,resnet50,0.9722560523310328,resnet18,0.9658321590339656,0.0064238932970672735,resnet50,True
+largest_margin_disagreement_context,sipakmed,B,split_06,42,resnet18,0.9708619777895292,densenet121,0.9559161357658532,0.014945842023675993,resnet50,False

@@ -1,0 +1,15 @@
+{
+  "analysis_id": "JIIM_B1_numerical_source_audit_v0.1",
+  "status": "PASSED",
+  "errors": [],
+  "source_hashes_checked": 3315,
+  "output_hashes_checked": 20,
+  "raw_runs_covered": 1100,
+  "strata_point_checks": 16,
+  "direct_loop_budget_cells": 150,
+  "legacy_flat_bootstrap_strata_replayed": 4,
+  "original_A_B_coverage": true,
+  "audit_script_sha256": "8781ccc9fd4ccf77f159c8903495d86deb10271240ee5d9d6d51b296031e2b2e",
+  "independent_person_review": false,
+  "interpretation": "Different implementation and direct loops by same agent; numerical/source acceptance only, not independent scientific endorsement."
+}

@@ -1,0 +1,52 @@
+{
+  "data_quality_amendment_sha256": "20431f979a781e84b44e9b964ce95839159061af1cc2e7b4e1f89b1fd34785ed",
+  "dataset": "isic2019",
+  "dataset_index_hash": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+  "dataset_index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+  "design_lock_sha256": "e8b6a2e5ed9845a753d370fc27ae07d4b740e3c10e7801fe40d16199fcc582be",
+  "environment": {
+    "cuda": "12.1",
+    "cudnn": 90100,
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pillow": "10.4.0",
+    "python": "3.10.21",
+    "pyyaml": "6.0.2",
+    "scikit_learn": "1.7.2",
+    "torch": "2.4.1+cu121",
+    "torchvision": "0.19.1+cu121"
+  },
+  "environment_lock_hash": "8c355813631c795862be90d9bce8c529a9a1566466cb2e16b8cf0490ec380a0b",
+  "environment_target_sha256": "8c355813631c795862be90d9bce8c529a9a1566466cb2e16b8cf0490ec380a0b",
+  "hyperparameters": {
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "max_epochs": 60,
+    "mixed_precision": false,
+    "num_workers": 4,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001
+  },
+  "model": "resnet18",
+  "model_weight_hash": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "preprocessing_sha256": "490790c0cba32886a1971017a6777f90e7c96eba78431cca1528f35a4c39cefd",
+  "pretrained_weight_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "protocol_hash": "e421b3513f2c28aeab535501919c3d7f1417fd51c177d96cebde16641a84c896",
+  "run_id": "jiim_ext_isic2019_split_04_seed_62_resnet18_A",
+  "run_manifest_sha256": "0f27ea6240e2570e035d5226faa3216ea32b3cc8eca69833bab011162e1d28b9",
+  "script_hash": "42f6c00832759f211330c3dfff6fc3a8185a91763f220dfaa5307f06f20d7d2a",
+  "script_sha256": "42f6c00832759f211330c3dfff6fc3a8185a91763f220dfaa5307f06f20d7d2a",
+  "source_paths": {
+    "dataset_index": "/root/autodl-tmp/CervicalCancerV2/research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/candidate_indices/final_objective_v0.6/isic2019_dataset_index.csv",
+    "split": "/root/autodl-tmp/CervicalCancerV2/research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/formal_splits_v0.6/isic2019/split_04.csv"
+  },
+  "split_hash": "92483abbc0e83a93668c31f6a51e76f9c5435efa9fbd17045f113322c7c19803",
+  "split_sha256": "92483abbc0e83a93668c31f6a51e76f9c5435efa9fbd17045f113322c7c19803",
+  "swin_sensitivity_decision_sha256": "6299bcf7d6edbfe8ebd1e9ec838f5a9624cc802dbd15d00a0ac491f2b3bc67d2",
+  "technical_smoke": false,
+  "training_seed": 62,
+  "variant": "shared",
+  "variant_sha256": "d530181347567e5cb171aa6c1c9f8caeaba8194aa1bcade0e5862911ece97479"
+}

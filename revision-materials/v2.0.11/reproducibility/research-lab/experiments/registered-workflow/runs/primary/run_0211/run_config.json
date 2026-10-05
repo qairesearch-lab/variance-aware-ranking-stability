@@ -1,0 +1,217 @@
+{
+  "augmentation_check": {
+    "dataset": "sipakmed",
+    "horizontal_flip_enabled": true
+  },
+  "created_at_utc": "2026-05-02T10:17:20+00:00",
+  "device_info": {
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "device": "cuda:0",
+    "gpu_models": [
+      "NVIDIA GeForce RTX 3060"
+    ],
+    "hostname": "ERAZA-Q",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "visible_device_ids": null
+  },
+  "git_commit": null,
+  "manifest_row": {
+    "analysis_role": "primary_analysis",
+    "checkpoint_policy": "A",
+    "config_hash": "5e203de9913a10ae47f75aab7d778e21e9a142a0699f4a4a6c374b725d67c1ae",
+    "dataset": "sipakmed",
+    "model": "resnet50",
+    "output_dir": "research-lab/experiments/registered-workflow/runs/primary/run_0211",
+    "run_id": "run_0211",
+    "split_hash": "62d20423be647ef0983223155360f75c645c737e683005d81cb78f574fc523cf",
+    "split_id": "split_06",
+    "split_seed": "1006",
+    "status": "pending",
+    "training_seed": "52"
+  },
+  "package_versions": {
+    "Pillow": "10.4.0",
+    "PyYAML": "6.0.2",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.14",
+    "scikit-learn": "1.7.2",
+    "torch": "2.4.1+cu121",
+    "torchvision": "0.19.1"
+  },
+  "python_executable": "C:\\workflow\\.venv_gpu\\Scripts\\python.exe",
+  "resolved_frozen_config": {
+    "checkpoint_policy": {
+      "applies_to": [
+        "sipakmed",
+        "organamnist"
+      ],
+      "checkpoint_used_for_evaluation": "best_validation_loss_epoch",
+      "display_name": "Validation-Best Checkpointing with Early Stopping",
+      "early_stopping": true,
+      "max_epochs": 60,
+      "min_delta": 0.001,
+      "min_delta_mode": "absolute",
+      "monitor": "val_loss",
+      "monitor_mode": "min",
+      "name": "validation_best_checkpointing_with_early_stopping",
+      "patience": 7,
+      "selection_rule": "minimum_val_loss"
+    },
+    "dataset": {
+      "classes": 5,
+      "dataset_id": "sipakmed",
+      "expected_samples": 4049,
+      "grouping_policy": {
+        "current_group_id_status": "unavailable_after_dataset_manifest_verification",
+        "group_aware_split_required_if_group_ids_available": true,
+        "group_id_available": false,
+        "limitation_if_no_group_ids": "image_level_repeated_random_holdout_required"
+      },
+      "modality": "cervical_cytology_microscopy",
+      "name": "SIPaKMeD",
+      "observed_samples_after_download": 4049,
+      "official_split_used_for_primary_analysis": false,
+      "primary_image_glob": "../../../../data/sipakmed/raw/im_*/CROPPED/*.bmp",
+      "primary_matrix": true,
+      "source_url": "https://www.cs.uoi.gr/~marina/sipakmed.html",
+      "split_source": "generated_image_level_repeated_random_holdout",
+      "task_type": "multiclass_classification",
+      "version": "original_release_icip_2018"
+    },
+    "model": {
+      "family": "CNN-ResNet",
+      "full_name": "ResNet-50",
+      "name": "resnet50",
+      "torch_name": "torchvision.models.resnet50",
+      "trainable_scope": "layer4_plus_classifier",
+      "weights": "IMAGENET1K_V1"
+    },
+    "split_file": "research-lab\\experiments\\registered-workflow\\splits\\sipakmed\\split_06.csv",
+    "training_common": {
+      "augmentation": {
+        "common_train": {
+          "random_resized_crop": {
+            "enabled": true,
+            "scale": [
+              0.8,
+              1.0
+            ],
+            "size": 224
+          },
+          "rotation": {
+            "degrees": 10,
+            "enabled": true
+          }
+        },
+        "dataset_overrides": {
+          "organamnist": {
+            "horizontal_flip": {
+              "enabled": false,
+              "p": 0.0,
+              "rationale": "Abdominal CT organ labels may be orientation-sensitive; avoid semantic label changes."
+            }
+          },
+          "sipakmed": {
+            "horizontal_flip": {
+              "enabled": true,
+              "p": 0.5,
+              "rationale": "Cytology images are not expected to have left-right anatomical label semantics."
+            }
+          }
+        },
+        "test": {
+          "center_crop": null,
+          "resize": 224
+        },
+        "validation": {
+          "center_crop": null,
+          "resize": 224
+        }
+      },
+      "fine_tuning": {
+        "initialization": "imagenet",
+        "layer_wise_lr_decay": false,
+        "model_specific_tuning": false,
+        "trainable_scope": "final_block_plus_classifier"
+      },
+      "input": {
+        "channels": 3,
+        "grayscale_handling": "convert_to_rgb_by_channel_repeat",
+        "image_size": 224,
+        "interpolation": "bilinear"
+      },
+      "normalization": {
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "scheme": "imagenet",
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "notes": [
+        "Values are frozen as the common primary-analysis training configuration.",
+        "Horizontal flip is dataset-specific by frozen decision; do not enable it globally.",
+        "Any new dataset-specific exception requires decision logging before formal execution."
+      ],
+      "optimization": {
+        "batch_size": 32,
+        "learning_rate": 0.0001,
+        "loss": "cross_entropy",
+        "optimizer": "adamw",
+        "scheduler": {
+          "name": "none"
+        },
+        "weight_decay": 0.0001
+      },
+      "reproducibility": {
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "dataloader_generator_policy": "torch_generator_seeded_by_training_seed",
+        "dataloader_worker_seed_policy": "worker_init_fn_based_on_global_seed",
+        "num_workers": 4,
+        "persistent_workers": false,
+        "pin_memory": true,
+        "worker_seed_formula": "worker_seed = training_seed + worker_id",
+        "worker_seed_formula_note": "The same training-seed-derived worker seeds are intentionally reused across datasets, splits, models, and checkpoint policies to preserve the crossed seed design. Run identity must not be used to alter worker seeds unless an amendment is recorded.\n"
+      },
+      "training_common": {
+        "basis": [
+          "https://osf.io/avnp9 (Study Protocol Frozen v1.0)",
+          "research-lab/notes/2026-04-25_Pre_Execution_Issues_and_Freeze_Proposal.md"
+        ],
+        "frozen_on": "2026-04-25",
+        "scope": "all primary datasets, models, splits, seeds, and checkpoint policies",
+        "status": "frozen"
+      }
+    }
+  },
+  "script_path": "C:\\workflow\\research-lab\\experiments\\scripts\\train_one_run.py",
+  "script_version": "train_one_run_cuda_strict_2026-04-29_v2",
+  "seed_policy": {
+    "dataloader_generator_policy": "torch_generator_seeded_by_training_seed",
+    "dataloader_worker_seed_policy": "worker_init_fn_based_on_global_seed",
+    "training_seed": "52",
+    "worker_seed_formula": "worker_seed = training_seed + worker_id"
+  },
+  "validation_overrides": {
+    "disable_pin_memory": false,
+    "disable_train_augmentation": false,
+    "max_epochs": null,
+    "max_train_batches": null,
+    "num_workers_override": 0,
+    "sample_limit_per_subset": null,
+    "sync_cuda_each_batch": false
+  },
+  "weights": {
+    "cache_location": "C:\\workflow\\model-weights/hub/checkpoints/",
+    "weights_enum": "IMAGENET1K_V1"
+  }
+}

@@ -1,0 +1,5 @@
+﻿stage,dataset,runs,gpu_model,cuda,Pillow,PyYAML,numpy,pandas,python,scikit-learn,torch,torchvision,first_run,last_run
+extension,isic2019,150,NVIDIA GeForce RTX 4090 D,12.1,10.4.0,6.0.2,1.26.4,2.3.3,3.10.21,1.7.2,2.4.1+cu121,0.19.1+cu121,jiim_ext_isic2019_split_01_seed_42_resnet18_A,jiim_ext_isic2019_split_10_seed_62_efficientnet_b0_A
+extension,mura,150,NVIDIA GeForce RTX 4090 D,12.1,10.4.0,6.0.2,1.26.4,2.3.3,3.10.21,1.7.2,2.4.1+cu121,0.19.1+cu121,jiim_ext_mura_split_01_seed_42_resnet18_A,jiim_ext_mura_split_10_seed_62_efficientnet_b0_A
+original,organamnist,400,NVIDIA GeForce RTX 5070 Ti,12.8,12.1.1,6.0.3,2.2.6,2.3.3,3.12.7,1.8.0,2.10.0+cu128,0.25.0+cu128,run_0401,run_0800
+original,sipakmed,400,NVIDIA GeForce RTX 3060,12.1,10.4.0,6.0.2,1.26.4,2.3.3,3.10.14,1.7.2,2.4.1+cu121,0.19.1,run_0001,run_0400

@@ -1,0 +1,43 @@
+# Pre-outcome author decision of 2026-09-28. Supersedes the human-adjudication
+# requirement in v0.4 and the corresponding data-quality clauses of design v0.3.
+# The original submitted 800-run study and all other v0.3 decisions are unchanged.
+amendment_id: jiim_2026_extension_data_quality_v0.6
+status: AUTHOR_CONFIRMED_2026_09_28_OBJECTIVE_AUDIT
+author_confirmation_date: '2026-09-28'
+base_design_lock: extension_protocol_design_locked_v0.3.yaml
+supersedes: data_quality_amendment_v0.4.yaml
+scope: reviewer_requested_extension_only
+research_aim: compare_model_ranking_stability_not_develop_a_deduplication_algorithm
+decision_timing: before_formal_isic_mura_model_outcomes
+isic2019:
+  source_known_lesion_id_images: 23247
+  source_known_lesion_id_groups: 11847
+  exclusion_reason: exact_same_image_across_conflicting_MEL_and_NV_labels_and_inconsistent_metadata
+  exclusion_unit: complete_lesion_id
+  excluded_group_ids: [BCN_0003560, BCN_0000237]
+  excluded_sample_ids: [ISIC_0067502, ISIC_0071017, ISIC_0067980, ISIC_0069013]
+  excluded_original_label_counts: {MEL: 2, NV: 2}
+  excluded_image_count: 4
+  expected_images_after_exclusion: 23243
+  expected_groups_before_duplicate_merges: 11845
+  relabel_original_ground_truth: false
+exact_image_policy:
+  detection: file_sha256_or_decoded_rgb_sha256_with_dimensions
+  same_label_cross_id_action: link_split_groups_without_claiming_same_patient_or_lesion
+  conflicting_label_action: stop_unless_covered_by_prespecified_complete_lesion_exclusion
+  verify_pairs_against_fingerprint_file: true
+near_duplicate_screen:
+  candidate_method: perceptual_hash
+  maximum_hamming_distance_inclusive: 4
+  detected_candidate_pairs_before_exclusion: {isic2019: 1150, mura: 1870, total: 3020}
+  candidate_pairs_touching_excluded_isic_groups: 0
+  decision_rule: descriptive_risk_screen_only_no_manual_same_source_adjudication
+  alter_labels_inclusion_or_split_groups_from_phash: false
+  report_cross_partition_candidate_counts_by_split: true
+  residual_unverified_same_source_risk: disclose
+reporting:
+  disclose_missing_lesion_id_exclusion_separately: 2084
+  disclose_conflict_exclusion_separately: 4
+  distinguish_official_labels_from_image_identity_audit: true
+  describe_screen_as_data_quality_control_not_new_algorithm: true
+  do_not_claim_zero_residual_duplicate_risk: true

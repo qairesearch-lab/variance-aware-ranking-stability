@@ -1,0 +1,17 @@
+stratum,contexts,full_reference_match,max_point_difference,held_split_excluded
+organamnist_A_cnn4_all5,50,True,0.0,True
+organamnist_A_cnn4_common3,30,True,0.0,True
+organamnist_B_cnn4_all5,50,True,1.1102230246251565e-16,True
+organamnist_B_cnn4_common3,30,True,0.0,True
+sipakmed_A_cnn4_all5,50,True,0.0,True
+sipakmed_A_cnn4_common3,30,True,5.551115123125783e-17,True
+sipakmed_B_cnn4_all5,50,True,0.0,True
+sipakmed_B_cnn4_common3,30,True,5.551115123125783e-17,True
+isic2019_A_cnn4_all3,30,True,0.0,True
+isic2019_A_cnn4_pool_contexts,15,True,0.0,True
+isic2019_A_pool5_shared,15,True,0.0,True
+isic2019_A_pool5_swin_weight_eval,15,True,0.0,True
+mura_A_cnn4_all3,30,True,1.1102230246251565e-16,True
+mura_A_cnn4_pool_contexts,15,True,0.0,True
+mura_A_pool5_shared,15,True,0.0,True
+mura_A_pool5_swin_weight_eval,15,True,0.0,True

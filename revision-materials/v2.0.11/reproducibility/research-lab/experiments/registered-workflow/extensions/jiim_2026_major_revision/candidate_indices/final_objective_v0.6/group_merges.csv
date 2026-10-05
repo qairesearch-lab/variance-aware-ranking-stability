@@ -1,0 +1,6 @@
+dataset,original_group_id,merged_group_id
+isic2019,BCN_0002919,BCN_0002049
+isic2019,BCN_0004816,BCN_0001604
+mura,patient04296,patient04009
+mura,patient08915,patient08556
+mura,patient11359,patient06960

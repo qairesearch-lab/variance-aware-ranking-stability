@@ -1,0 +1,168 @@
+{
+  "analysis_id": "JIIM_revision_extension_reanalysis_v0.1",
+  "created_local_date": "2026-10-03",
+  "status": "completed",
+  "registered_extension_role": "reviewer-requested post hoc extension; original 800-run matrix unchanged",
+  "manifest_sha256": "0f27ea6240e2570e035d5226faa3216ea32b3cc8eca69833bab011162e1d28b9",
+  "manifest_rows": 300,
+  "integrity_passed_runs": 300,
+  "primary_extension_runs": 270,
+  "Swin_preprocessing_sensitivity_runs": 30,
+  "datasets_in_comparison": [
+    "organamnist",
+    "sipakmed",
+    "isic2019",
+    "mura"
+  ],
+  "common_model_pool": [
+    "resnet18",
+    "resnet50",
+    "densenet121",
+    "efficientnet_b0"
+  ],
+  "primary_metric": "balanced_accuracy",
+  "resampling": "split-first, seed-second paired hierarchical bootstrap",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260926,
+  "margin_model": "discordance ~ standardized[-log10(top-two BA margin + 1e-6)] + dataset fixed effects; dataset-by-split cluster bootstrap CI",
+  "interpretation_boundary": "Descriptive benchmark-stage robustness across these four datasets; does not establish causal dataset-difficulty effects, universal medical-image generalization, clinical/patient-level generalization, or a best architecture.",
+  "outputs": {
+    "run_integrity_audit.csv": 300,
+    "original_rule_A_raw_metrics_audit.csv": 400,
+    "extension_run_metrics.csv": 300,
+    "four_dataset_context_stability.csv": 160,
+    "four_dataset_model_performance_and_selection.csv": 16,
+    "four_dataset_ranking_stability_summary.csv": 4,
+    "extension_paired_model_differences.csv": 12,
+    "margin_discordance_logistic_model.csv": 1,
+    "isic_mura_split_block_crossfit.csv": 2,
+    "swin_candidate_pool_and_input_recipe_sensitivity.csv": 2,
+    "swin_preprocessing_sensitivity_paired.csv": 2,
+    "mura_body_region_model_performance.csv": 28,
+    "mura_body_region_stability_summary.csv": 7
+  },
+  "preliminary_dataset_summary": [
+    {
+      "dataset": "isic2019",
+      "splits": 10,
+      "seeds_per_split": 3,
+      "contexts": 30,
+      "leave_one_split_out_agreement": 0.9,
+      "leave_one_split_out_discordance": 0.09999999999999998,
+      "split_then_seed_hierarchical_bootstrap_agreement_CI_low": 0.7333333333333333,
+      "split_then_seed_hierarchical_bootstrap_agreement_CI_high": 1.0,
+      "mean_top_two_margin": 0.0325973504561383,
+      "median_top_two_margin": 0.029451652875694068,
+      "contexts_margin_below_0.01": 6,
+      "selection_entropy_normalized": 0.28041258849736506,
+      "full_grid_in_sample_agreement_descriptive": 0.9,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20260926
+    },
+    {
+      "dataset": "mura",
+      "splits": 10,
+      "seeds_per_split": 3,
+      "contexts": 30,
+      "leave_one_split_out_agreement": 0.6,
+      "leave_one_split_out_discordance": 0.4,
+      "split_then_seed_hierarchical_bootstrap_agreement_CI_low": 0.13333333333333333,
+      "split_then_seed_hierarchical_bootstrap_agreement_CI_high": 0.8,
+      "mean_top_two_margin": 0.008379650093724943,
+      "median_top_two_margin": 0.006600641489075965,
+      "contexts_margin_below_0.01": 19,
+      "selection_entropy_normalized": 0.6936457138218854,
+      "full_grid_in_sample_agreement_descriptive": 0.6,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20260926
+    },
+    {
+      "dataset": "organamnist",
+      "splits": 10,
+      "seeds_per_split": 5,
+      "contexts": 50,
+      "leave_one_split_out_agreement": 0.62,
+      "leave_one_split_out_discordance": 0.38,
+      "split_then_seed_hierarchical_bootstrap_agreement_CI_low": 0.32,
+      "split_then_seed_hierarchical_bootstrap_agreement_CI_high": 0.8,
+      "mean_top_two_margin": 0.0014659053939374321,
+      "median_top_two_margin": 0.0012427274765569596,
+      "contexts_margin_below_0.01": 50,
+      "selection_entropy_normalized": 0.4790210111131499,
+      "full_grid_in_sample_agreement_descriptive": 0.62,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20260926
+    },
+    {
+      "dataset": "sipakmed",
+      "splits": 10,
+      "seeds_per_split": 5,
+      "contexts": 50,
+      "leave_one_split_out_agreement": 0.52,
+      "leave_one_split_out_discordance": 0.48,
+      "split_then_seed_hierarchical_bootstrap_agreement_CI_low": 0.14,
+      "split_then_seed_hierarchical_bootstrap_agreement_CI_high": 0.74,
+      "mean_top_two_margin": 0.006660769563184719,
+      "median_top_two_margin": 0.0050494555918255135,
+      "contexts_margin_below_0.01": 39,
+      "selection_entropy_normalized": 0.676611135872029,
+      "full_grid_in_sample_agreement_descriptive": 0.52,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20260926
+    }
+  ],
+  "preliminary_margin_model": [
+    {
+      "term": "one_SD_decrease_in_log10_top_two_margin",
+      "odds_ratio": 2.022464446304802,
+      "cluster_bootstrap_95CI_low": 0.7469480686238749,
+      "cluster_bootstrap_95CI_high": 6.492956185411795,
+      "clusters": 40,
+      "contexts": 160,
+      "dataset_fixed_effects": "included",
+      "cluster_bootstrap_replicates": 10000,
+      "epsilon": 1e-06,
+      "interpretation": "associational; discordance is defined against leave-one-split-out comparator"
+    }
+  ],
+  "preliminary_swin_sensitivity": [
+    {
+      "dataset": "isic2019",
+      "paired_contexts": 15,
+      "adding_shared_transform_Swin_changes_context_winner_fraction": 0.4,
+      "four_CNN_top_two_margin_mean": 0.028327950147414425,
+      "five_model_top_two_margin_mean": 0.025267963186280374,
+      "swin_shared_observed_selection_frequency": 0.4,
+      "interpretation": "paired candidate-pool sensitivity only; not a model-superiority claim"
+    },
+    {
+      "dataset": "mura",
+      "paired_contexts": 15,
+      "adding_shared_transform_Swin_changes_context_winner_fraction": 0.8,
+      "four_CNN_top_two_margin_mean": 0.009862729330261829,
+      "five_model_top_two_margin_mean": 0.010876953268385425,
+      "swin_shared_observed_selection_frequency": 0.8,
+      "interpretation": "paired candidate-pool sensitivity only; not a model-superiority claim"
+    }
+  ],
+  "preliminary_swin_preprocessing_sensitivity": [
+    {
+      "dataset": "isic2019",
+      "paired_contexts": 15,
+      "mean_BA_difference_weight_specific_minus_shared": 0.019596199743108826,
+      "split_cluster_bootstrap_95CI_low": 0.014210615380525779,
+      "split_cluster_bootstrap_95CI_high": 0.025961643453152793,
+      "fraction_contexts_weight_specific_BA_higher": 0.9333333333333333,
+      "interpretation": "same Swin-T weights and architecture; sensitivity to evaluation input recipe"
+    },
+    {
+      "dataset": "mura",
+      "paired_contexts": 15,
+      "mean_BA_difference_weight_specific_minus_shared": -0.0007684623648081053,
+      "split_cluster_bootstrap_95CI_low": -0.005258869157523997,
+      "split_cluster_bootstrap_95CI_high": 0.004322282387440051,
+      "fraction_contexts_weight_specific_BA_higher": 0.4,
+      "interpretation": "same Swin-T weights and architecture; sensitivity to evaluation input recipe"
+    }
+  ]
+}

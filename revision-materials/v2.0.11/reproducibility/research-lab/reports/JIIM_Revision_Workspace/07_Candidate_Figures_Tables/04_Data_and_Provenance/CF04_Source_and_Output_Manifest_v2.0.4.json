@@ -1,0 +1,15 @@
+{
+  "version": "v2.0.4",
+  "operation": "render existing statistics only",
+  "source_files": {
+    "research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables/02_Supplement_Candidates/ST04_Checkpoint_selected_identity_sensitivity_v0.1.csv": "7cb2aae2cd7e87b7ba254b9e3a4d37e77a827ecbb1fd597b838e61e1c9727678",
+    "research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables/02_Supplement_Candidates/ST05_Candidate_pool_sensitivity_v0.1.csv": "d1361f649696c11bf2eec2c47d1614ea575279ad3c038721d315587866225416"
+  },
+  "outputs": {
+    "research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables/01_Main_Candidates/CF04_Selected_identity_sensitivity_Figure4_v2.0.4.csv": "8650138ffc140a319a5270f1993cba8f4109988cab17a14fd14a01beadd80522",
+    "research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables/01_Main_Candidates/CF04_Selected_identity_sensitivity_Figure4_v2.0.4.png": "c63691aebd9433a92bd367254aacb8acf922917984d406de177d35a8da466a7b",
+    "research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables/01_Main_Candidates/CF04_Selected_identity_sensitivity_Figure4_v2.0.4.pdf": "721bf0d13505bfb8406bbd75d808b3572617acc946bb7e3ab60bbfff4994d789",
+    "research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables/01_Main_Candidates/CF04_Selected_identity_sensitivity_Figure4_v2.0.4.svg": "86735b2b58b49d24aeb018a493fd5f7d850595814e581118ba8f8d1b5ecdc688",
+    "research-lab/reports/JIIM_Revision_Workspace/07_Candidate_Figures_Tables/01_Main_Candidates/CF04_Selected_identity_sensitivity_Figure4_v2.0.4.md": "4137dee7bb6b6bb4f6268b6c649f34f7f3b758d7ba8db5124f80ea793afbcce3"
+  }
+}

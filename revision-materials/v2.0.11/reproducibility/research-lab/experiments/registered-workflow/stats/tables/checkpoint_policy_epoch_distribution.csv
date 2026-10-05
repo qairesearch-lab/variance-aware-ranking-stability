@@ -1,0 +1,17 @@
+dataset,checkpoint_policy,model,run_count,selected_epoch_mean,selected_epoch_sd,selected_epoch_median,selected_epoch_iqr,selected_epoch_min,selected_epoch_max,early_stopped_before_60_count
+organamnist,A,densenet121,50,28.26,7.102198567330818,27.0,8.0,16,46,50
+organamnist,A,efficientnet_b0,50,52.48,7.6644954038683055,56.0,10.25,32,60,43
+organamnist,A,resnet18,50,16.68,5.807946702403457,16.5,8.75,5,31,50
+organamnist,A,resnet50,50,17.7,5.8875517242842506,17.0,7.0,5,36,50
+organamnist,B,densenet121,50,60.0,0.0,60.0,0.0,60,60,0
+organamnist,B,efficientnet_b0,50,60.0,0.0,60.0,0.0,60,60,0
+organamnist,B,resnet18,50,60.0,0.0,60.0,0.0,60,60,0
+organamnist,B,resnet50,50,60.0,0.0,60.0,0.0,60,60,0
+sipakmed,A,densenet121,50,14.66,5.622876016228488,13.5,8.0,7,29,50
+sipakmed,A,efficientnet_b0,50,49.76,8.601281347353225,50.5,14.5,30,60,46
+sipakmed,A,resnet18,50,11.06,5.589384983144024,9.5,7.0,2,29,50
+sipakmed,A,resnet50,50,8.84,4.147091432189406,9.0,6.75,2,18,50
+sipakmed,B,densenet121,50,60.0,0.0,60.0,0.0,60,60,0
+sipakmed,B,efficientnet_b0,50,60.0,0.0,60.0,0.0,60,60,0
+sipakmed,B,resnet18,50,60.0,0.0,60.0,0.0,60,60,0
+sipakmed,B,resnet50,50,60.0,0.0,60.0,0.0,60,60,0

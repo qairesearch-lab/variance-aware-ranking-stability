@@ -1,0 +1,5 @@
+dataset,sample_id,relative_path,label,group_id,study_id,body_region,archive_member,source_partition
+isic2019,ISIC_0067502,research-lab/data/isic2019/extracted/ISIC_2019_Training_Input/ISIC_0067502.jpg,0,BCN_0003560,,,ISIC_2019_Training_Input/ISIC_0067502.jpg,official_train
+isic2019,ISIC_0067980,research-lab/data/isic2019/extracted/ISIC_2019_Training_Input/ISIC_0067980.jpg,1,BCN_0000237,,,ISIC_2019_Training_Input/ISIC_0067980.jpg,official_train
+isic2019,ISIC_0069013,research-lab/data/isic2019/extracted/ISIC_2019_Training_Input/ISIC_0069013.jpg,1,BCN_0000237,,,ISIC_2019_Training_Input/ISIC_0069013.jpg,official_train
+isic2019,ISIC_0071017,research-lab/data/isic2019/extracted/ISIC_2019_Training_Input/ISIC_0071017.jpg,0,BCN_0003560,,,ISIC_2019_Training_Input/ISIC_0071017.jpg,official_train

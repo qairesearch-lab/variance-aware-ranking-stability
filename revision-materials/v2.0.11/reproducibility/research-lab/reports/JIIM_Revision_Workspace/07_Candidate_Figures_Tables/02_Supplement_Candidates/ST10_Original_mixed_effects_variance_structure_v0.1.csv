@@ -1,0 +1,5 @@
+﻿Stratum,Split variance share,Model×split share,Residual share,Model
+OrganAMNIST / A,0.103,0.166,0.730,Reported nonsingular fallback
+OrganAMNIST / B,0.128,0.248,0.625,Reported nonsingular fallback
+SIPaKMeD / A,0.118,0.362,0.520,Reported nonsingular fallback
+SIPaKMeD / B,0.159,0.341,0.500,Reported nonsingular fallback

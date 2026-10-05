@@ -1,0 +1,34 @@
+{
+  "isic2019": {
+    "excluded_class_counts": {
+      "BKL": 198,
+      "MEL": 337,
+      "NV": 1549
+    },
+    "excluded_missing_lesion_id": 2084,
+    "images_in_ground_truth": 25331,
+    "lesion_groups_before_duplicate_merges": 11847,
+    "lesion_ids_with_conflicting_labels": 0,
+    "primary_known_lesion_images": 23247,
+    "status": "candidate_before_image_duplicate_adjudication"
+  },
+  "mura": {
+    "body_regions": {
+      "XR_ELBOW": 5396,
+      "XR_FINGER": 5567,
+      "XR_FOREARM": 2126,
+      "XR_HAND": 6003,
+      "XR_HUMERUS": 1560,
+      "XR_SHOULDER": 8942,
+      "XR_WRIST": 10411
+    },
+    "official_partition_counts": {
+      "official_train": 36808,
+      "official_valid": 3197
+    },
+    "patients": 11967,
+    "status": "candidate_before_image_duplicate_adjudication",
+    "studies": 14656,
+    "valid_images": 40005
+  }
+}

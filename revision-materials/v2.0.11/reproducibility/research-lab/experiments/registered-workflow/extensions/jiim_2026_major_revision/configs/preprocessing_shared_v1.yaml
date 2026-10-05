@@ -1,0 +1,13 @@
+# Primary author-approved extension recipe. This file is a runnable supplement to
+# extension_protocol_design_locked_v0.3.yaml, not an amendment of that design lock.
+variant_id: shared_dataset_transform_v1
+role: primary_five_model_pool
+design_lock: extension_protocol_design_locked_v0.3.yaml
+train_transform: dataset_specific_shared_across_models
+eval_transform:
+  isic2019: direct_resize_224_bilinear
+  mura: pad_square_then_direct_resize_224_bilinear
+swin_pretrained_weight_enum: IMAGENET1K_V1
+swin_weight_specific_eval: false
+interpretation: architecture_pool_comparison_within_each_dataset
+

@@ -1,0 +1,13 @@
+# Author decision recorded before any formal extension run or sealed manifest.
+# Supplements, and does not rewrite, the v0.3 design and v0.4 data-quality amendment.
+decision_id: jiim_2026_extension_swin_sensitivity_v0.5
+status: AUTHOR_CONFIRMED_BEFORE_FORMAL_RUNS
+author_confirmation_date: '2026-09-27'
+primary_shared_preprocessing_runs: 270
+swin_weight_specific_eval_sensitivity_runs: 30
+total_manifest_runs: 300
+include_sensitivity_in_initial_manifest: true
+run_order: [e0_shared_150, e1_shared_increment_120, swin_B_sensitivity_30]
+primary_interpretation: four_CNN_and_shared_preprocessing_model_ranking_stability
+sensitivity_interpretation: swin_input_pipeline_sensitivity_not_pure_architecture_effect
+research_aim: method_conclusion_robustness_not_new_algorithm

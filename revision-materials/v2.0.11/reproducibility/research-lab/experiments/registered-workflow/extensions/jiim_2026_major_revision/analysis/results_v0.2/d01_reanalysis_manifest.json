@@ -1,0 +1,95 @@
+{
+  "analysis_id": "JIIM_D01_split_identity_bootstrap_v0.2",
+  "date": "2026-10-03",
+  "status": "completed",
+  "source_analysis": "extension results v0.1; original completed Rule-A runs plus shared-input CNN extension",
+  "point_estimates_recomputed": true,
+  "point_estimate_scope": "four datasets; 4 CNNs; original Rule-A 10x5 for OrganAMNIST/SIPaKMeD and extension Rule-A 10x3 for ISIC/MURA",
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20261003,
+    "cluster": "original split identity; seeds nested within sampled split",
+    "heldout_rule": "exclude every sampled occurrence sharing held-out original split identity from its comparator",
+    "degenerate_draw": "resample if fewer than two distinct original split identities; counts recorded"
+  },
+  "inputs": {
+    "research-lab/experiments/registered-workflow/outputs/primary/analysis_io/run_metrics_table.csv": "13a36ad256a468bb9e099161346723d3e2d64cb06b383487d343f31595063512",
+    "research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/results_v0.1/extension_run_metrics.csv": "845587386d2dc41408f05521e31932c5e493b7e3a2e37008dcba29fcf975ab55",
+    "research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/reanalyze_d01_split_identity_v0.2.py": "87489c8b778c86aff7d76ebf603b93fe948bec5ffa35e8444ce4d3239d6d1b8f"
+  },
+  "lso_results": [
+    {
+      "dataset": "isic2019",
+      "splits": 10,
+      "seeds_per_split": 3,
+      "contexts": 30,
+      "observed_LSO_agreement": 0.9,
+      "identity_aware_bootstrap_CI_low": 0.7333333333333333,
+      "identity_aware_bootstrap_CI_high": 1.0,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20261003,
+      "degenerate_draws_resampled": 0,
+      "conditioning": "bootstrap draw contains at least two distinct original split identities"
+    },
+    {
+      "dataset": "mura",
+      "splits": 10,
+      "seeds_per_split": 3,
+      "contexts": 30,
+      "observed_LSO_agreement": 0.6,
+      "identity_aware_bootstrap_CI_low": 0.13333333333333333,
+      "identity_aware_bootstrap_CI_high": 0.8,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20261003,
+      "degenerate_draws_resampled": 0,
+      "conditioning": "bootstrap draw contains at least two distinct original split identities"
+    },
+    {
+      "dataset": "organamnist",
+      "splits": 10,
+      "seeds_per_split": 5,
+      "contexts": 50,
+      "observed_LSO_agreement": 0.62,
+      "identity_aware_bootstrap_CI_low": 0.28,
+      "identity_aware_bootstrap_CI_high": 0.8,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20261003,
+      "degenerate_draws_resampled": 0,
+      "conditioning": "bootstrap draw contains at least two distinct original split identities"
+    },
+    {
+      "dataset": "sipakmed",
+      "splits": 10,
+      "seeds_per_split": 5,
+      "contexts": 50,
+      "observed_LSO_agreement": 0.52,
+      "identity_aware_bootstrap_CI_low": 0.12,
+      "identity_aware_bootstrap_CI_high": 0.76,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20261003,
+      "degenerate_draws_resampled": 0,
+      "conditioning": "bootstrap draw contains at least two distinct original split identities"
+    }
+  ],
+  "margin_model": {
+    "term": "one_SD_decrease_in_log10_context_top_two_BA_difference",
+    "odds_ratio": 2.022464446304853,
+    "identity_aware_cluster_bootstrap_CI_low": 0.5968472938769749,
+    "identity_aware_cluster_bootstrap_CI_high": 5.762689474827234,
+    "datasets": 4,
+    "clusters": 40,
+    "contexts": 160,
+    "bootstrap_replicates": 10000,
+    "requested_replicates": 10000,
+    "bootstrap_seed": 20261003,
+    "degenerate_draws_resampled": 0,
+    "failed_logistic_fits": 0,
+    "conditioning": "within each dataset bootstrap draw, at least two distinct original split identities",
+    "interpretation": "associational; discordance is defined against the identity-correct leave-one-split-out comparator; interval is conditional on these datasets and split-generation process"
+  },
+  "limitations": [
+    "Conditioned on the four fixed benchmark datasets and observed split-generation process; no new independent patient/site sample was generated.",
+    "The margin model is associational and context margins are order statistics affected by candidate pool.",
+    "D02, D04-D09 remain outside this D01 reanalysis."
+  ]
+}

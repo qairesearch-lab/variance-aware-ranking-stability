@@ -1,0 +1,4 @@
+﻿subset,width,height,mode,png_verified,images
+test,28,28,L,True,17778
+train,28,28,L,True,34561
+val,28,28,L,True,6491

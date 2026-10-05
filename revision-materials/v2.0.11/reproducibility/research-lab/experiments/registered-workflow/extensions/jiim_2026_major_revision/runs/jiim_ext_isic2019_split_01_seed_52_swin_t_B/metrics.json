@@ -1,0 +1,95 @@
+{
+  "balanced_accuracy": 0.5392529873795179,
+  "confusion_matrix": [
+    [
+      302,
+      230,
+      20,
+      6,
+      37,
+      0,
+      2,
+      6
+    ],
+    [
+      36,
+      1584,
+      40,
+      0,
+      49,
+      2,
+      6,
+      1
+    ],
+    [
+      34,
+      37,
+      386,
+      1,
+      11,
+      2,
+      6,
+      16
+    ],
+    [
+      10,
+      17,
+      39,
+      28,
+      25,
+      2,
+      3,
+      11
+    ],
+    [
+      52,
+      75,
+      13,
+      7,
+      209,
+      0,
+      1,
+      11
+    ],
+    [
+      2,
+      10,
+      4,
+      1,
+      4,
+      10,
+      2,
+      2
+    ],
+    [
+      2,
+      0,
+      5,
+      0,
+      0,
+      0,
+      30,
+      0
+    ],
+    [
+      5,
+      13,
+      55,
+      2,
+      8,
+      1,
+      0,
+      26
+    ]
+  ],
+  "dataset": "isic2019",
+  "prediction_unit": "image",
+  "run_id": "jiim_ext_isic2019_split_01_seed_52_swin_t_B",
+  "secondary_lesion_balanced_accuracy": 0.542148475670941,
+  "secondary_lesion_units": 1777,
+  "selected_epoch": 4,
+  "technical_smoke_not_research_result": false,
+  "test_loss": 0.7485823285850611,
+  "test_units": 3499,
+  "variant": "swin_weight_eval"
+}

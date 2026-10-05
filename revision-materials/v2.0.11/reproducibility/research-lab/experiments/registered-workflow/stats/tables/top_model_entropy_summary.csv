@@ -1,0 +1,5 @@
+dataset,checkpoint_policy,contexts,candidate_models,top_model_counts,shannon_entropy,normalized_entropy,effective_number_of_top_models,interpretation
+organamnist,A,50,4,"{""densenet121"": 0, ""efficientnet_b0"": 0, ""resnet18"": 31, ""resnet50"": 19}",0.6640641265641081,0.4790210111131499,1.9426715755958301,Higher entropy indicates more dispersed top-model determination across repeated workflow contexts.
+organamnist,B,50,4,"{""densenet121"": 0, ""efficientnet_b0"": 0, ""resnet18"": 20, ""resnet50"": 30}",0.6730116670092565,0.4854752972273344,1.9601317042077895,Higher entropy indicates more dispersed top-model determination across repeated workflow contexts.
+sipakmed,A,50,4,"{""densenet121"": 5, ""efficientnet_b0"": 0, ""resnet18"": 26, ""resnet50"": 19}",0.9379822023303179,0.676611135872029,2.55482110177715,Higher entropy indicates more dispersed top-model determination across repeated workflow contexts.
+sipakmed,B,50,4,"{""densenet121"": 6, ""efficientnet_b0"": 0, ""resnet18"": 22, ""resnet50"": 22}",0.9768945101654615,0.7046804326436822,2.6561946349633807,Higher entropy indicates more dispersed top-model determination across repeated workflow contexts.

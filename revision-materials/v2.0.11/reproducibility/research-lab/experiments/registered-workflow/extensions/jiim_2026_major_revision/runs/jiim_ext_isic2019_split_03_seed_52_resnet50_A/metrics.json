@@ -1,0 +1,95 @@
+{
+  "balanced_accuracy": 0.5274821220877332,
+  "confusion_matrix": [
+    [
+      318,
+      198,
+      24,
+      14,
+      96,
+      1,
+      5,
+      2
+    ],
+    [
+      62,
+      1486,
+      45,
+      3,
+      48,
+      6,
+      4,
+      1
+    ],
+    [
+      21,
+      41,
+      341,
+      20,
+      48,
+      6,
+      5,
+      14
+    ],
+    [
+      6,
+      14,
+      26,
+      27,
+      56,
+      1,
+      0,
+      4
+    ],
+    [
+      22,
+      65,
+      32,
+      9,
+      237,
+      2,
+      1,
+      1
+    ],
+    [
+      4,
+      12,
+      10,
+      0,
+      1,
+      5,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      30,
+      0
+    ],
+    [
+      5,
+      2,
+      23,
+      10,
+      28,
+      0,
+      0,
+      25
+    ]
+  ],
+  "dataset": "isic2019",
+  "prediction_unit": "image",
+  "run_id": "jiim_ext_isic2019_split_03_seed_52_resnet50_A",
+  "secondary_lesion_balanced_accuracy": 0.5175037325696996,
+  "secondary_lesion_units": 1777,
+  "selected_epoch": 2,
+  "technical_smoke_not_research_result": false,
+  "test_loss": 0.8383810626804282,
+  "test_units": 3471,
+  "variant": "shared"
+}

@@ -1,0 +1,4 @@
+numpy==2.3.5
+pandas==2.2.3
+# Python 3.12.14 was recorded for completed B1 analysis.
+# Rendering additionally used matplotlib==3.11.2.

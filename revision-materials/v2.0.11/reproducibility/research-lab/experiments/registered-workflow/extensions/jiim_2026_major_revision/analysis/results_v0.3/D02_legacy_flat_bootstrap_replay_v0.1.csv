@@ -1,0 +1,5 @@
+dataset,policy,bootstrap_replicates,original_counts_reproduced,rng
+organamnist,A,10000,True,single stream initialized2026051510; table per-stratum seed labels are not separate reinitializations
+organamnist,B,10000,True,single stream initialized2026051510; table per-stratum seed labels are not separate reinitializations
+sipakmed,A,10000,True,single stream initialized2026051510; table per-stratum seed labels are not separate reinitializations
+sipakmed,B,10000,True,single stream initialized2026051510; table per-stratum seed labels are not separate reinitializations

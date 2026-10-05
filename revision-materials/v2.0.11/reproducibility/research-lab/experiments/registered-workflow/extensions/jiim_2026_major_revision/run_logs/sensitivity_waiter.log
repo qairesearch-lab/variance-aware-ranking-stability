@@ -1,0 +1,24 @@
+2026-10-01 22:12:07 CST WAIT_FOR_E0_E1 pid=35526
+2026-10-03 04:17:30 CST E0_E1_VERIFIED_COMPLETE
+2026-10-03 04:17:30 CST STAGE_START sensitivity
+2026-10-03 04:17:30 CST LAUNCHED sensitivity gpu=0 pid=442095
+2026-10-03 04:17:30 CST LAUNCHED sensitivity gpu=1 pid=442097
+2026-10-03 07:24:44 CST QUEUE_EXIT sensitivity pid=442095 code=0
+2026-10-03 07:26:30 CST QUEUE_EXIT sensitivity pid=442097 code=0
+{
+  "active": [],
+  "counts": {
+    "completed_reported": 30,
+    "failed": 0,
+    "incomplete_output": 0,
+    "not_started": 0,
+    "other": 0,
+    "running_reported": 0
+  },
+  "data_disk_free_gb": 20.4,
+  "gpu_count": 2,
+  "note": "Statuses come from run_status.json; running may be stale and completed still needs formal audit",
+  "stage_runs": 30,
+  "stop_file_present": false
+}
+2026-10-03 07:26:33 CST ALL_300_RUNS_COMPLETE

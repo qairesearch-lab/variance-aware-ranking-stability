@@ -1,0 +1,20 @@
+# Candidate extension environment, not yet validated on AutoDL CUDA hardware.
+# Exact installed versions, driver, CUDA, GPU, and weight hashes are captured
+# per run. Do not claim the original two datasets shared this environment.
+environment_id: jiim_extension_cuda121_v1_candidate
+status: CANDIDATE_REQUIRES_4090_VALIDATION
+python: '3.10'
+torch: '2.4.1+cu121'
+torchvision: '0.19.1+cu121'
+numpy: '1.26.4'
+pillow: '10.4.0'
+pandas: '2.3.3'
+scikit_learn: '1.7.2'
+pyyaml: '6.0.2'
+precision: fp32_no_amp
+deterministic_cudnn: true
+benchmark_cudnn: false
+num_workers: 4
+batch_size: 32
+validator: train_extension_run.py
+

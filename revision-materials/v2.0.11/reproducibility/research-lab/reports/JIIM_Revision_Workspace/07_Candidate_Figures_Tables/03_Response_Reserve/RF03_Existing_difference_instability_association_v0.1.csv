@@ -1,0 +1,2 @@
+﻿term,recomputed_odds_ratio,replay_CI_low,replay_CI_high,legacy_max_abs_difference,bootstrap_replicates,nonconverged_fits,point_nonconverged,ridge,epsilon,interpretation,audit_kind
+one_SD_decrease_in_log10_context_top_two_BA_difference,2.022464446304802,0.5968472938769491,5.762689474828938,1.7035262089848402e-12,10000,0,False,1e-08,1.0000000000000002e-06,associational and supplementary; fixed four datasets; not a universal threshold,different implementation by same agent; independent-person review remains pending

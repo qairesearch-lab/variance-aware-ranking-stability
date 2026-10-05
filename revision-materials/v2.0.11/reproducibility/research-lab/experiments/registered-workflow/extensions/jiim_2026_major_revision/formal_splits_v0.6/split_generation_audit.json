@@ -1,0 +1,547 @@
+{
+  "data_quality_amendment_sha256": "20431f979a781e84b44e9b964ce95839159061af1cc2e7b4e1f89b1fd34785ed",
+  "protocol_candidate_count": 512,
+  "records": [
+    {
+      "candidate_index": 53,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 590,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 295,
+        "test/validation": 64,
+        "train/validation": 231
+      },
+      "primary_unit_counts": {
+        "test": 3499,
+        "train": 16212,
+        "validation": 3532
+      },
+      "score": 0.003941459630714562,
+      "split_id": "split_01",
+      "split_seed": 1001,
+      "split_sha256": "f5f83662b92865c0da3fa59b606b3e13eec64d0fa9c8148c8a817f3ecbbe32cd",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 483,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 533,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 303,
+        "test/validation": 45,
+        "train/validation": 185
+      },
+      "primary_unit_counts": {
+        "test": 3486,
+        "train": 16307,
+        "validation": 3450
+      },
+      "score": 0.004567046920192936,
+      "split_id": "split_02",
+      "split_seed": 1002,
+      "split_sha256": "51767f30ee4d3651f9d51ac5ed5ba9df05539b9ca1070368d5e25a3813730427",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 61,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 565,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 291,
+        "test/validation": 57,
+        "train/validation": 217
+      },
+      "primary_unit_counts": {
+        "test": 3471,
+        "train": 16286,
+        "validation": 3486
+      },
+      "score": 0.00367928083423041,
+      "split_id": "split_03",
+      "split_seed": 1003,
+      "split_sha256": "6093993b0dbdf836412d085cd953da1f2bca1d332bee692a4e22a4dc2f69f6be",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 433,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 504,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 207,
+        "test/validation": 50,
+        "train/validation": 247
+      },
+      "primary_unit_counts": {
+        "test": 3473,
+        "train": 16271,
+        "validation": 3499
+      },
+      "score": 0.003626648210551182,
+      "split_id": "split_04",
+      "split_seed": 1004,
+      "split_sha256": "92483abbc0e83a93668c31f6a51e76f9c5435efa9fbd17045f113322c7c19803",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 200,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 535,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 277,
+        "test/validation": 33,
+        "train/validation": 225
+      },
+      "primary_unit_counts": {
+        "test": 3468,
+        "train": 16275,
+        "validation": 3500
+      },
+      "score": 0.003873350761605754,
+      "split_id": "split_05",
+      "split_seed": 1005,
+      "split_sha256": "ee4a99fb0518ac44c2317ee130a347966a18edda9f81af3c772690b7a7b7638a",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 418,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 480,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 221,
+        "test/validation": 38,
+        "train/validation": 221
+      },
+      "primary_unit_counts": {
+        "test": 3524,
+        "train": 16253,
+        "validation": 3466
+      },
+      "score": 0.0039941619312570155,
+      "split_id": "split_06",
+      "split_seed": 1006,
+      "split_sha256": "fb0da4cf3637c64ad950d8259044ff93b0ebe4e9ddbcef3cd5f696f2dc58adf6",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 424,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 470,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 235,
+        "test/validation": 43,
+        "train/validation": 192
+      },
+      "primary_unit_counts": {
+        "test": 3486,
+        "train": 16279,
+        "validation": 3478
+      },
+      "score": 0.0035128652323970703,
+      "split_id": "split_07",
+      "split_seed": 1007,
+      "split_sha256": "9496238160864114ad5bf3564f7fbf3dc6af500c330ffe1a3271e21d3135bb63",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 206,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 527,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 243,
+        "test/validation": 43,
+        "train/validation": 241
+      },
+      "primary_unit_counts": {
+        "test": 3506,
+        "train": 16265,
+        "validation": 3472
+      },
+      "score": 0.004433168122152756,
+      "split_id": "split_08",
+      "split_seed": 1008,
+      "split_sha256": "dc5a2578deaf2f04c32c7a4977cd9be8e1b21a1c20daca278266a12776299e56",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 76,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 523,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 240,
+        "test/validation": 64,
+        "train/validation": 219
+      },
+      "primary_unit_counts": {
+        "test": 3485,
+        "train": 16238,
+        "validation": 3520
+      },
+      "score": 0.004078613121042321,
+      "split_id": "split_09",
+      "split_seed": 1009,
+      "split_sha256": "dad9ecc9c26dc3cca515b91114b9fd9a328f25906531ecb68156488bb40dd7a7",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 465,
+      "dataset": "isic2019",
+      "group_counts": {
+        "test": 1777,
+        "train": 8289,
+        "validation": 1777
+      },
+      "index_sha256": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+      "near_risk_candidate_pair_count": 1150,
+      "near_risk_cross_partition_pair_count": 548,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 233,
+        "test/validation": 54,
+        "train/validation": 261
+      },
+      "primary_unit_counts": {
+        "test": 3503,
+        "train": 16245,
+        "validation": 3495
+      },
+      "score": 0.004446516384735068,
+      "split_id": "split_10",
+      "split_seed": 1010,
+      "split_sha256": "05ce483d132ac34a948241a73e25e6b6d4015ebb3c4acbcb16717d743a59a293",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 406,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 775,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 327,
+        "test/validation": 52,
+        "train/validation": 396
+      },
+      "primary_unit_counts": {
+        "test": 2193,
+        "train": 10261,
+        "validation": 2202
+      },
+      "score": 0.000932116389788476,
+      "split_id": "split_01",
+      "split_seed": 1001,
+      "split_sha256": "53ef3632899a84841a6a594368c3e224d97201a086e578de0b911c5647bce228",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 13,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 934,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 367,
+        "test/validation": 93,
+        "train/validation": 474
+      },
+      "primary_unit_counts": {
+        "test": 2199,
+        "train": 10255,
+        "validation": 2202
+      },
+      "score": 0.0008370555743729982,
+      "split_id": "split_02",
+      "split_seed": 1002,
+      "split_sha256": "2701cc3a90dd777eef53e4e014bf4e599c6d6eaf3403a39ae2d0ad79fd69cc36",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 184,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 929,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 476,
+        "test/validation": 92,
+        "train/validation": 361
+      },
+      "primary_unit_counts": {
+        "test": 2205,
+        "train": 10259,
+        "validation": 2192
+      },
+      "score": 0.0007148481130613622,
+      "split_id": "split_03",
+      "split_seed": 1003,
+      "split_sha256": "b758c516f851bf732488463a50be6471cbb11886e78cbe0425cbef4739db7882",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 330,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 874,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 484,
+        "test/validation": 69,
+        "train/validation": 321
+      },
+      "primary_unit_counts": {
+        "test": 2191,
+        "train": 10260,
+        "validation": 2205
+      },
+      "score": 0.0009471694636612401,
+      "split_id": "split_04",
+      "split_seed": 1004,
+      "split_sha256": "ec1437c12ae386adf3ca586c38116c0aa52bda1842fefc767505643ea954fe2e",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 42,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 936,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 496,
+        "test/validation": 97,
+        "train/validation": 343
+      },
+      "primary_unit_counts": {
+        "test": 2199,
+        "train": 10259,
+        "validation": 2198
+      },
+      "score": 0.000728909030977563,
+      "split_id": "split_05",
+      "split_seed": 1005,
+      "split_sha256": "e827b9c3feb9ba18e74b306edc073e765646604ce9f359f169ce6b8de2979061",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 256,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 920,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 468,
+        "test/validation": 79,
+        "train/validation": 373
+      },
+      "primary_unit_counts": {
+        "test": 2194,
+        "train": 10258,
+        "validation": 2204
+      },
+      "score": 0.0009036978621235069,
+      "split_id": "split_06",
+      "split_seed": 1006,
+      "split_sha256": "802de3622377b082a9fca637a66f439a42f069aeaf936ade5052d73c383b1233",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 449,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 831,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 400,
+        "test/validation": 71,
+        "train/validation": 360
+      },
+      "primary_unit_counts": {
+        "test": 2200,
+        "train": 10257,
+        "validation": 2199
+      },
+      "score": 0.0007139121035360368,
+      "split_id": "split_07",
+      "split_seed": 1007,
+      "split_sha256": "ee607258093f9e2bff4c0c7d42aa1d9bb2388473e488711b56654100bba2abfb",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 347,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 905,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 453,
+        "test/validation": 102,
+        "train/validation": 350
+      },
+      "primary_unit_counts": {
+        "test": 2196,
+        "train": 10262,
+        "validation": 2198
+      },
+      "score": 0.0007708124041272714,
+      "split_id": "split_08",
+      "split_seed": 1008,
+      "split_sha256": "a6185707fc3bc27da285cfcf187bf3ce66d6bf730ae5d7800b86e05214effc29",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 295,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 841,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 446,
+        "test/validation": 52,
+        "train/validation": 343
+      },
+      "primary_unit_counts": {
+        "test": 2187,
+        "train": 10264,
+        "validation": 2205
+      },
+      "score": 0.0010115379893547508,
+      "split_id": "split_09",
+      "split_seed": 1009,
+      "split_sha256": "4b9e641218fae7e66e46fe64f0a56410a39f230fd0bd2620e8c44ff7aff49d30",
+      "valid_candidate_count": 512
+    },
+    {
+      "candidate_index": 75,
+      "dataset": "mura",
+      "group_counts": {
+        "test": 1795,
+        "train": 8374,
+        "validation": 1795
+      },
+      "index_sha256": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5",
+      "near_risk_candidate_pair_count": 1870,
+      "near_risk_cross_partition_pair_count": 883,
+      "near_risk_cross_partition_pair_types": {
+        "test/train": 455,
+        "test/validation": 93,
+        "train/validation": 335
+      },
+      "primary_unit_counts": {
+        "test": 2209,
+        "train": 10260,
+        "validation": 2187
+      },
+      "score": 0.0010494079210541325,
+      "split_id": "split_10",
+      "split_seed": 1010,
+      "split_sha256": "7524ee2626ac4a24bd3b5ce8a188076a13f9b970c8a8f0fe7f0578c11530dff8",
+      "valid_candidate_count": 512
+    }
+  ],
+  "status": "generated_after_objective_data_quality_audit"
+}

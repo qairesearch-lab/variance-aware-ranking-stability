@@ -1,0 +1,36 @@
+config_id: random_seeds_v1
+status: frozen
+frozen_on: 2026-04-25
+basis:
+  - https://osf.io/avnp9 (Study Protocol Frozen v1.0)
+  - research-lab/plan/decisions/03_Fixed_Seed_Set_Freeze_Proposal.md
+  - research-lab/notes/2026-04-25_Pre_Execution_Issues_and_Freeze_Proposal.md
+
+training_seeds:
+  values: [42, 52, 62, 72, 82]
+  scope:
+    - model_initialization
+    - dataloader_shuffle
+    - augmentation_randomness
+  reuse_policy: reused_across_all_datasets_splits_models_and_checkpoint_policies
+  role_in_analysis: crossed_seed_factor
+
+split_generation_seeds:
+  values: [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010]
+  scope:
+    - repeated_random_holdout_split_generation
+  reuse_policy: one_seed_per_split_id_shared_across_primary_datasets_where_feasible
+  note: Split generation seeds are separated from training seeds.
+
+determinism:
+  cudnn_deterministic: true
+  cudnn_benchmark: false
+  bitwise_reproducibility_note: >
+    Main experiments prioritize deterministic framework settings where feasible.
+    Exact bitwise reproducibility may still depend on hardware, driver, CUDA,
+    PyTorch, and torchvision versions, which must be recorded in run metadata.
+
+prohibited_practices:
+  - Do not change seeds after inspecting model performance.
+  - Do not use different training seed sets for different models or datasets.
+  - Do not mix split generation seeds with training seeds without recording an amendment.

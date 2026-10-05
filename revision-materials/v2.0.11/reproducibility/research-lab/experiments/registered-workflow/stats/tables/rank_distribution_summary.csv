@@ -1,0 +1,17 @@
+dataset,checkpoint_policy,model,rank_count,rank_mean,rank_sd,rank_median,rank_min,rank_max
+organamnist,A,densenet121,50,2.92,0.2712931993250107,3.0,2,3
+organamnist,A,efficientnet_b0,50,4,0.0,4.0,4,4
+organamnist,A,resnet18,50,1.42,0.5688585061331156,1.0,1,3
+organamnist,A,resnet50,50,1.66,0.5517245689653488,2.0,1,3
+organamnist,B,densenet121,50,3,0.0,3.0,3,3
+organamnist,B,efficientnet_b0,50,4,0.0,4.0,4,4
+organamnist,B,resnet18,50,1.6,0.4898979485566356,2.0,1,2
+organamnist,B,resnet50,50,1.4,0.4898979485566356,1.0,1,2
+sipakmed,A,densenet121,50,2.68,0.835224520712844,3.0,1,4
+sipakmed,A,efficientnet_b0,50,3.76,0.5851495535331118,4.0,2,4
+sipakmed,A,resnet18,50,1.72,0.8494704232638121,1.0,1,4
+sipakmed,A,resnet50,50,1.84,0.7578918128598566,2.0,1,3
+sipakmed,B,densenet121,50,2.78,0.87840765023991,3.0,1,4
+sipakmed,B,efficientnet_b0,50,3.82,0.38418745424597095,4.0,3,4
+sipakmed,B,resnet18,50,1.72,0.7222188034107115,2.0,1,3
+sipakmed,B,resnet50,50,1.68,0.6764613810115105,2.0,1,3

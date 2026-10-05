@@ -1,0 +1,17 @@
+dataset,checkpoint_policy,model,full_reference_top_model,full_reference_rank,bootstrap_top_count,bootstrap_replicates,paired_context_bootstrap_top_probability,monte_carlo_ci_low,monte_carlo_ci_high,interval_type,bootstrap_seed,resampling_unit,pairing_preserved,model_level_mean_recomputed_each_replicate,tie_breaker
+organamnist,A,resnet18,resnet18,1,9875,10000,0.9875,0.9851276180946895,0.9894979834939008,monte_carlo_wilson_95,2026051510,split_seed_context,True,True,alphabetical_after_descending_metric
+organamnist,A,resnet50,resnet18,2,125,10000,0.0125,0.01050201650609921,0.01487238190531047,monte_carlo_wilson_95,2026051510,split_seed_context,True,True,alphabetical_after_descending_metric
+organamnist,A,densenet121,resnet18,3,0,10000,0.0,0.0,0.00038399837067659573,monte_carlo_wilson_95,2026051510,split_seed_context,True,True,alphabetical_after_descending_metric
+organamnist,A,efficientnet_b0,resnet18,4,0,10000,0.0,0.0,0.00038399837067659573,monte_carlo_wilson_95,2026051510,split_seed_context,True,True,alphabetical_after_descending_metric
+organamnist,B,resnet50,resnet50,1,8284,10000,0.8284,0.8208845382760992,0.8356632515940405,monte_carlo_wilson_95,2026051511,split_seed_context,True,True,alphabetical_after_descending_metric
+organamnist,B,resnet18,resnet50,2,1716,10000,0.1716,0.16433674840595952,0.17911546172390086,monte_carlo_wilson_95,2026051511,split_seed_context,True,True,alphabetical_after_descending_metric
+organamnist,B,densenet121,resnet50,3,0,10000,0.0,0.0,0.00038399837067659573,monte_carlo_wilson_95,2026051511,split_seed_context,True,True,alphabetical_after_descending_metric
+organamnist,B,efficientnet_b0,resnet50,4,0,10000,0.0,0.0,0.00038399837067659573,monte_carlo_wilson_95,2026051511,split_seed_context,True,True,alphabetical_after_descending_metric
+sipakmed,A,resnet18,resnet18,1,9616,10000,0.9616,0.9576530344728916,0.9651924582312997,monte_carlo_wilson_95,2026051512,split_seed_context,True,True,alphabetical_after_descending_metric
+sipakmed,A,resnet50,resnet18,2,384,10000,0.0384,0.0348075417687003,0.04234696552710831,monte_carlo_wilson_95,2026051512,split_seed_context,True,True,alphabetical_after_descending_metric
+sipakmed,A,densenet121,resnet18,3,0,10000,0.0,0.0,0.00038399837067659573,monte_carlo_wilson_95,2026051512,split_seed_context,True,True,alphabetical_after_descending_metric
+sipakmed,A,efficientnet_b0,resnet18,4,0,10000,0.0,0.0,0.00038399837067659573,monte_carlo_wilson_95,2026051512,split_seed_context,True,True,alphabetical_after_descending_metric
+sipakmed,B,resnet50,resnet50,1,5748,10000,0.5748,0.5650835562693929,0.5844589975743538,monte_carlo_wilson_95,2026051513,split_seed_context,True,True,alphabetical_after_descending_metric
+sipakmed,B,resnet18,resnet50,2,4252,10000,0.4252,0.4155410024256462,0.434916443730607,monte_carlo_wilson_95,2026051513,split_seed_context,True,True,alphabetical_after_descending_metric
+sipakmed,B,densenet121,resnet50,3,0,10000,0.0,0.0,0.00038399837067659573,monte_carlo_wilson_95,2026051513,split_seed_context,True,True,alphabetical_after_descending_metric
+sipakmed,B,efficientnet_b0,resnet50,4,0,10000,0.0,0.0,0.00038399837067659573,monte_carlo_wilson_95,2026051513,split_seed_context,True,True,alphabetical_after_descending_metric

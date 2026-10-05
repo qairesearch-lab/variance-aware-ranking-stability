@@ -1,0 +1,4 @@
+"item","value"
+"analysis_role","exploratory_sensitivity_not_primary_replacement"
+"fold_random_effect_status","not_applicable_no_stable_fold_level_in_registered_repeated_holdout_design"
+"primary_interpretation_boundary","Sensitivity models assess dependence on statistical model specification and do not alter the primary outcome construct."

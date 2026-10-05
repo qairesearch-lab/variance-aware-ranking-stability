@@ -1,0 +1,3 @@
+metric,rows,missing_rows,non_missing_rows,excluded_from_rq_enhancement,interpretation
+calibration_intercept,800,800,0,True,"Unavailable for current primary interpretation; RQ evidence enhancement uses balanced_accuracy, ranking, paired uncertainty, and workflow stability outputs."
+calibration_slope,800,800,0,True,"Unavailable for current primary interpretation; RQ evidence enhancement uses balanced_accuracy, ranking, paired uncertainty, and workflow stability outputs."

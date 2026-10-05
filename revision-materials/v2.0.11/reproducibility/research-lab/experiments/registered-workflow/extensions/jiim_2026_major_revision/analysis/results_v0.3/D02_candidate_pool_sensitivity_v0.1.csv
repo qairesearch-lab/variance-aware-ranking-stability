@@ -1,0 +1,5 @@
+dataset,swin_variant,contexts,split_clusters,selected_identity_changed_fraction,CI_low,CI_high,observed_mean_top_two_difference_four,observed_mean_top_two_difference_five,interpretation
+isic2019,shared,15,5,0.40000000000000002,0.066666666666666666,0.73333333333333328,0.028327950147414425,0.025267963186280374,paired candidate-pool sensitivity; no cross-architecture superiority claim
+isic2019,swin_weight_eval,15,5,0.66666666666666663,0.40000000000000002,0.93333333333333335,0.028327950147414425,0.027257832068604586,paired candidate-pool sensitivity; no cross-architecture superiority claim
+mura,shared,15,5,0.80000000000000004,0.53333333333333333,1,0.0098627293302618289,0.010876953268385425,paired candidate-pool sensitivity; no cross-architecture superiority claim
+mura,swin_weight_eval,15,5,0.8666666666666667,0.59999999999999998,1,0.0098627293302618289,0.010835449093794554,paired candidate-pool sensitivity; no cross-architecture superiority claim

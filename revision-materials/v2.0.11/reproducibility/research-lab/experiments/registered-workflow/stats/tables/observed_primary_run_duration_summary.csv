@@ -1,0 +1,801 @@
+run_id,dataset,checkpoint_policy,model,duration_seconds,gpu_model
+run_0001,sipakmed,A,resnet18,231.0,NVIDIA GeForce RTX 3060
+run_0002,sipakmed,B,resnet18,733.0,NVIDIA GeForce RTX 3060
+run_0003,sipakmed,A,resnet50,265.0,NVIDIA GeForce RTX 3060
+run_0004,sipakmed,B,resnet50,973.0,NVIDIA GeForce RTX 3060
+run_0005,sipakmed,A,densenet121,436.0,NVIDIA GeForce RTX 3060
+run_0006,sipakmed,B,densenet121,982.0,NVIDIA GeForce RTX 3060
+run_0007,sipakmed,A,efficientnet_b0,766.0,NVIDIA GeForce RTX 3060
+run_0008,sipakmed,B,efficientnet_b0,739.0,NVIDIA GeForce RTX 3060
+run_0009,sipakmed,A,resnet18,206.0,NVIDIA GeForce RTX 3060
+run_0010,sipakmed,B,resnet18,733.0,NVIDIA GeForce RTX 3060
+run_0011,sipakmed,A,resnet50,296.0,NVIDIA GeForce RTX 3060
+run_0012,sipakmed,B,resnet50,975.0,NVIDIA GeForce RTX 3060
+run_0013,sipakmed,A,densenet121,341.0,NVIDIA GeForce RTX 3060
+run_0014,sipakmed,B,densenet121,1093.0,NVIDIA GeForce RTX 3060
+run_0015,sipakmed,A,efficientnet_b0,728.0,NVIDIA GeForce RTX 3060
+run_0016,sipakmed,B,efficientnet_b0,743.0,NVIDIA GeForce RTX 3060
+run_0017,sipakmed,A,resnet18,455.0,NVIDIA GeForce RTX 3060
+run_0018,sipakmed,B,resnet18,767.0,NVIDIA GeForce RTX 3060
+run_0019,sipakmed,A,resnet50,413.0,NVIDIA GeForce RTX 3060
+run_0020,sipakmed,B,resnet50,1117.0,NVIDIA GeForce RTX 3060
+run_0021,sipakmed,A,densenet121,276.0,NVIDIA GeForce RTX 3060
+run_0022,sipakmed,B,densenet121,1106.0,NVIDIA GeForce RTX 3060
+run_0023,sipakmed,A,efficientnet_b0,800.0,NVIDIA GeForce RTX 3060
+run_0024,sipakmed,B,efficientnet_b0,797.0,NVIDIA GeForce RTX 3060
+run_0025,sipakmed,A,resnet18,313.0,NVIDIA GeForce RTX 3060
+run_0026,sipakmed,B,resnet18,728.0,NVIDIA GeForce RTX 3060
+run_0027,sipakmed,A,resnet50,438.0,NVIDIA GeForce RTX 3060
+run_0028,sipakmed,B,resnet50,1042.0,NVIDIA GeForce RTX 3060
+run_0029,sipakmed,A,densenet121,301.0,NVIDIA GeForce RTX 3060
+run_0030,sipakmed,B,densenet121,1009.0,NVIDIA GeForce RTX 3060
+run_0031,sipakmed,A,efficientnet_b0,757.0,NVIDIA GeForce RTX 3060
+run_0032,sipakmed,B,efficientnet_b0,741.0,NVIDIA GeForce RTX 3060
+run_0033,sipakmed,A,resnet18,173.0,NVIDIA GeForce RTX 3060
+run_0034,sipakmed,B,resnet18,770.0,NVIDIA GeForce RTX 3060
+run_0035,sipakmed,A,resnet50,322.0,NVIDIA GeForce RTX 3060
+run_0036,sipakmed,B,resnet50,1124.0,NVIDIA GeForce RTX 3060
+run_0037,sipakmed,A,densenet121,394.0,NVIDIA GeForce RTX 3060
+run_0038,sipakmed,B,densenet121,1085.0,NVIDIA GeForce RTX 3060
+run_0039,sipakmed,A,efficientnet_b0,815.0,NVIDIA GeForce RTX 3060
+run_0040,sipakmed,B,efficientnet_b0,1026.0,NVIDIA GeForce RTX 3060
+run_0041,sipakmed,A,resnet18,306.0,NVIDIA GeForce RTX 3060
+run_0042,sipakmed,B,resnet18,765.0,NVIDIA GeForce RTX 3060
+run_0043,sipakmed,A,resnet50,286.0,NVIDIA GeForce RTX 3060
+run_0044,sipakmed,B,resnet50,1135.0,NVIDIA GeForce RTX 3060
+run_0045,sipakmed,A,densenet121,304.0,NVIDIA GeForce RTX 3060
+run_0046,sipakmed,B,densenet121,1122.0,NVIDIA GeForce RTX 3060
+run_0047,sipakmed,A,efficientnet_b0,574.0,NVIDIA GeForce RTX 3060
+run_0048,sipakmed,B,efficientnet_b0,746.0,NVIDIA GeForce RTX 3060
+run_0049,sipakmed,A,resnet18,275.0,NVIDIA GeForce RTX 3060
+run_0050,sipakmed,B,resnet18,790.0,NVIDIA GeForce RTX 3060
+run_0051,sipakmed,A,resnet50,320.0,NVIDIA GeForce RTX 3060
+run_0052,sipakmed,B,resnet50,1060.0,NVIDIA GeForce RTX 3060
+run_0053,sipakmed,A,densenet121,266.0,NVIDIA GeForce RTX 3060
+run_0054,sipakmed,B,densenet121,983.0,NVIDIA GeForce RTX 3060
+run_0055,sipakmed,A,efficientnet_b0,752.0,NVIDIA GeForce RTX 3060
+run_0056,sipakmed,B,efficientnet_b0,746.0,NVIDIA GeForce RTX 3060
+run_0057,sipakmed,A,resnet18,269.0,NVIDIA GeForce RTX 3060
+run_0058,sipakmed,B,resnet18,751.0,NVIDIA GeForce RTX 3060
+run_0059,sipakmed,A,resnet50,356.0,NVIDIA GeForce RTX 3060
+run_0060,sipakmed,B,resnet50,1059.0,NVIDIA GeForce RTX 3060
+run_0061,sipakmed,A,densenet121,246.0,NVIDIA GeForce RTX 3060
+run_0062,sipakmed,B,densenet121,1047.0,NVIDIA GeForce RTX 3060
+run_0063,sipakmed,A,efficientnet_b0,619.0,NVIDIA GeForce RTX 3060
+run_0064,sipakmed,B,efficientnet_b0,742.0,NVIDIA GeForce RTX 3060
+run_0065,sipakmed,A,resnet18,166.0,NVIDIA GeForce RTX 3060
+run_0066,sipakmed,B,resnet18,707.0,NVIDIA GeForce RTX 3060
+run_0067,sipakmed,A,resnet50,248.0,NVIDIA GeForce RTX 3060
+run_0068,sipakmed,B,resnet50,1056.0,NVIDIA GeForce RTX 3060
+run_0069,sipakmed,A,densenet121,319.0,NVIDIA GeForce RTX 3060
+run_0070,sipakmed,B,densenet121,1051.0,NVIDIA GeForce RTX 3060
+run_0071,sipakmed,A,efficientnet_b0,727.0,NVIDIA GeForce RTX 3060
+run_0072,sipakmed,B,efficientnet_b0,744.0,NVIDIA GeForce RTX 3060
+run_0073,sipakmed,A,resnet18,332.0,NVIDIA GeForce RTX 3060
+run_0074,sipakmed,B,resnet18,735.0,NVIDIA GeForce RTX 3060
+run_0075,sipakmed,A,resnet50,183.0,NVIDIA GeForce RTX 3060
+run_0076,sipakmed,B,resnet50,977.0,NVIDIA GeForce RTX 3060
+run_0077,sipakmed,A,densenet121,277.0,NVIDIA GeForce RTX 3060
+run_0078,sipakmed,B,densenet121,974.0,NVIDIA GeForce RTX 3060
+run_0079,sipakmed,A,efficientnet_b0,602.0,NVIDIA GeForce RTX 3060
+run_0080,sipakmed,B,efficientnet_b0,744.0,NVIDIA GeForce RTX 3060
+run_0081,sipakmed,A,resnet18,365.0,NVIDIA GeForce RTX 3060
+run_0082,sipakmed,B,resnet18,728.0,NVIDIA GeForce RTX 3060
+run_0083,sipakmed,A,resnet50,181.0,NVIDIA GeForce RTX 3060
+run_0084,sipakmed,B,resnet50,968.0,NVIDIA GeForce RTX 3060
+run_0085,sipakmed,A,densenet121,501.0,NVIDIA GeForce RTX 3060
+run_0086,sipakmed,B,densenet121,973.0,NVIDIA GeForce RTX 3060
+run_0087,sipakmed,A,efficientnet_b0,801.0,NVIDIA GeForce RTX 3060
+run_0088,sipakmed,B,efficientnet_b0,800.0,NVIDIA GeForce RTX 3060
+run_0089,sipakmed,A,resnet18,146.0,NVIDIA GeForce RTX 3060
+run_0090,sipakmed,B,resnet18,759.0,NVIDIA GeForce RTX 3060
+run_0091,sipakmed,A,resnet50,261.0,NVIDIA GeForce RTX 3060
+run_0092,sipakmed,B,resnet50,999.0,NVIDIA GeForce RTX 3060
+run_0093,sipakmed,A,densenet121,356.0,NVIDIA GeForce RTX 3060
+run_0094,sipakmed,B,densenet121,974.0,NVIDIA GeForce RTX 3060
+run_0095,sipakmed,A,efficientnet_b0,629.0,NVIDIA GeForce RTX 3060
+run_0096,sipakmed,B,efficientnet_b0,732.0,NVIDIA GeForce RTX 3060
+run_0097,sipakmed,A,resnet18,182.0,NVIDIA GeForce RTX 3060
+run_0098,sipakmed,B,resnet18,722.0,NVIDIA GeForce RTX 3060
+run_0099,sipakmed,A,resnet50,276.0,NVIDIA GeForce RTX 3060
+run_0100,sipakmed,B,resnet50,1055.0,NVIDIA GeForce RTX 3060
+run_0101,sipakmed,A,densenet121,398.0,NVIDIA GeForce RTX 3060
+run_0102,sipakmed,B,densenet121,921.0,NVIDIA GeForce RTX 3060
+run_0103,sipakmed,A,efficientnet_b0,713.0,NVIDIA GeForce RTX 3060
+run_0104,sipakmed,B,efficientnet_b0,701.0,NVIDIA GeForce RTX 3060
+run_0105,sipakmed,A,resnet18,269.0,NVIDIA GeForce RTX 3060
+run_0106,sipakmed,B,resnet18,730.0,NVIDIA GeForce RTX 3060
+run_0107,sipakmed,A,resnet50,387.0,NVIDIA GeForce RTX 3060
+run_0108,sipakmed,B,resnet50,1053.0,NVIDIA GeForce RTX 3060
+run_0109,sipakmed,A,densenet121,351.0,NVIDIA GeForce RTX 3060
+run_0110,sipakmed,B,densenet121,1033.0,NVIDIA GeForce RTX 3060
+run_0111,sipakmed,A,efficientnet_b0,705.0,NVIDIA GeForce RTX 3060
+run_0112,sipakmed,B,efficientnet_b0,729.0,NVIDIA GeForce RTX 3060
+run_0113,sipakmed,A,resnet18,225.0,NVIDIA GeForce RTX 3060
+run_0114,sipakmed,B,resnet18,751.0,NVIDIA GeForce RTX 3060
+run_0115,sipakmed,A,resnet50,181.0,NVIDIA GeForce RTX 3060
+run_0116,sipakmed,B,resnet50,1048.0,NVIDIA GeForce RTX 3060
+run_0117,sipakmed,A,densenet121,315.0,NVIDIA GeForce RTX 3060
+run_0118,sipakmed,B,densenet121,1047.0,NVIDIA GeForce RTX 3060
+run_0119,sipakmed,A,efficientnet_b0,481.0,NVIDIA GeForce RTX 3060
+run_0120,sipakmed,B,efficientnet_b0,753.0,NVIDIA GeForce RTX 3060
+run_0121,sipakmed,A,resnet18,148.0,NVIDIA GeForce RTX 3060
+run_0122,sipakmed,B,resnet18,737.0,NVIDIA GeForce RTX 3060
+run_0123,sipakmed,A,resnet50,179.0,NVIDIA GeForce RTX 3060
+run_0124,sipakmed,B,resnet50,1054.0,NVIDIA GeForce RTX 3060
+run_0125,sipakmed,A,densenet121,439.0,NVIDIA GeForce RTX 3060
+run_0126,sipakmed,B,densenet121,1035.0,NVIDIA GeForce RTX 3060
+run_0127,sipakmed,A,efficientnet_b0,507.0,NVIDIA GeForce RTX 3060
+run_0128,sipakmed,B,efficientnet_b0,754.0,NVIDIA GeForce RTX 3060
+run_0129,sipakmed,A,resnet18,151.0,NVIDIA GeForce RTX 3060
+run_0130,sipakmed,B,resnet18,747.0,NVIDIA GeForce RTX 3060
+run_0131,sipakmed,A,resnet50,367.0,NVIDIA GeForce RTX 3060
+run_0132,sipakmed,B,resnet50,1053.0,NVIDIA GeForce RTX 3060
+run_0133,sipakmed,A,densenet121,457.0,NVIDIA GeForce RTX 3060
+run_0134,sipakmed,B,densenet121,1046.0,NVIDIA GeForce RTX 3060
+run_0135,sipakmed,A,efficientnet_b0,721.0,NVIDIA GeForce RTX 3060
+run_0136,sipakmed,B,efficientnet_b0,747.0,NVIDIA GeForce RTX 3060
+run_0137,sipakmed,A,resnet18,339.0,NVIDIA GeForce RTX 3060
+run_0138,sipakmed,B,resnet18,743.0,NVIDIA GeForce RTX 3060
+run_0139,sipakmed,A,resnet50,354.0,NVIDIA GeForce RTX 3060
+run_0140,sipakmed,B,resnet50,1055.0,NVIDIA GeForce RTX 3060
+run_0141,sipakmed,A,densenet121,382.0,NVIDIA GeForce RTX 3060
+run_0142,sipakmed,B,densenet121,1045.0,NVIDIA GeForce RTX 3060
+run_0143,sipakmed,A,efficientnet_b0,756.0,NVIDIA GeForce RTX 3060
+run_0144,sipakmed,B,efficientnet_b0,749.0,NVIDIA GeForce RTX 3060
+run_0145,sipakmed,A,resnet18,114.0,NVIDIA GeForce RTX 3060
+run_0146,sipakmed,B,resnet18,753.0,NVIDIA GeForce RTX 3060
+run_0147,sipakmed,A,resnet50,191.0,NVIDIA GeForce RTX 3060
+run_0148,sipakmed,B,resnet50,935.0,NVIDIA GeForce RTX 3060
+run_0149,sipakmed,A,densenet121,427.0,NVIDIA GeForce RTX 3060
+run_0150,sipakmed,B,densenet121,1041.0,NVIDIA GeForce RTX 3060
+run_0151,sipakmed,A,efficientnet_b0,672.0,NVIDIA GeForce RTX 3060
+run_0152,sipakmed,B,efficientnet_b0,752.0,NVIDIA GeForce RTX 3060
+run_0153,sipakmed,A,resnet18,165.0,NVIDIA GeForce RTX 3060
+run_0154,sipakmed,B,resnet18,741.0,NVIDIA GeForce RTX 3060
+run_0155,sipakmed,A,resnet50,178.0,NVIDIA GeForce RTX 3060
+run_0156,sipakmed,B,resnet50,1042.0,NVIDIA GeForce RTX 3060
+run_0157,sipakmed,A,densenet121,385.0,NVIDIA GeForce RTX 3060
+run_0158,sipakmed,B,densenet121,1044.0,NVIDIA GeForce RTX 3060
+run_0159,sipakmed,A,efficientnet_b0,617.0,NVIDIA GeForce RTX 3060
+run_0160,sipakmed,B,efficientnet_b0,753.0,NVIDIA GeForce RTX 3060
+run_0161,sipakmed,A,resnet18,184.0,NVIDIA GeForce RTX 3060
+run_0162,sipakmed,B,resnet18,734.0,NVIDIA GeForce RTX 3060
+run_0163,sipakmed,A,resnet50,353.0,NVIDIA GeForce RTX 3060
+run_0164,sipakmed,B,resnet50,974.0,NVIDIA GeForce RTX 3060
+run_0165,sipakmed,A,densenet121,280.0,NVIDIA GeForce RTX 3060
+run_0166,sipakmed,B,densenet121,928.0,NVIDIA GeForce RTX 3060
+run_0167,sipakmed,A,efficientnet_b0,646.0,NVIDIA GeForce RTX 3060
+run_0168,sipakmed,B,efficientnet_b0,754.0,NVIDIA GeForce RTX 3060
+run_0169,sipakmed,A,resnet18,152.0,NVIDIA GeForce RTX 3060
+run_0170,sipakmed,B,resnet18,745.0,NVIDIA GeForce RTX 3060
+run_0171,sipakmed,A,resnet50,194.0,NVIDIA GeForce RTX 3060
+run_0172,sipakmed,B,resnet50,1050.0,NVIDIA GeForce RTX 3060
+run_0173,sipakmed,A,densenet121,247.0,NVIDIA GeForce RTX 3060
+run_0174,sipakmed,B,densenet121,1044.0,NVIDIA GeForce RTX 3060
+run_0175,sipakmed,A,efficientnet_b0,756.0,NVIDIA GeForce RTX 3060
+run_0176,sipakmed,B,efficientnet_b0,740.0,NVIDIA GeForce RTX 3060
+run_0177,sipakmed,A,resnet18,199.0,NVIDIA GeForce RTX 3060
+run_0178,sipakmed,B,resnet18,744.0,NVIDIA GeForce RTX 3060
+run_0179,sipakmed,A,resnet50,248.0,NVIDIA GeForce RTX 3060
+run_0180,sipakmed,B,resnet50,998.0,NVIDIA GeForce RTX 3060
+run_0181,sipakmed,A,densenet121,249.0,NVIDIA GeForce RTX 3060
+run_0182,sipakmed,B,densenet121,995.0,NVIDIA GeForce RTX 3060
+run_0183,sipakmed,A,efficientnet_b0,709.0,NVIDIA GeForce RTX 3060
+run_0184,sipakmed,B,efficientnet_b0,755.0,NVIDIA GeForce RTX 3060
+run_0185,sipakmed,A,resnet18,152.0,NVIDIA GeForce RTX 3060
+run_0186,sipakmed,B,resnet18,738.0,NVIDIA GeForce RTX 3060
+run_0187,sipakmed,A,resnet50,249.0,NVIDIA GeForce RTX 3060
+run_0188,sipakmed,B,resnet50,1055.0,NVIDIA GeForce RTX 3060
+run_0189,sipakmed,A,densenet121,266.0,NVIDIA GeForce RTX 3060
+run_0190,sipakmed,B,densenet121,1048.0,NVIDIA GeForce RTX 3060
+run_0191,sipakmed,A,efficientnet_b0,752.0,NVIDIA GeForce RTX 3060
+run_0192,sipakmed,B,efficientnet_b0,760.0,NVIDIA GeForce RTX 3060
+run_0193,sipakmed,A,resnet18,188.0,NVIDIA GeForce RTX 3060
+run_0194,sipakmed,B,resnet18,750.0,NVIDIA GeForce RTX 3060
+run_0195,sipakmed,A,resnet50,321.0,NVIDIA GeForce RTX 3060
+run_0196,sipakmed,B,resnet50,1050.0,NVIDIA GeForce RTX 3060
+run_0197,sipakmed,A,densenet121,350.0,NVIDIA GeForce RTX 3060
+run_0198,sipakmed,B,densenet121,1047.0,NVIDIA GeForce RTX 3060
+run_0199,sipakmed,A,efficientnet_b0,762.0,NVIDIA GeForce RTX 3060
+run_0200,sipakmed,B,efficientnet_b0,758.0,NVIDIA GeForce RTX 3060
+run_0201,sipakmed,A,resnet18,209.0,NVIDIA GeForce RTX 3060
+run_0202,sipakmed,B,resnet18,699.0,NVIDIA GeForce RTX 3060
+run_0203,sipakmed,A,resnet50,362.0,NVIDIA GeForce RTX 3060
+run_0204,sipakmed,B,resnet50,940.0,NVIDIA GeForce RTX 3060
+run_0205,sipakmed,A,densenet121,325.0,NVIDIA GeForce RTX 3060
+run_0206,sipakmed,B,densenet121,1031.0,NVIDIA GeForce RTX 3060
+run_0207,sipakmed,A,efficientnet_b0,697.0,NVIDIA GeForce RTX 3060
+run_0208,sipakmed,B,efficientnet_b0,755.0,NVIDIA GeForce RTX 3060
+run_0209,sipakmed,A,resnet18,230.0,NVIDIA GeForce RTX 3060
+run_0210,sipakmed,B,resnet18,707.0,NVIDIA GeForce RTX 3060
+run_0211,sipakmed,A,resnet50,205.0,NVIDIA GeForce RTX 3060
+run_0212,sipakmed,B,resnet50,1043.0,NVIDIA GeForce RTX 3060
+run_0213,sipakmed,A,densenet121,265.0,NVIDIA GeForce RTX 3060
+run_0214,sipakmed,B,densenet121,1038.0,NVIDIA GeForce RTX 3060
+run_0215,sipakmed,A,efficientnet_b0,675.0,NVIDIA GeForce RTX 3060
+run_0216,sipakmed,B,efficientnet_b0,721.0,NVIDIA GeForce RTX 3060
+run_0217,sipakmed,A,resnet18,224.0,NVIDIA GeForce RTX 3060
+run_0218,sipakmed,B,resnet18,743.0,NVIDIA GeForce RTX 3060
+run_0219,sipakmed,A,resnet50,267.0,NVIDIA GeForce RTX 3060
+run_0220,sipakmed,B,resnet50,1056.0,NVIDIA GeForce RTX 3060
+run_0221,sipakmed,A,densenet121,414.0,NVIDIA GeForce RTX 3060
+run_0222,sipakmed,B,densenet121,1045.0,NVIDIA GeForce RTX 3060
+run_0223,sipakmed,A,efficientnet_b0,708.0,NVIDIA GeForce RTX 3060
+run_0224,sipakmed,B,efficientnet_b0,705.0,NVIDIA GeForce RTX 3060
+run_0225,sipakmed,A,resnet18,281.0,NVIDIA GeForce RTX 3060
+run_0226,sipakmed,B,resnet18,733.0,NVIDIA GeForce RTX 3060
+run_0227,sipakmed,A,resnet50,318.0,NVIDIA GeForce RTX 3060
+run_0228,sipakmed,B,resnet50,1055.0,NVIDIA GeForce RTX 3060
+run_0229,sipakmed,A,densenet121,511.0,NVIDIA GeForce RTX 3060
+run_0230,sipakmed,B,densenet121,1046.0,NVIDIA GeForce RTX 3060
+run_0231,sipakmed,A,efficientnet_b0,751.0,NVIDIA GeForce RTX 3060
+run_0232,sipakmed,B,efficientnet_b0,755.0,NVIDIA GeForce RTX 3060
+run_0233,sipakmed,A,resnet18,176.0,NVIDIA GeForce RTX 3060
+run_0234,sipakmed,B,resnet18,746.0,NVIDIA GeForce RTX 3060
+run_0235,sipakmed,A,resnet50,162.0,NVIDIA GeForce RTX 3060
+run_0236,sipakmed,B,resnet50,1049.0,NVIDIA GeForce RTX 3060
+run_0237,sipakmed,A,densenet121,317.0,NVIDIA GeForce RTX 3060
+run_0238,sipakmed,B,densenet121,1048.0,NVIDIA GeForce RTX 3060
+run_0239,sipakmed,A,efficientnet_b0,710.0,NVIDIA GeForce RTX 3060
+run_0240,sipakmed,B,efficientnet_b0,753.0,NVIDIA GeForce RTX 3060
+run_0241,sipakmed,A,resnet18,221.0,NVIDIA GeForce RTX 3060
+run_0242,sipakmed,B,resnet18,736.0,NVIDIA GeForce RTX 3060
+run_0243,sipakmed,A,resnet50,230.0,NVIDIA GeForce RTX 3060
+run_0244,sipakmed,B,resnet50,1055.0,NVIDIA GeForce RTX 3060
+run_0245,sipakmed,A,densenet121,300.0,NVIDIA GeForce RTX 3060
+run_0246,sipakmed,B,densenet121,1042.0,NVIDIA GeForce RTX 3060
+run_0247,sipakmed,A,efficientnet_b0,658.0,NVIDIA GeForce RTX 3060
+run_0248,sipakmed,B,efficientnet_b0,760.0,NVIDIA GeForce RTX 3060
+run_0249,sipakmed,A,resnet18,188.0,NVIDIA GeForce RTX 3060
+run_0250,sipakmed,B,resnet18,745.0,NVIDIA GeForce RTX 3060
+run_0251,sipakmed,A,resnet50,334.0,NVIDIA GeForce RTX 3060
+run_0252,sipakmed,B,resnet50,1049.0,NVIDIA GeForce RTX 3060
+run_0253,sipakmed,A,densenet121,298.0,NVIDIA GeForce RTX 3060
+run_0254,sipakmed,B,densenet121,1049.0,NVIDIA GeForce RTX 3060
+run_0255,sipakmed,A,efficientnet_b0,758.0,NVIDIA GeForce RTX 3060
+run_0256,sipakmed,B,efficientnet_b0,745.0,NVIDIA GeForce RTX 3060
+run_0257,sipakmed,A,resnet18,162.0,NVIDIA GeForce RTX 3060
+run_0258,sipakmed,B,resnet18,742.0,NVIDIA GeForce RTX 3060
+run_0259,sipakmed,A,resnet50,301.0,NVIDIA GeForce RTX 3060
+run_0260,sipakmed,B,resnet50,1054.0,NVIDIA GeForce RTX 3060
+run_0261,sipakmed,A,densenet121,486.0,NVIDIA GeForce RTX 3060
+run_0262,sipakmed,B,densenet121,1047.0,NVIDIA GeForce RTX 3060
+run_0263,sipakmed,A,efficientnet_b0,632.0,NVIDIA GeForce RTX 3060
+run_0264,sipakmed,B,efficientnet_b0,757.0,NVIDIA GeForce RTX 3060
+run_0265,sipakmed,A,resnet18,313.0,NVIDIA GeForce RTX 3060
+run_0266,sipakmed,B,resnet18,736.0,NVIDIA GeForce RTX 3060
+run_0267,sipakmed,A,resnet50,372.0,NVIDIA GeForce RTX 3060
+run_0268,sipakmed,B,resnet50,1055.0,NVIDIA GeForce RTX 3060
+run_0269,sipakmed,A,densenet121,316.0,NVIDIA GeForce RTX 3060
+run_0270,sipakmed,B,densenet121,1046.0,NVIDIA GeForce RTX 3060
+run_0271,sipakmed,A,efficientnet_b0,597.0,NVIDIA GeForce RTX 3060
+run_0272,sipakmed,B,efficientnet_b0,750.0,NVIDIA GeForce RTX 3060
+run_0273,sipakmed,A,resnet18,197.0,NVIDIA GeForce RTX 3060
+run_0274,sipakmed,B,resnet18,738.0,NVIDIA GeForce RTX 3060
+run_0275,sipakmed,A,resnet50,319.0,NVIDIA GeForce RTX 3060
+run_0276,sipakmed,B,resnet50,1050.0,NVIDIA GeForce RTX 3060
+run_0277,sipakmed,A,densenet121,335.0,NVIDIA GeForce RTX 3060
+run_0278,sipakmed,B,densenet121,1044.0,NVIDIA GeForce RTX 3060
+run_0279,sipakmed,A,efficientnet_b0,520.0,NVIDIA GeForce RTX 3060
+run_0280,sipakmed,B,efficientnet_b0,755.0,NVIDIA GeForce RTX 3060
+run_0281,sipakmed,A,resnet18,159.0,NVIDIA GeForce RTX 3060
+run_0282,sipakmed,B,resnet18,743.0,NVIDIA GeForce RTX 3060
+run_0283,sipakmed,A,resnet50,207.0,NVIDIA GeForce RTX 3060
+run_0284,sipakmed,B,resnet50,937.0,NVIDIA GeForce RTX 3060
+run_0285,sipakmed,A,densenet121,293.0,NVIDIA GeForce RTX 3060
+run_0286,sipakmed,B,densenet121,1036.0,NVIDIA GeForce RTX 3060
+run_0287,sipakmed,A,efficientnet_b0,753.0,NVIDIA GeForce RTX 3060
+run_0288,sipakmed,B,efficientnet_b0,757.0,NVIDIA GeForce RTX 3060
+run_0289,sipakmed,A,resnet18,297.0,NVIDIA GeForce RTX 3060
+run_0290,sipakmed,B,resnet18,743.0,NVIDIA GeForce RTX 3060
+run_0291,sipakmed,A,resnet50,174.0,NVIDIA GeForce RTX 3060
+run_0292,sipakmed,B,resnet50,963.0,NVIDIA GeForce RTX 3060
+run_0293,sipakmed,A,densenet121,502.0,NVIDIA GeForce RTX 3060
+run_0294,sipakmed,B,densenet121,943.0,NVIDIA GeForce RTX 3060
+run_0295,sipakmed,A,efficientnet_b0,632.0,NVIDIA GeForce RTX 3060
+run_0296,sipakmed,B,efficientnet_b0,722.0,NVIDIA GeForce RTX 3060
+run_0297,sipakmed,A,resnet18,210.0,NVIDIA GeForce RTX 3060
+run_0298,sipakmed,B,resnet18,745.0,NVIDIA GeForce RTX 3060
+run_0299,sipakmed,A,resnet50,337.0,NVIDIA GeForce RTX 3060
+run_0300,sipakmed,B,resnet50,1053.0,NVIDIA GeForce RTX 3060
+run_0301,sipakmed,A,densenet121,521.0,NVIDIA GeForce RTX 3060
+run_0302,sipakmed,B,densenet121,1051.0,NVIDIA GeForce RTX 3060
+run_0303,sipakmed,A,efficientnet_b0,760.0,NVIDIA GeForce RTX 3060
+run_0304,sipakmed,B,efficientnet_b0,751.0,NVIDIA GeForce RTX 3060
+run_0305,sipakmed,A,resnet18,153.0,NVIDIA GeForce RTX 3060
+run_0306,sipakmed,B,resnet18,700.0,NVIDIA GeForce RTX 3060
+run_0307,sipakmed,A,resnet50,296.0,NVIDIA GeForce RTX 3060
+run_0308,sipakmed,B,resnet50,1049.0,NVIDIA GeForce RTX 3060
+run_0309,sipakmed,A,densenet121,439.0,NVIDIA GeForce RTX 3060
+run_0310,sipakmed,B,densenet121,977.0,NVIDIA GeForce RTX 3060
+run_0311,sipakmed,A,efficientnet_b0,629.0,NVIDIA GeForce RTX 3060
+run_0312,sipakmed,B,efficientnet_b0,763.0,NVIDIA GeForce RTX 3060
+run_0313,sipakmed,A,resnet18,242.0,NVIDIA GeForce RTX 3060
+run_0314,sipakmed,B,resnet18,761.0,NVIDIA GeForce RTX 3060
+run_0315,sipakmed,A,resnet50,274.0,NVIDIA GeForce RTX 3060
+run_0316,sipakmed,B,resnet50,1072.0,NVIDIA GeForce RTX 3060
+run_0317,sipakmed,A,densenet121,646.0,NVIDIA GeForce RTX 3060
+run_0318,sipakmed,B,densenet121,1075.0,NVIDIA GeForce RTX 3060
+run_0319,sipakmed,A,efficientnet_b0,774.0,NVIDIA GeForce RTX 3060
+run_0320,sipakmed,B,efficientnet_b0,711.0,NVIDIA GeForce RTX 3060
+run_0321,sipakmed,A,resnet18,166.0,NVIDIA GeForce RTX 3060
+run_0322,sipakmed,B,resnet18,729.0,NVIDIA GeForce RTX 3060
+run_0323,sipakmed,A,resnet50,177.0,NVIDIA GeForce RTX 3060
+run_0324,sipakmed,B,resnet50,1053.0,NVIDIA GeForce RTX 3060
+run_0325,sipakmed,A,densenet121,616.0,NVIDIA GeForce RTX 3060
+run_0326,sipakmed,B,densenet121,1040.0,NVIDIA GeForce RTX 3060
+run_0327,sipakmed,A,efficientnet_b0,761.0,NVIDIA GeForce RTX 3060
+run_0328,sipakmed,B,efficientnet_b0,758.0,NVIDIA GeForce RTX 3060
+run_0329,sipakmed,A,resnet18,340.0,NVIDIA GeForce RTX 3060
+run_0330,sipakmed,B,resnet18,744.0,NVIDIA GeForce RTX 3060
+run_0331,sipakmed,A,resnet50,245.0,NVIDIA GeForce RTX 3060
+run_0332,sipakmed,B,resnet50,1054.0,NVIDIA GeForce RTX 3060
+run_0333,sipakmed,A,densenet121,457.0,NVIDIA GeForce RTX 3060
+run_0334,sipakmed,B,densenet121,1050.0,NVIDIA GeForce RTX 3060
+run_0335,sipakmed,A,efficientnet_b0,471.0,NVIDIA GeForce RTX 3060
+run_0336,sipakmed,B,efficientnet_b0,748.0,NVIDIA GeForce RTX 3060
+run_0337,sipakmed,A,resnet18,190.0,NVIDIA GeForce RTX 3060
+run_0338,sipakmed,B,resnet18,700.0,NVIDIA GeForce RTX 3060
+run_0339,sipakmed,A,resnet50,314.0,NVIDIA GeForce RTX 3060
+run_0340,sipakmed,B,resnet50,1051.0,NVIDIA GeForce RTX 3060
+run_0341,sipakmed,A,densenet121,434.0,NVIDIA GeForce RTX 3060
+run_0342,sipakmed,B,densenet121,1044.0,NVIDIA GeForce RTX 3060
+run_0343,sipakmed,A,efficientnet_b0,755.0,NVIDIA GeForce RTX 3060
+run_0344,sipakmed,B,efficientnet_b0,752.0,NVIDIA GeForce RTX 3060
+run_0345,sipakmed,A,resnet18,310.0,NVIDIA GeForce RTX 3060
+run_0346,sipakmed,B,resnet18,710.0,NVIDIA GeForce RTX 3060
+run_0347,sipakmed,A,resnet50,282.0,NVIDIA GeForce RTX 3060
+run_0348,sipakmed,B,resnet50,1053.0,NVIDIA GeForce RTX 3060
+run_0349,sipakmed,A,densenet121,300.0,NVIDIA GeForce RTX 3060
+run_0350,sipakmed,B,densenet121,1048.0,NVIDIA GeForce RTX 3060
+run_0351,sipakmed,A,efficientnet_b0,624.0,NVIDIA GeForce RTX 3060
+run_0352,sipakmed,B,efficientnet_b0,755.0,NVIDIA GeForce RTX 3060
+run_0353,sipakmed,A,resnet18,236.0,NVIDIA GeForce RTX 3060
+run_0354,sipakmed,B,resnet18,742.0,NVIDIA GeForce RTX 3060
+run_0355,sipakmed,A,resnet50,214.0,NVIDIA GeForce RTX 3060
+run_0356,sipakmed,B,resnet50,1045.0,NVIDIA GeForce RTX 3060
+run_0357,sipakmed,A,densenet121,406.0,NVIDIA GeForce RTX 3060
+run_0358,sipakmed,B,densenet121,943.0,NVIDIA GeForce RTX 3060
+run_0359,sipakmed,A,efficientnet_b0,754.0,NVIDIA GeForce RTX 3060
+run_0360,sipakmed,B,efficientnet_b0,758.0,NVIDIA GeForce RTX 3060
+run_0361,sipakmed,A,resnet18,187.0,NVIDIA GeForce RTX 3060
+run_0362,sipakmed,B,resnet18,708.0,NVIDIA GeForce RTX 3060
+run_0363,sipakmed,A,resnet50,160.0,NVIDIA GeForce RTX 3060
+run_0364,sipakmed,B,resnet50,1003.0,NVIDIA GeForce RTX 3060
+run_0365,sipakmed,A,densenet121,317.0,NVIDIA GeForce RTX 3060
+run_0366,sipakmed,B,densenet121,967.0,NVIDIA GeForce RTX 3060
+run_0367,sipakmed,A,efficientnet_b0,508.0,NVIDIA GeForce RTX 3060
+run_0368,sipakmed,B,efficientnet_b0,740.0,NVIDIA GeForce RTX 3060
+run_0369,sipakmed,A,resnet18,156.0,NVIDIA GeForce RTX 3060
+run_0370,sipakmed,B,resnet18,703.0,NVIDIA GeForce RTX 3060
+run_0371,sipakmed,A,resnet50,175.0,NVIDIA GeForce RTX 3060
+run_0372,sipakmed,B,resnet50,940.0,NVIDIA GeForce RTX 3060
+run_0373,sipakmed,A,densenet121,294.0,NVIDIA GeForce RTX 3060
+run_0374,sipakmed,B,densenet121,1041.0,NVIDIA GeForce RTX 3060
+run_0375,sipakmed,A,efficientnet_b0,758.0,NVIDIA GeForce RTX 3060
+run_0376,sipakmed,B,efficientnet_b0,741.0,NVIDIA GeForce RTX 3060
+run_0377,sipakmed,A,resnet18,225.0,NVIDIA GeForce RTX 3060
+run_0378,sipakmed,B,resnet18,742.0,NVIDIA GeForce RTX 3060
+run_0379,sipakmed,A,resnet50,337.0,NVIDIA GeForce RTX 3060
+run_0380,sipakmed,B,resnet50,1057.0,NVIDIA GeForce RTX 3060
+run_0381,sipakmed,A,densenet121,518.0,NVIDIA GeForce RTX 3060
+run_0382,sipakmed,B,densenet121,1042.0,NVIDIA GeForce RTX 3060
+run_0383,sipakmed,A,efficientnet_b0,582.0,NVIDIA GeForce RTX 3060
+run_0384,sipakmed,B,efficientnet_b0,941.0,NVIDIA GeForce RTX 3060
+run_0385,sipakmed,A,resnet18,266.0,NVIDIA GeForce RTX 3060
+run_0386,sipakmed,B,resnet18,995.0,NVIDIA GeForce RTX 3060
+run_0387,sipakmed,A,resnet50,364.0,NVIDIA GeForce RTX 3060
+run_0388,sipakmed,B,resnet50,1275.0,NVIDIA GeForce RTX 3060
+run_0389,sipakmed,A,densenet121,406.0,NVIDIA GeForce RTX 3060
+run_0390,sipakmed,B,densenet121,1248.0,NVIDIA GeForce RTX 3060
+run_0391,sipakmed,A,efficientnet_b0,826.0,NVIDIA GeForce RTX 3060
+run_0392,sipakmed,B,efficientnet_b0,971.0,NVIDIA GeForce RTX 3060
+run_0393,sipakmed,A,resnet18,347.0,NVIDIA GeForce RTX 3060
+run_0394,sipakmed,B,resnet18,1000.0,NVIDIA GeForce RTX 3060
+run_0395,sipakmed,A,resnet50,419.0,NVIDIA GeForce RTX 3060
+run_0396,sipakmed,B,resnet50,1188.0,NVIDIA GeForce RTX 3060
+run_0397,sipakmed,A,densenet121,478.0,NVIDIA GeForce RTX 3060
+run_0398,sipakmed,B,densenet121,1231.0,NVIDIA GeForce RTX 3060
+run_0399,sipakmed,A,efficientnet_b0,948.0,NVIDIA GeForce RTX 3060
+run_0400,sipakmed,B,efficientnet_b0,1022.0,NVIDIA GeForce RTX 3060
+run_0401,organamnist,A,resnet18,494.0,NVIDIA GeForce RTX 5070 Ti
+run_0402,organamnist,B,resnet18,1242.0,NVIDIA GeForce RTX 5070 Ti
+run_0403,organamnist,A,resnet50,938.0,NVIDIA GeForce RTX 5070 Ti
+run_0404,organamnist,B,resnet50,2556.0,NVIDIA GeForce RTX 5070 Ti
+run_0405,organamnist,A,densenet121,2130.0,NVIDIA GeForce RTX 5070 Ti
+run_0406,organamnist,B,densenet121,2706.0,NVIDIA GeForce RTX 5070 Ti
+run_0407,organamnist,A,efficientnet_b0,1474.0,NVIDIA GeForce RTX 5070 Ti
+run_0408,organamnist,B,efficientnet_b0,1471.0,NVIDIA GeForce RTX 5070 Ti
+run_0409,organamnist,A,resnet18,762.0,NVIDIA GeForce RTX 5070 Ti
+run_0410,organamnist,B,resnet18,1293.0,NVIDIA GeForce RTX 5070 Ti
+run_0411,organamnist,A,resnet50,1168.0,NVIDIA GeForce RTX 5070 Ti
+run_0412,organamnist,B,resnet50,2556.0,NVIDIA GeForce RTX 5070 Ti
+run_0413,organamnist,A,densenet121,1597.0,NVIDIA GeForce RTX 5070 Ti
+run_0414,organamnist,B,densenet121,2704.0,NVIDIA GeForce RTX 5070 Ti
+run_0415,organamnist,A,efficientnet_b0,1472.0,NVIDIA GeForce RTX 5070 Ti
+run_0416,organamnist,B,efficientnet_b0,1475.0,NVIDIA GeForce RTX 5070 Ti
+run_0417,organamnist,A,resnet18,502.0,NVIDIA GeForce RTX 5070 Ti
+run_0418,organamnist,B,resnet18,1282.0,NVIDIA GeForce RTX 5070 Ti
+run_0419,organamnist,A,resnet50,1288.0,NVIDIA GeForce RTX 5070 Ti
+run_0420,organamnist,B,resnet50,2555.0,NVIDIA GeForce RTX 5070 Ti
+run_0421,organamnist,A,densenet121,1808.0,NVIDIA GeForce RTX 5070 Ti
+run_0422,organamnist,B,densenet121,2708.0,NVIDIA GeForce RTX 5070 Ti
+run_0423,organamnist,A,efficientnet_b0,1472.0,NVIDIA GeForce RTX 5070 Ti
+run_0424,organamnist,B,efficientnet_b0,1465.0,NVIDIA GeForce RTX 5070 Ti
+run_0425,organamnist,A,resnet18,642.0,NVIDIA GeForce RTX 5070 Ti
+run_0426,organamnist,B,resnet18,1283.0,NVIDIA GeForce RTX 5070 Ti
+run_0427,organamnist,A,resnet50,1362.0,NVIDIA GeForce RTX 5070 Ti
+run_0428,organamnist,B,resnet50,2556.0,NVIDIA GeForce RTX 5070 Ti
+run_0429,organamnist,A,densenet121,1683.0,NVIDIA GeForce RTX 5070 Ti
+run_0430,organamnist,B,densenet121,2704.0,NVIDIA GeForce RTX 5070 Ti
+run_0431,organamnist,A,efficientnet_b0,1459.0,NVIDIA GeForce RTX 5070 Ti
+run_0432,organamnist,B,efficientnet_b0,1457.0,NVIDIA GeForce RTX 5070 Ti
+run_0433,organamnist,A,resnet18,515.0,NVIDIA GeForce RTX 5070 Ti
+run_0434,organamnist,B,resnet18,1279.0,NVIDIA GeForce RTX 5070 Ti
+run_0435,organamnist,A,resnet50,819.0,NVIDIA GeForce RTX 5070 Ti
+run_0436,organamnist,B,resnet50,2555.0,NVIDIA GeForce RTX 5070 Ti
+run_0437,organamnist,A,densenet121,1724.0,NVIDIA GeForce RTX 5070 Ti
+run_0438,organamnist,B,densenet121,2705.0,NVIDIA GeForce RTX 5070 Ti
+run_0439,organamnist,A,efficientnet_b0,1428.0,NVIDIA GeForce RTX 5070 Ti
+run_0440,organamnist,B,efficientnet_b0,1460.0,NVIDIA GeForce RTX 5070 Ti
+run_0441,organamnist,A,resnet18,674.0,NVIDIA GeForce RTX 5070 Ti
+run_0442,organamnist,B,resnet18,1285.0,NVIDIA GeForce RTX 5070 Ti
+run_0443,organamnist,A,resnet50,1128.0,NVIDIA GeForce RTX 5070 Ti
+run_0444,organamnist,B,resnet50,2553.0,NVIDIA GeForce RTX 5070 Ti
+run_0445,organamnist,A,densenet121,1682.0,NVIDIA GeForce RTX 5070 Ti
+run_0446,organamnist,B,densenet121,2709.0,NVIDIA GeForce RTX 5070 Ti
+run_0447,organamnist,A,efficientnet_b0,1302.0,NVIDIA GeForce RTX 5070 Ti
+run_0448,organamnist,B,efficientnet_b0,1468.0,NVIDIA GeForce RTX 5070 Ti
+run_0449,organamnist,A,resnet18,714.0,NVIDIA GeForce RTX 5070 Ti
+run_0450,organamnist,B,resnet18,1284.0,NVIDIA GeForce RTX 5070 Ti
+run_0451,organamnist,A,resnet50,900.0,NVIDIA GeForce RTX 5070 Ti
+run_0452,organamnist,B,resnet50,2556.0,NVIDIA GeForce RTX 5070 Ti
+run_0453,organamnist,A,densenet121,1646.0,NVIDIA GeForce RTX 5070 Ti
+run_0454,organamnist,B,densenet121,2735.0,NVIDIA GeForce RTX 5070 Ti
+run_0455,organamnist,A,efficientnet_b0,1481.0,NVIDIA GeForce RTX 5070 Ti
+run_0456,organamnist,B,efficientnet_b0,1481.0,NVIDIA GeForce RTX 5070 Ti
+run_0457,organamnist,A,resnet18,451.0,NVIDIA GeForce RTX 5070 Ti
+run_0458,organamnist,B,resnet18,1288.0,NVIDIA GeForce RTX 5070 Ti
+run_0459,organamnist,A,resnet50,1520.0,NVIDIA GeForce RTX 5070 Ti
+run_0460,organamnist,B,resnet50,2558.0,NVIDIA GeForce RTX 5070 Ti
+run_0461,organamnist,A,densenet121,1565.0,NVIDIA GeForce RTX 5070 Ti
+run_0462,organamnist,B,densenet121,2718.0,NVIDIA GeForce RTX 5070 Ti
+run_0463,organamnist,A,efficientnet_b0,1479.0,NVIDIA GeForce RTX 5070 Ti
+run_0464,organamnist,B,efficientnet_b0,1473.0,NVIDIA GeForce RTX 5070 Ti
+run_0465,organamnist,A,resnet18,626.0,NVIDIA GeForce RTX 5070 Ti
+run_0466,organamnist,B,resnet18,1289.0,NVIDIA GeForce RTX 5070 Ti
+run_0467,organamnist,A,resnet50,1250.0,NVIDIA GeForce RTX 5070 Ti
+run_0468,organamnist,B,resnet50,2557.0,NVIDIA GeForce RTX 5070 Ti
+run_0469,organamnist,A,densenet121,1770.0,NVIDIA GeForce RTX 5070 Ti
+run_0470,organamnist,B,densenet121,2717.0,NVIDIA GeForce RTX 5070 Ti
+run_0471,organamnist,A,efficientnet_b0,1475.0,NVIDIA GeForce RTX 5070 Ti
+run_0472,organamnist,B,efficientnet_b0,1468.0,NVIDIA GeForce RTX 5070 Ti
+run_0473,organamnist,A,resnet18,729.0,NVIDIA GeForce RTX 5070 Ti
+run_0474,organamnist,B,resnet18,1286.0,NVIDIA GeForce RTX 5070 Ti
+run_0475,organamnist,A,resnet50,1170.0,NVIDIA GeForce RTX 5070 Ti
+run_0476,organamnist,B,resnet50,2555.0,NVIDIA GeForce RTX 5070 Ti
+run_0477,organamnist,A,densenet121,1561.0,NVIDIA GeForce RTX 5070 Ti
+run_0478,organamnist,B,densenet121,2714.0,NVIDIA GeForce RTX 5070 Ti
+run_0479,organamnist,A,efficientnet_b0,1267.0,NVIDIA GeForce RTX 5070 Ti
+run_0480,organamnist,B,efficientnet_b0,1471.0,NVIDIA GeForce RTX 5070 Ti
+run_0481,organamnist,A,resnet18,693.0,NVIDIA GeForce RTX 5070 Ti
+run_0482,organamnist,B,resnet18,1282.0,NVIDIA GeForce RTX 5070 Ti
+run_0483,organamnist,A,resnet50,1552.0,NVIDIA GeForce RTX 5070 Ti
+run_0484,organamnist,B,resnet50,2556.0,NVIDIA GeForce RTX 5070 Ti
+run_0485,organamnist,A,densenet121,1645.0,NVIDIA GeForce RTX 5070 Ti
+run_0486,organamnist,B,densenet121,2744.0,NVIDIA GeForce RTX 5070 Ti
+run_0487,organamnist,A,efficientnet_b0,1330.0,NVIDIA GeForce RTX 5070 Ti
+run_0488,organamnist,B,efficientnet_b0,1326.0,NVIDIA GeForce RTX 5070 Ti
+run_0489,organamnist,A,resnet18,617.0,NVIDIA GeForce RTX 5070 Ti
+run_0490,organamnist,B,resnet18,1246.0,NVIDIA GeForce RTX 5070 Ti
+run_0491,organamnist,A,resnet50,1412.0,NVIDIA GeForce RTX 5070 Ti
+run_0492,organamnist,B,resnet50,2565.0,NVIDIA GeForce RTX 5070 Ti
+run_0493,organamnist,A,densenet121,1491.0,NVIDIA GeForce RTX 5070 Ti
+run_0494,organamnist,B,densenet121,2723.0,NVIDIA GeForce RTX 5070 Ti
+run_0495,organamnist,A,efficientnet_b0,1329.0,NVIDIA GeForce RTX 5070 Ti
+run_0496,organamnist,B,efficientnet_b0,1325.0,NVIDIA GeForce RTX 5070 Ti
+run_0497,organamnist,A,resnet18,726.0,NVIDIA GeForce RTX 5070 Ti
+run_0498,organamnist,B,resnet18,1253.0,NVIDIA GeForce RTX 5070 Ti
+run_0499,organamnist,A,resnet50,991.0,NVIDIA GeForce RTX 5070 Ti
+run_0500,organamnist,B,resnet50,2589.0,NVIDIA GeForce RTX 5070 Ti
+run_0501,organamnist,A,densenet121,1451.0,NVIDIA GeForce RTX 5070 Ti
+run_0502,organamnist,B,densenet121,2726.0,NVIDIA GeForce RTX 5070 Ti
+run_0503,organamnist,A,efficientnet_b0,1330.0,NVIDIA GeForce RTX 5070 Ti
+run_0504,organamnist,B,efficientnet_b0,1325.0,NVIDIA GeForce RTX 5070 Ti
+run_0505,organamnist,A,resnet18,635.0,NVIDIA GeForce RTX 5070 Ti
+run_0506,organamnist,B,resnet18,1251.0,NVIDIA GeForce RTX 5070 Ti
+run_0507,organamnist,A,resnet50,873.0,NVIDIA GeForce RTX 5070 Ti
+run_0508,organamnist,B,resnet50,2568.0,NVIDIA GeForce RTX 5070 Ti
+run_0509,organamnist,A,densenet121,1739.0,NVIDIA GeForce RTX 5070 Ti
+run_0510,organamnist,B,densenet121,2723.0,NVIDIA GeForce RTX 5070 Ti
+run_0511,organamnist,A,efficientnet_b0,1326.0,NVIDIA GeForce RTX 5070 Ti
+run_0512,organamnist,B,efficientnet_b0,1326.0,NVIDIA GeForce RTX 5070 Ti
+run_0513,organamnist,A,resnet18,717.0,NVIDIA GeForce RTX 5070 Ti
+run_0514,organamnist,B,resnet18,1248.0,NVIDIA GeForce RTX 5070 Ti
+run_0515,organamnist,A,resnet50,1066.0,NVIDIA GeForce RTX 5070 Ti
+run_0516,organamnist,B,resnet50,2568.0,NVIDIA GeForce RTX 5070 Ti
+run_0517,organamnist,A,densenet121,2273.0,NVIDIA GeForce RTX 5070 Ti
+run_0518,organamnist,B,densenet121,2724.0,NVIDIA GeForce RTX 5070 Ti
+run_0519,organamnist,A,efficientnet_b0,1326.0,NVIDIA GeForce RTX 5070 Ti
+run_0520,organamnist,B,efficientnet_b0,1327.0,NVIDIA GeForce RTX 5070 Ti
+run_0521,organamnist,A,resnet18,566.0,NVIDIA GeForce RTX 5070 Ti
+run_0522,organamnist,B,resnet18,1245.0,NVIDIA GeForce RTX 5070 Ti
+run_0523,organamnist,A,resnet50,988.0,NVIDIA GeForce RTX 5070 Ti
+run_0524,organamnist,B,resnet50,2572.0,NVIDIA GeForce RTX 5070 Ti
+run_0525,organamnist,A,densenet121,1571.0,NVIDIA GeForce RTX 5070 Ti
+run_0526,organamnist,B,densenet121,2724.0,NVIDIA GeForce RTX 5070 Ti
+run_0527,organamnist,A,efficientnet_b0,1485.0,NVIDIA GeForce RTX 5070 Ti
+run_0528,organamnist,B,efficientnet_b0,1488.0,NVIDIA GeForce RTX 5070 Ti
+run_0529,organamnist,A,resnet18,665.0,NVIDIA GeForce RTX 5070 Ti
+run_0530,organamnist,B,resnet18,1297.0,NVIDIA GeForce RTX 5070 Ti
+run_0531,organamnist,A,resnet50,1292.0,NVIDIA GeForce RTX 5070 Ti
+run_0532,organamnist,B,resnet50,2563.0,NVIDIA GeForce RTX 5070 Ti
+run_0533,organamnist,A,densenet121,1487.0,NVIDIA GeForce RTX 5070 Ti
+run_0534,organamnist,B,densenet121,2725.0,NVIDIA GeForce RTX 5070 Ti
+run_0535,organamnist,A,efficientnet_b0,1051.0,NVIDIA GeForce RTX 5070 Ti
+run_0536,organamnist,B,efficientnet_b0,1481.0,NVIDIA GeForce RTX 5070 Ti
+run_0537,organamnist,A,resnet18,788.0,NVIDIA GeForce RTX 5070 Ti
+run_0538,organamnist,B,resnet18,1296.0,NVIDIA GeForce RTX 5070 Ti
+run_0539,organamnist,A,resnet50,1138.0,NVIDIA GeForce RTX 5070 Ti
+run_0540,organamnist,B,resnet50,2567.0,NVIDIA GeForce RTX 5070 Ti
+run_0541,organamnist,A,densenet121,1819.0,NVIDIA GeForce RTX 5070 Ti
+run_0542,organamnist,B,densenet121,2727.0,NVIDIA GeForce RTX 5070 Ti
+run_0543,organamnist,A,efficientnet_b0,1489.0,NVIDIA GeForce RTX 5070 Ti
+run_0544,organamnist,B,efficientnet_b0,1485.0,NVIDIA GeForce RTX 5070 Ti
+run_0545,organamnist,A,resnet18,581.0,NVIDIA GeForce RTX 5070 Ti
+run_0546,organamnist,B,resnet18,1295.0,NVIDIA GeForce RTX 5070 Ti
+run_0547,organamnist,A,resnet50,1100.0,NVIDIA GeForce RTX 5070 Ti
+run_0548,organamnist,B,resnet50,2565.0,NVIDIA GeForce RTX 5070 Ti
+run_0549,organamnist,A,densenet121,1491.0,NVIDIA GeForce RTX 5070 Ti
+run_0550,organamnist,B,densenet121,2731.0,NVIDIA GeForce RTX 5070 Ti
+run_0551,organamnist,A,efficientnet_b0,1469.0,NVIDIA GeForce RTX 5070 Ti
+run_0552,organamnist,B,efficientnet_b0,1487.0,NVIDIA GeForce RTX 5070 Ti
+run_0553,organamnist,A,resnet18,806.0,NVIDIA GeForce RTX 5070 Ti
+run_0554,organamnist,B,resnet18,1316.0,NVIDIA GeForce RTX 5070 Ti
+run_0555,organamnist,A,resnet50,1451.0,NVIDIA GeForce RTX 5070 Ti
+run_0556,organamnist,B,resnet50,2615.0,NVIDIA GeForce RTX 5070 Ti
+run_0557,organamnist,A,densenet121,1830.0,NVIDIA GeForce RTX 5070 Ti
+run_0558,organamnist,B,densenet121,2739.0,NVIDIA GeForce RTX 5070 Ti
+run_0559,organamnist,A,efficientnet_b0,1416.0,NVIDIA GeForce RTX 5070 Ti
+run_0560,organamnist,B,efficientnet_b0,1475.0,NVIDIA GeForce RTX 5070 Ti
+run_0561,organamnist,A,resnet18,801.0,NVIDIA GeForce RTX 5070 Ti
+run_0562,organamnist,B,resnet18,1296.0,NVIDIA GeForce RTX 5070 Ti
+run_0563,organamnist,A,resnet50,1222.0,NVIDIA GeForce RTX 5070 Ti
+run_0564,organamnist,B,resnet50,2575.0,NVIDIA GeForce RTX 5070 Ti
+run_0565,organamnist,A,densenet121,2064.0,NVIDIA GeForce RTX 5070 Ti
+run_0566,organamnist,B,densenet121,2723.0,NVIDIA GeForce RTX 5070 Ti
+run_0567,organamnist,A,efficientnet_b0,1309.0,NVIDIA GeForce RTX 5070 Ti
+run_0568,organamnist,B,efficientnet_b0,1479.0,NVIDIA GeForce RTX 5070 Ti
+run_0569,organamnist,A,resnet18,615.0,NVIDIA GeForce RTX 5070 Ti
+run_0570,organamnist,B,resnet18,1290.0,NVIDIA GeForce RTX 5070 Ti
+run_0571,organamnist,A,resnet50,1259.0,NVIDIA GeForce RTX 5070 Ti
+run_0572,organamnist,B,resnet50,2570.0,NVIDIA GeForce RTX 5070 Ti
+run_0573,organamnist,A,densenet121,2148.0,NVIDIA GeForce RTX 5070 Ti
+run_0574,organamnist,B,densenet121,2725.0,NVIDIA GeForce RTX 5070 Ti
+run_0575,organamnist,A,efficientnet_b0,1468.0,NVIDIA GeForce RTX 5070 Ti
+run_0576,organamnist,B,efficientnet_b0,1467.0,NVIDIA GeForce RTX 5070 Ti
+run_0577,organamnist,A,resnet18,682.0,NVIDIA GeForce RTX 5070 Ti
+run_0578,organamnist,B,resnet18,1290.0,NVIDIA GeForce RTX 5070 Ti
+run_0579,organamnist,A,resnet50,989.0,NVIDIA GeForce RTX 5070 Ti
+run_0580,organamnist,B,resnet50,2573.0,NVIDIA GeForce RTX 5070 Ti
+run_0581,organamnist,A,densenet121,1981.0,NVIDIA GeForce RTX 5070 Ti
+run_0582,organamnist,B,densenet121,2719.0,NVIDIA GeForce RTX 5070 Ti
+run_0583,organamnist,A,efficientnet_b0,1185.0,NVIDIA GeForce RTX 5070 Ti
+run_0584,organamnist,B,efficientnet_b0,1465.0,NVIDIA GeForce RTX 5070 Ti
+run_0585,organamnist,A,resnet18,717.0,NVIDIA GeForce RTX 5070 Ti
+run_0586,organamnist,B,resnet18,1291.0,NVIDIA GeForce RTX 5070 Ti
+run_0587,organamnist,A,resnet50,1104.0,NVIDIA GeForce RTX 5070 Ti
+run_0588,organamnist,B,resnet50,2568.0,NVIDIA GeForce RTX 5070 Ti
+run_0589,organamnist,A,densenet121,2142.0,NVIDIA GeForce RTX 5070 Ti
+run_0590,organamnist,B,densenet121,2720.0,NVIDIA GeForce RTX 5070 Ti
+run_0591,organamnist,A,efficientnet_b0,1148.0,NVIDIA GeForce RTX 5070 Ti
+run_0592,organamnist,B,efficientnet_b0,1471.0,NVIDIA GeForce RTX 5070 Ti
+run_0593,organamnist,A,resnet18,633.0,NVIDIA GeForce RTX 5070 Ti
+run_0594,organamnist,B,resnet18,1239.0,NVIDIA GeForce RTX 5070 Ti
+run_0595,organamnist,A,resnet50,1140.0,NVIDIA GeForce RTX 5070 Ti
+run_0596,organamnist,B,resnet50,2562.0,NVIDIA GeForce RTX 5070 Ti
+run_0597,organamnist,A,densenet121,2389.0,NVIDIA GeForce RTX 5070 Ti
+run_0598,organamnist,B,densenet121,2739.0,NVIDIA GeForce RTX 5070 Ti
+run_0599,organamnist,A,efficientnet_b0,1484.0,NVIDIA GeForce RTX 5070 Ti
+run_0600,organamnist,B,efficientnet_b0,1480.0,NVIDIA GeForce RTX 5070 Ti
+run_0601,organamnist,A,resnet18,768.0,NVIDIA GeForce RTX 5070 Ti
+run_0602,organamnist,B,resnet18,1300.0,NVIDIA GeForce RTX 5070 Ti
+run_0603,organamnist,A,resnet50,907.0,NVIDIA GeForce RTX 5070 Ti
+run_0604,organamnist,B,resnet50,2571.0,NVIDIA GeForce RTX 5070 Ti
+run_0605,organamnist,A,densenet121,1672.0,NVIDIA GeForce RTX 5070 Ti
+run_0606,organamnist,B,densenet121,2721.0,NVIDIA GeForce RTX 5070 Ti
+run_0607,organamnist,A,efficientnet_b0,1355.0,NVIDIA GeForce RTX 5070 Ti
+run_0608,organamnist,B,efficientnet_b0,1469.0,NVIDIA GeForce RTX 5070 Ti
+run_0609,organamnist,A,resnet18,686.0,NVIDIA GeForce RTX 5070 Ti
+run_0610,organamnist,B,resnet18,1283.0,NVIDIA GeForce RTX 5070 Ti
+run_0611,organamnist,A,resnet50,1326.0,NVIDIA GeForce RTX 5070 Ti
+run_0612,organamnist,B,resnet50,2550.0,NVIDIA GeForce RTX 5070 Ti
+run_0613,organamnist,A,densenet121,2414.0,NVIDIA GeForce RTX 5070 Ti
+run_0614,organamnist,B,densenet121,2697.0,NVIDIA GeForce RTX 5070 Ti
+run_0615,organamnist,A,efficientnet_b0,1263.0,NVIDIA GeForce RTX 5070 Ti
+run_0616,organamnist,B,efficientnet_b0,1465.0,NVIDIA GeForce RTX 5070 Ti
+run_0617,organamnist,A,resnet18,709.0,NVIDIA GeForce RTX 5070 Ti
+run_0618,organamnist,B,resnet18,1283.0,NVIDIA GeForce RTX 5070 Ti
+run_0619,organamnist,A,resnet50,1903.0,NVIDIA GeForce RTX 5070 Ti
+run_0620,organamnist,B,resnet50,2555.0,NVIDIA GeForce RTX 5070 Ti
+run_0621,organamnist,A,densenet121,1922.0,NVIDIA GeForce RTX 5070 Ti
+run_0622,organamnist,B,densenet121,2702.0,NVIDIA GeForce RTX 5070 Ti
+run_0623,organamnist,A,efficientnet_b0,1462.0,NVIDIA GeForce RTX 5070 Ti
+run_0624,organamnist,B,efficientnet_b0,1465.0,NVIDIA GeForce RTX 5070 Ti
+run_0625,organamnist,A,resnet18,586.0,NVIDIA GeForce RTX 5070 Ti
+run_0626,organamnist,B,resnet18,1279.0,NVIDIA GeForce RTX 5070 Ti
+run_0627,organamnist,A,resnet50,977.0,NVIDIA GeForce RTX 5070 Ti
+run_0628,organamnist,B,resnet50,2554.0,NVIDIA GeForce RTX 5070 Ti
+run_0629,organamnist,A,densenet121,1353.0,NVIDIA GeForce RTX 5070 Ti
+run_0630,organamnist,B,densenet121,2695.0,NVIDIA GeForce RTX 5070 Ti
+run_0631,organamnist,A,efficientnet_b0,1458.0,NVIDIA GeForce RTX 5070 Ti
+run_0632,organamnist,B,efficientnet_b0,1459.0,NVIDIA GeForce RTX 5070 Ti
+run_0633,organamnist,A,resnet18,534.0,NVIDIA GeForce RTX 5070 Ti
+run_0634,organamnist,B,resnet18,1280.0,NVIDIA GeForce RTX 5070 Ti
+run_0635,organamnist,A,resnet50,1482.0,NVIDIA GeForce RTX 5070 Ti
+run_0636,organamnist,B,resnet50,2557.0,NVIDIA GeForce RTX 5070 Ti
+run_0637,organamnist,A,densenet121,1350.0,NVIDIA GeForce RTX 5070 Ti
+run_0638,organamnist,B,densenet121,2694.0,NVIDIA GeForce RTX 5070 Ti
+run_0639,organamnist,A,efficientnet_b0,1456.0,NVIDIA GeForce RTX 5070 Ti
+run_0640,organamnist,B,efficientnet_b0,1457.0,NVIDIA GeForce RTX 5070 Ti
+run_0641,organamnist,A,resnet18,652.0,NVIDIA GeForce RTX 5070 Ti
+run_0642,organamnist,B,resnet18,1279.0,NVIDIA GeForce RTX 5070 Ti
+run_0643,organamnist,A,resnet50,1129.0,NVIDIA GeForce RTX 5070 Ti
+run_0644,organamnist,B,resnet50,2553.0,NVIDIA GeForce RTX 5070 Ti
+run_0645,organamnist,A,densenet121,1473.0,NVIDIA GeForce RTX 5070 Ti
+run_0646,organamnist,B,densenet121,2697.0,NVIDIA GeForce RTX 5070 Ti
+run_0647,organamnist,A,efficientnet_b0,1464.0,NVIDIA GeForce RTX 5070 Ti
+run_0648,organamnist,B,efficientnet_b0,1458.0,NVIDIA GeForce RTX 5070 Ti
+run_0649,organamnist,A,resnet18,639.0,NVIDIA GeForce RTX 5070 Ti
+run_0650,organamnist,B,resnet18,1279.0,NVIDIA GeForce RTX 5070 Ti
+run_0651,organamnist,A,resnet50,1285.0,NVIDIA GeForce RTX 5070 Ti
+run_0652,organamnist,B,resnet50,2553.0,NVIDIA GeForce RTX 5070 Ti
+run_0653,organamnist,A,densenet121,1881.0,NVIDIA GeForce RTX 5070 Ti
+run_0654,organamnist,B,densenet121,2706.0,NVIDIA GeForce RTX 5070 Ti
+run_0655,organamnist,A,efficientnet_b0,1463.0,NVIDIA GeForce RTX 5070 Ti
+run_0656,organamnist,B,efficientnet_b0,1458.0,NVIDIA GeForce RTX 5070 Ti
+run_0657,organamnist,A,resnet18,687.0,NVIDIA GeForce RTX 5070 Ti
+run_0658,organamnist,B,resnet18,1278.0,NVIDIA GeForce RTX 5070 Ti
+run_0659,organamnist,A,resnet50,1129.0,NVIDIA GeForce RTX 5070 Ti
+run_0660,organamnist,B,resnet50,2555.0,NVIDIA GeForce RTX 5070 Ti
+run_0661,organamnist,A,densenet121,1228.0,NVIDIA GeForce RTX 5070 Ti
+run_0662,organamnist,B,densenet121,2701.0,NVIDIA GeForce RTX 5070 Ti
+run_0663,organamnist,A,efficientnet_b0,1467.0,NVIDIA GeForce RTX 5070 Ti
+run_0664,organamnist,B,efficientnet_b0,1461.0,NVIDIA GeForce RTX 5070 Ti
+run_0665,organamnist,A,resnet18,537.0,NVIDIA GeForce RTX 5070 Ti
+run_0666,organamnist,B,resnet18,1280.0,NVIDIA GeForce RTX 5070 Ti
+run_0667,organamnist,A,resnet50,1131.0,NVIDIA GeForce RTX 5070 Ti
+run_0668,organamnist,B,resnet50,2560.0,NVIDIA GeForce RTX 5070 Ti
+run_0669,organamnist,A,densenet121,1557.0,NVIDIA GeForce RTX 5070 Ti
+run_0670,organamnist,B,densenet121,2702.0,NVIDIA GeForce RTX 5070 Ti
+run_0671,organamnist,A,efficientnet_b0,1468.0,NVIDIA GeForce RTX 5070 Ti
+run_0672,organamnist,B,efficientnet_b0,1464.0,NVIDIA GeForce RTX 5070 Ti
+run_0673,organamnist,A,resnet18,571.0,NVIDIA GeForce RTX 5070 Ti
+run_0674,organamnist,B,resnet18,1277.0,NVIDIA GeForce RTX 5070 Ti
+run_0675,organamnist,A,resnet50,1399.0,NVIDIA GeForce RTX 5070 Ti
+run_0676,organamnist,B,resnet50,2555.0,NVIDIA GeForce RTX 5070 Ti
+run_0677,organamnist,A,densenet121,2211.0,NVIDIA GeForce RTX 5070 Ti
+run_0678,organamnist,B,densenet121,2697.0,NVIDIA GeForce RTX 5070 Ti
+run_0679,organamnist,A,efficientnet_b0,1466.0,NVIDIA GeForce RTX 5070 Ti
+run_0680,organamnist,B,efficientnet_b0,1462.0,NVIDIA GeForce RTX 5070 Ti
+run_0681,organamnist,A,resnet18,566.0,NVIDIA GeForce RTX 5070 Ti
+run_0682,organamnist,B,resnet18,1277.0,NVIDIA GeForce RTX 5070 Ti
+run_0683,organamnist,A,resnet50,1363.0,NVIDIA GeForce RTX 5070 Ti
+run_0684,organamnist,B,resnet50,2556.0,NVIDIA GeForce RTX 5070 Ti
+run_0685,organamnist,A,densenet121,1676.0,NVIDIA GeForce RTX 5070 Ti
+run_0686,organamnist,B,densenet121,2700.0,NVIDIA GeForce RTX 5070 Ti
+run_0687,organamnist,A,efficientnet_b0,1176.0,NVIDIA GeForce RTX 5070 Ti
+run_0688,organamnist,B,efficientnet_b0,1457.0,NVIDIA GeForce RTX 5070 Ti
+run_0689,organamnist,A,resnet18,760.0,NVIDIA GeForce RTX 5070 Ti
+run_0690,organamnist,B,resnet18,1275.0,NVIDIA GeForce RTX 5070 Ti
+run_0691,organamnist,A,resnet50,1127.0,NVIDIA GeForce RTX 5070 Ti
+run_0692,organamnist,B,resnet50,2555.0,NVIDIA GeForce RTX 5070 Ti
+run_0693,organamnist,A,densenet121,1515.0,NVIDIA GeForce RTX 5070 Ti
+run_0694,organamnist,B,densenet121,2700.0,NVIDIA GeForce RTX 5070 Ti
+run_0695,organamnist,A,efficientnet_b0,1260.0,NVIDIA GeForce RTX 5070 Ti
+run_0696,organamnist,B,efficientnet_b0,1461.0,NVIDIA GeForce RTX 5070 Ti
+run_0697,organamnist,A,resnet18,781.0,NVIDIA GeForce RTX 5070 Ti
+run_0698,organamnist,B,resnet18,1281.0,NVIDIA GeForce RTX 5070 Ti
+run_0699,organamnist,A,resnet50,976.0,NVIDIA GeForce RTX 5070 Ti
+run_0700,organamnist,B,resnet50,2557.0,NVIDIA GeForce RTX 5070 Ti
+run_0701,organamnist,A,densenet121,1513.0,NVIDIA GeForce RTX 5070 Ti
+run_0702,organamnist,B,densenet121,2702.0,NVIDIA GeForce RTX 5070 Ti
+run_0703,organamnist,A,efficientnet_b0,1428.0,NVIDIA GeForce RTX 5070 Ti
+run_0704,organamnist,B,efficientnet_b0,1467.0,NVIDIA GeForce RTX 5070 Ti
+run_0705,organamnist,A,resnet18,798.0,NVIDIA GeForce RTX 5070 Ti
+run_0706,organamnist,B,resnet18,1281.0,NVIDIA GeForce RTX 5070 Ti
+run_0707,organamnist,A,resnet50,1286.0,NVIDIA GeForce RTX 5070 Ti
+run_0708,organamnist,B,resnet50,2558.0,NVIDIA GeForce RTX 5070 Ti
+run_0709,organamnist,A,densenet121,1557.0,NVIDIA GeForce RTX 5070 Ti
+run_0710,organamnist,B,densenet121,2723.0,NVIDIA GeForce RTX 5070 Ti
+run_0711,organamnist,A,efficientnet_b0,1100.0,NVIDIA GeForce RTX 5070 Ti
+run_0712,organamnist,B,efficientnet_b0,1468.0,NVIDIA GeForce RTX 5070 Ti
+run_0713,organamnist,A,resnet18,624.0,NVIDIA GeForce RTX 5070 Ti
+run_0714,organamnist,B,resnet18,1286.0,NVIDIA GeForce RTX 5070 Ti
+run_0715,organamnist,A,resnet50,707.0,NVIDIA GeForce RTX 5070 Ti
+run_0716,organamnist,B,resnet50,2559.0,NVIDIA GeForce RTX 5070 Ti
+run_0717,organamnist,A,densenet121,1598.0,NVIDIA GeForce RTX 5070 Ti
+run_0718,organamnist,B,densenet121,2701.0,NVIDIA GeForce RTX 5070 Ti
+run_0719,organamnist,A,efficientnet_b0,1474.0,NVIDIA GeForce RTX 5070 Ti
+run_0720,organamnist,B,efficientnet_b0,1466.0,NVIDIA GeForce RTX 5070 Ti
+run_0721,organamnist,A,resnet18,832.0,NVIDIA GeForce RTX 5070 Ti
+run_0722,organamnist,B,resnet18,1287.0,NVIDIA GeForce RTX 5070 Ti
+run_0723,organamnist,A,resnet50,1480.0,NVIDIA GeForce RTX 5070 Ti
+run_0724,organamnist,B,resnet50,2560.0,NVIDIA GeForce RTX 5070 Ti
+run_0725,organamnist,A,densenet121,1802.0,NVIDIA GeForce RTX 5070 Ti
+run_0726,organamnist,B,densenet121,2704.0,NVIDIA GeForce RTX 5070 Ti
+run_0727,organamnist,A,efficientnet_b0,1469.0,NVIDIA GeForce RTX 5070 Ti
+run_0728,organamnist,B,efficientnet_b0,1477.0,NVIDIA GeForce RTX 5070 Ti
+run_0729,organamnist,A,resnet18,710.0,NVIDIA GeForce RTX 5070 Ti
+run_0730,organamnist,B,resnet18,1285.0,NVIDIA GeForce RTX 5070 Ti
+run_0731,organamnist,A,resnet50,1327.0,NVIDIA GeForce RTX 5070 Ti
+run_0732,organamnist,B,resnet50,2558.0,NVIDIA GeForce RTX 5070 Ti
+run_0733,organamnist,A,densenet121,1679.0,NVIDIA GeForce RTX 5070 Ti
+run_0734,organamnist,B,densenet121,2700.0,NVIDIA GeForce RTX 5070 Ti
+run_0735,organamnist,A,efficientnet_b0,1202.0,NVIDIA GeForce RTX 5070 Ti
+run_0736,organamnist,B,efficientnet_b0,1463.0,NVIDIA GeForce RTX 5070 Ti
+run_0737,organamnist,A,resnet18,556.0,NVIDIA GeForce RTX 5070 Ti
+run_0738,organamnist,B,resnet18,1285.0,NVIDIA GeForce RTX 5070 Ti
+run_0739,organamnist,A,resnet50,1212.0,NVIDIA GeForce RTX 5070 Ti
+run_0740,organamnist,B,resnet50,2562.0,NVIDIA GeForce RTX 5070 Ti
+run_0741,organamnist,A,densenet121,1352.0,NVIDIA GeForce RTX 5070 Ti
+run_0742,organamnist,B,densenet121,2703.0,NVIDIA GeForce RTX 5070 Ti
+run_0743,organamnist,A,efficientnet_b0,1284.0,NVIDIA GeForce RTX 5070 Ti
+run_0744,organamnist,B,efficientnet_b0,1467.0,NVIDIA GeForce RTX 5070 Ti
+run_0745,organamnist,A,resnet18,903.0,NVIDIA GeForce RTX 5070 Ti
+run_0746,organamnist,B,resnet18,1285.0,NVIDIA GeForce RTX 5070 Ti
+run_0747,organamnist,A,resnet50,1290.0,NVIDIA GeForce RTX 5070 Ti
+run_0748,organamnist,B,resnet50,2559.0,NVIDIA GeForce RTX 5070 Ti
+run_0749,organamnist,A,densenet121,1562.0,NVIDIA GeForce RTX 5070 Ti
+run_0750,organamnist,B,densenet121,2705.0,NVIDIA GeForce RTX 5070 Ti
+run_0751,organamnist,A,efficientnet_b0,1473.0,NVIDIA GeForce RTX 5070 Ti
+run_0752,organamnist,B,efficientnet_b0,1475.0,NVIDIA GeForce RTX 5070 Ti
+run_0753,organamnist,A,resnet18,502.0,NVIDIA GeForce RTX 5070 Ti
+run_0754,organamnist,B,resnet18,1291.0,NVIDIA GeForce RTX 5070 Ti
+run_0755,organamnist,A,resnet50,1058.0,NVIDIA GeForce RTX 5070 Ti
+run_0756,organamnist,B,resnet50,2562.0,NVIDIA GeForce RTX 5070 Ti
+run_0757,organamnist,A,densenet121,1931.0,NVIDIA GeForce RTX 5070 Ti
+run_0758,organamnist,B,densenet121,2709.0,NVIDIA GeForce RTX 5070 Ti
+run_0759,organamnist,A,efficientnet_b0,1328.0,NVIDIA GeForce RTX 5070 Ti
+run_0760,organamnist,B,efficientnet_b0,1473.0,NVIDIA GeForce RTX 5070 Ti
+run_0761,organamnist,A,resnet18,469.0,NVIDIA GeForce RTX 5070 Ti
+run_0762,organamnist,B,resnet18,1290.0,NVIDIA GeForce RTX 5070 Ti
+run_0763,organamnist,A,resnet50,1674.0,NVIDIA GeForce RTX 5070 Ti
+run_0764,organamnist,B,resnet50,2565.0,NVIDIA GeForce RTX 5070 Ti
+run_0765,organamnist,A,densenet121,1499.0,NVIDIA GeForce RTX 5070 Ti
+run_0766,organamnist,B,densenet121,2702.0,NVIDIA GeForce RTX 5070 Ti
+run_0767,organamnist,A,efficientnet_b0,1478.0,NVIDIA GeForce RTX 5070 Ti
+run_0768,organamnist,B,efficientnet_b0,1472.0,NVIDIA GeForce RTX 5070 Ti
+run_0769,organamnist,A,resnet18,558.0,NVIDIA GeForce RTX 5070 Ti
+run_0770,organamnist,B,resnet18,1292.0,NVIDIA GeForce RTX 5070 Ti
+run_0771,organamnist,A,resnet50,1325.0,NVIDIA GeForce RTX 5070 Ti
+run_0772,organamnist,B,resnet50,2559.0,NVIDIA GeForce RTX 5070 Ti
+run_0773,organamnist,A,densenet121,1474.0,NVIDIA GeForce RTX 5070 Ti
+run_0774,organamnist,B,densenet121,2704.0,NVIDIA GeForce RTX 5070 Ti
+run_0775,organamnist,A,efficientnet_b0,1427.0,NVIDIA GeForce RTX 5070 Ti
+run_0776,organamnist,B,efficientnet_b0,1465.0,NVIDIA GeForce RTX 5070 Ti
+run_0777,organamnist,A,resnet18,662.0,NVIDIA GeForce RTX 5070 Ti
+run_0778,organamnist,B,resnet18,1283.0,NVIDIA GeForce RTX 5070 Ti
+run_0779,organamnist,A,resnet50,1173.0,NVIDIA GeForce RTX 5070 Ti
+run_0780,organamnist,B,resnet50,2558.0,NVIDIA GeForce RTX 5070 Ti
+run_0781,organamnist,A,densenet121,1268.0,NVIDIA GeForce RTX 5070 Ti
+run_0782,organamnist,B,densenet121,2704.0,NVIDIA GeForce RTX 5070 Ti
+run_0783,organamnist,A,efficientnet_b0,1467.0,NVIDIA GeForce RTX 5070 Ti
+run_0784,organamnist,B,efficientnet_b0,1471.0,NVIDIA GeForce RTX 5070 Ti
+run_0785,organamnist,A,resnet18,641.0,NVIDIA GeForce RTX 5070 Ti
+run_0786,organamnist,B,resnet18,1280.0,NVIDIA GeForce RTX 5070 Ti
+run_0787,organamnist,A,resnet50,978.0,NVIDIA GeForce RTX 5070 Ti
+run_0788,organamnist,B,resnet50,2557.0,NVIDIA GeForce RTX 5070 Ti
+run_0789,organamnist,A,densenet121,1475.0,NVIDIA GeForce RTX 5070 Ti
+run_0790,organamnist,B,densenet121,2703.0,NVIDIA GeForce RTX 5070 Ti
+run_0791,organamnist,A,efficientnet_b0,1467.0,NVIDIA GeForce RTX 5070 Ti
+run_0792,organamnist,B,efficientnet_b0,1467.0,NVIDIA GeForce RTX 5070 Ti
+run_0793,organamnist,A,resnet18,624.0,NVIDIA GeForce RTX 5070 Ti
+run_0794,organamnist,B,resnet18,1282.0,NVIDIA GeForce RTX 5070 Ti
+run_0795,organamnist,A,resnet50,1251.0,NVIDIA GeForce RTX 5070 Ti
+run_0796,organamnist,B,resnet50,2559.0,NVIDIA GeForce RTX 5070 Ti
+run_0797,organamnist,A,densenet121,1188.0,NVIDIA GeForce RTX 5070 Ti
+run_0798,organamnist,B,densenet121,2705.0,NVIDIA GeForce RTX 5070 Ti
+run_0799,organamnist,A,efficientnet_b0,1466.0,NVIDIA GeForce RTX 5070 Ti
+run_0800,organamnist,B,efficientnet_b0,1467.0,NVIDIA GeForce RTX 5070 Ti

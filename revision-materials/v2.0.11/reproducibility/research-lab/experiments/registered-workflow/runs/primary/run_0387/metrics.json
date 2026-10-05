@@ -1,0 +1,102 @@
+{
+  "accuracy": 0.9736842105263158,
+  "analysis_role": "primary_analysis",
+  "balanced_accuracy": 0.9736100774355938,
+  "brier_score_multiclass": 0.008401036990498694,
+  "calibration_intercept": null,
+  "calibration_slope": null,
+  "checkpoint_policy": "A",
+  "config_hash": "5e203de9913a10ae47f75aab7d778e21e9a142a0699f4a4a6c374b725d67c1ae",
+  "confusion_matrix": [
+    [
+      117,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      123,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      120,
+      2,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      120,
+      0
+    ],
+    [
+      0,
+      1,
+      6,
+      0,
+      112
+    ]
+  ],
+  "dataset": "sipakmed",
+  "metric_source": "primary_train",
+  "model": "resnet50",
+  "per_class_metrics": {
+    "0": {
+      "f1-score": 0.9915254237288136,
+      "precision": 0.9915254237288136,
+      "recall": 0.9915254237288136,
+      "support": 118.0
+    },
+    "1": {
+      "f1-score": 0.9879518072289156,
+      "precision": 0.9919354838709677,
+      "recall": 0.984,
+      "support": 125.0
+    },
+    "2": {
+      "f1-score": 0.9523809523809523,
+      "precision": 0.9375,
+      "recall": 0.967741935483871,
+      "support": 124.0
+    },
+    "3": {
+      "f1-score": 0.9795918367346939,
+      "precision": 0.975609756097561,
+      "recall": 0.9836065573770492,
+      "support": 122.0
+    },
+    "4": {
+      "f1-score": 0.9572649572649573,
+      "precision": 0.9739130434782609,
+      "recall": 0.9411764705882353,
+      "support": 119.0
+    },
+    "accuracy": 0.9736842105263158,
+    "macro avg": {
+      "f1-score": 0.9737429954676665,
+      "precision": 0.9740967414351205,
+      "recall": 0.9736100774355938,
+      "support": 608.0
+    },
+    "weighted avg": {
+      "f1-score": 0.9737071513075906,
+      "precision": 0.9739506215488264,
+      "recall": 0.9736842105263158,
+      "support": 608.0
+    }
+  },
+  "pr_auc_macro": 0.9946102159380705,
+  "roc_auc_macro_ovr": 0.9984316139498736,
+  "run_id": "run_0387",
+  "split_hash": "0af13229372ce953c2ddf8d28a612c846b5cdc04bf7b1e89c93147e67c292c0e",
+  "split_id": "split_10",
+  "split_seed": "1010",
+  "training_seed": "72"
+}

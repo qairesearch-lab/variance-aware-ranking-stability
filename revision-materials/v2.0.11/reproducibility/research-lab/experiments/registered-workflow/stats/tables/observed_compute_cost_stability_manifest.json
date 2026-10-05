@@ -1,0 +1,18 @@
+{
+  "analysis_type": "operational secondary analysis derived from completed primary-run timestamps",
+  "completed_primary_runs": 800,
+  "total_observed_gpu_hours": 251.56,
+  "source_tables": [
+    "subsampling_resource_stability_detail.csv",
+    "subsampling_resource_stability_summary.csv"
+  ],
+  "outputs": [
+    "observed_compute_cost_stability_summary.csv",
+    "observed_primary_run_duration_summary.csv",
+    "observed_compute_cost_stability_tradeoff.svg",
+    "observed_compute_cost_stability_tradeoff.pdf",
+    "observed_compute_cost_stability_tradeoff.png",
+    "observed_compute_cost_stability_tradeoff.tiff"
+  ],
+  "interpretation_boundary": "Observed GPU hours describe the completed hardware-specific workflow and do not benchmark GPU hardware performance."
+}

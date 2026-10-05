@@ -1,0 +1,9 @@
+dataset,checkpoint_policy,tie_handling_method,reference_top_model,match_count,context_denominator,match_rate,match_ci_low,match_ci_high,disagreement_rate,note
+organamnist,A,alphabetical_top_tie_breaker,resnet18,31,50,0.62,0.48150446930992974,0.7413721068980641,0.38,Random tie-breaker simulation was not run because no context-level exact top ties were observed.
+organamnist,A,shared_top_counting,resnet18,31,50,0.62,0.48150446930992974,0.7413721068980641,0.38,Random tie-breaker simulation was not run because no context-level exact top ties were observed.
+organamnist,B,alphabetical_top_tie_breaker,resnet50,30,50,0.6,0.4618143774758936,0.7239161026974346,0.4,Random tie-breaker simulation was not run because no context-level exact top ties were observed.
+organamnist,B,shared_top_counting,resnet50,30,50,0.6,0.4618143774758936,0.7239161026974346,0.4,Random tie-breaker simulation was not run because no context-level exact top ties were observed.
+sipakmed,A,alphabetical_top_tie_breaker,resnet18,26,50,0.52,0.38511744890044614,0.6520286471342196,0.48,Random tie-breaker simulation was not run because no context-level exact top ties were observed.
+sipakmed,A,shared_top_counting,resnet18,26,50,0.52,0.38511744890044614,0.6520286471342196,0.48,Random tie-breaker simulation was not run because no context-level exact top ties were observed.
+sipakmed,B,alphabetical_top_tie_breaker,resnet50,22,50,0.44,0.3116219921125717,0.5769397197834315,0.56,Random tie-breaker simulation was not run because no context-level exact top ties were observed.
+sipakmed,B,shared_top_counting,resnet50,22,50,0.44,0.3116219921125717,0.5769397197834315,0.56,Random tie-breaker simulation was not run because no context-level exact top ties were observed.

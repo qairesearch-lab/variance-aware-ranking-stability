@@ -1,0 +1,35 @@
+manuscript_table,title,source_file,role,manuscript_location
+Main Table 1,Conventional performance range summary,embedded_in_manuscript,main,Results 3.1
+Main Table 2,Model-level top-two balanced-accuracy summary,embedded_in_manuscript,main,Results 3.1
+Main Table 3,Agreement and top-model discordance by stratum,embedded_in_manuscript,main,Results 3.2
+Main Table 4,Rank-dispersion summary,embedded_in_manuscript,main,Results 3.3
+Main Table 5,Subsampling recovery summary,embedded_in_manuscript,main,Results 3.4
+Supplementary Table S1,Experimental evaluation matrix,experimental_workflow_matrix.csv,supplementary,Methods 2.1
+Supplementary Table S2,Dataset-feature comparison summary,dataset_feature_comparison_summary.csv,supplementary,Methods 2.1 / Methods 2.2
+Supplementary Table S3,Model parameter and environment summary,model_parameter_environment_summary.csv,supplementary,Methods 2.3
+Supplementary Table S4,All pairwise paired bootstrap comparisons,paired_bootstrap_comparison_summary.csv,supplementary,Methods 2.6
+Supplementary Table S5,Multiplicity and comparison-family record,multiplicity_comparison_family_record.csv,supplementary_if_formal_claims_are_made,Methods 2.6
+Supplementary Table S6,Primary performance summary,primary_performance_summary.csv,supplementary,Results 3.1
+Supplementary Table S7,Model-level performance table,model_level_performance_table.csv,supplementary,Results 3.1
+Supplementary Table S8,Reduced evaluation-context comparison detail,workflow_factor_comparison_summary.csv,supplementary,Results 3.2
+Supplementary Table S9,Agreement and top-model discordance interval summary,workflow_stability_interval_summary.csv,supplementary,Results 3.2
+Supplementary Table S10,Paired bootstrap selection-frequency sensitivity,paired_context_bootstrap_selection_probability.csv,supplementary,Results 3.2
+Supplementary Table S11,Reference-definition sensitivity,reference_definition_sensitivity.csv,supplementary,Results 3.2
+Supplementary Table S12,Tie-handling audit,tie_handling_audit.csv,supplementary,Results 3.2
+Supplementary Table S13,Tie-handling sensitivity summary,tie_handling_sensitivity_summary.csv,supplementary,Results 3.2
+Supplementary Table S14,Mixed-effects model status summary,mixed_effects_model_status_summary.csv,supplementary,Results 3.3
+Supplementary Table S15,Mixed-effects alternative specification status,mixed_effects_sensitivity_model_status.csv,supplementary,Results 3.3
+Supplementary Table S16,Mixed-effects fallback variance components,mixed_effects_sensitivity_variance_components.csv,supplementary,Results 3.3
+Supplementary Table S17,Seed-level variability summary,seed_variability_summary.csv,supplementary,Results 3.3
+Supplementary Table S18,Top-model entropy and rank-dispersion summary,top_model_entropy_summary.csv,supplementary,Results 3.3
+Supplementary Table S19,Top-two margin instability summary,top_two_gap_instability_summary.csv,supplementary,Results 3.3
+Supplementary Table S20,Top-two context-level margin table,top_two_context_gap_table.csv,supplementary,Results 3.3
+Supplementary Table S21,Performance-gap boundary summary,performance_gap_boundary_summary.csv,supplementary,Results 3.3
+Supplementary Table S22,Subsampling recovery summary,subsampling_resource_stability_summary.csv,supplementary,Results 3.4
+Supplementary Table S23,Subsampling recovery detail,subsampling_resource_stability_detail.csv,supplementary,Results 3.4
+Supplementary Table S24,Checkpoint-rule paired comparison table,checkpoint_policy_paired_comparison_table.csv,supplementary,Results 3.5
+Supplementary Table S25,Checkpoint-rule paired effects with paired effect sizes,checkpoint_policy_paired_effects.csv,supplementary,Results 3.5
+Supplementary Table S26,Checkpoint-rule ranking-shift summary,checkpoint_policy_ranking_shift_summary.csv,supplementary,Results 3.5
+Supplementary Table S27,Checkpoint-rule selected-epoch distribution,checkpoint_policy_epoch_distribution.csv,supplementary,Results 3.5
+Supplementary Table S28,Calibration missingness record,calibration_missingness_summary.csv,supplementary,Discussion limitations
+Supplementary Table S29,Numeric consistency audit,numeric_consistency_audit.csv,supplementary_audit,Supplementary Information / revision audit

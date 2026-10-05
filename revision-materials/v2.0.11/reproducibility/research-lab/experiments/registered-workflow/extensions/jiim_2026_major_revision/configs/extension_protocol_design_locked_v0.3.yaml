@@ -1,0 +1,291 @@
+# Research design decisions confirmed by the author on 2026-09-26.
+# Formal runs remain blocked until implementation/data/environment gates pass.
+# Never modify the original OSF-frozen bundle.
+protocol_id: jiim_2026_reviewer_requested_extension_v0.3
+status: DESIGN_DECISIONS_LOCKED_IMPLEMENTATION_PENDING
+manuscript_id: JDIM-D-26-02658
+role: post_hoc_reviewer_requested_extension
+original_primary_matrix_role: prespecified_800_runs_unchanged
+baseline:
+  public_release: https://github.com/qairesearch-lab/variance-aware-ranking-stability/releases/tag/v1.0-submission
+  public_commit: 2cc72ccdb0fafe0269a8c890891a779032beac9c
+  training_script: github/research-lab/experiments/scripts/train_one_run.py
+  config_directory: github/research-lab/experiments/registered-workflow/configs/frozen
+  original_run_manifest: github/research-lab/experiments/registered-workflow/run-manifests/primary_run_manifest.csv
+  amendment_rule: do_not_edit_original_frozen_config_or_original_800_run_outputs
+
+reviewer_targets:
+  new_training: [R1.1, R1.3, R2.2, R2.5]
+  original_800_run_reanalysis_without_new_training: [E.1, R2.3, R2.7, R2.9, R3.5]
+  reporting_without_new_training: [R1.2, R2.1, R2.4, R2.6, R2.8, R2.10, R3.1, R3.2, R3.3, R3.4]
+  harder_dataset_inclusion_rule: chosen_before_model_results_for_higher_native_resolution_or_grouped_clinical_structure
+  non_saturation_not_guaranteed: true
+
+author_decisions:
+  isic_primary_cohort:
+    status: CONFIRMED_BY_AUTHOR_2026_09_26
+    selected: known_lesion_id_only
+    recommended: known_lesion_id_only
+    alternatives: [known_lesion_id_only, all_images_missing_id_as_singleton]
+    consequence: >-
+      Known-only gives a more defensible lesion-grouped primary estimand but
+      excludes 2084/25331 images. All-images retains the full cohort but cannot
+      guarantee that missing-ID images from the same lesion stay together.
+  target_matrix:
+    status: CONFIRMED_BY_AUTHOR_2026_09_26
+    selected: E1
+    recommended: E1
+    alternatives: [E0, E1, E2]
+    consequence: >-
+      E1 has 10 split clusters for four-CNN analyses and 270 total runs; E0 has
+      only 5 split clusters; E2 restores the original 5-seed budget at higher cost.
+  swin_input_recipe:
+    status: CONFIRMED_BY_AUTHOR_2026_09_26
+    selected: shared_dataset_transform_for_all_five_models
+    recommended: shared_dataset_transform_for_all_five_models
+    alternatives: [shared_dataset_transform_for_all_five_models, official_weight_specific_swin_eval_transform]
+    consequence: >-
+      A shared transform better isolates model-pool changes. Swin's official
+      pretrained inference recipe uses bicubic 232 resize then 224 center crop;
+      using that recipe only for Swin introduces a model-by-preprocessing confound.
+
+dataset_sources:
+  isic2019:
+    archive: research-lab/data/isic2019/raw/ISIC_2019_Training_Input.zip
+    archive_sha256: 5075020b720c8f1b9b7f3ff85326c55ce0435e5906c41fbd338994feef886df1
+    metadata: research-lab/data/isic2019/metadata/ISIC_2019_Training_Metadata.csv
+    ground_truth: research-lab/data/isic2019/metadata/ISIC_2019_Training_GroundTruth.csv
+    full_image_count: 25331
+    missing_lesion_id_count: 2084
+    primary_cohort: known_lesion_id_only
+    primary_image_count: 23247
+    primary_lesion_group_count_before_duplicate_merges: 11847
+    excluded_missing_lesion_id_count: 2084
+    classes_in_order: [MEL, NV, BCC, AK, BKL, DF, VASC, SCC]
+    label_source: ground_truth_one_hot_eight_known_classes
+    image_id_key: image
+    split_group_key: lesion_id_or_author_approved_singleton
+    primary_prediction_unit: image
+    primary_metric: balanced_accuracy
+    secondary_prediction_unit: lesion
+    secondary_aggregation: arithmetic_mean_of_image_logits_then_softmax
+    hidden_challenge_test_used: false
+  mura:
+    archive: research-lab/data/mura/raw/MURA-v1.1_files.zip
+    archive_sha256: abebc62a52c66c42e4d3193b4585dbc08cbd3da41029147618470e7687eaf9b4
+    official_metadata_files: [train_labeled_studies.csv, valid_labeled_studies.csv, train_image_paths.csv, valid_image_paths.csv]
+    source_partitions_recombined: [official_train, official_valid]
+    valid_image_count: 40005
+    patient_count: 11967
+    study_count: 14656
+    reject_files_matching: '._*'
+    labels: {negative: 0, positive: 1}
+    endpoint: normal_vs_abnormal_not_fracture_detection
+    body_regions: [XR_ELBOW, XR_FINGER, XR_FOREARM, XR_HAND, XR_HUMERUS, XR_SHOULDER, XR_WRIST]
+    split_group_key: patient_id
+    training_loss_unit: image
+    validation_loss_unit: study
+    primary_prediction_unit: study
+    primary_metric: balanced_accuracy
+    primary_aggregation: arithmetic_mean_of_image_logits_then_softmax
+    primary_validation_loss: unweighted_mean_cross_entropy_over_study_mean_logits
+    secondary_aggregation: arithmetic_mean_of_image_probabilities
+    secondary_strata: seven_body_regions
+    hidden_competition_test_used: false
+
+data_quality_before_split:
+  exact_duplicate_detection: sha256_of_image_file_and_decoded_pixels
+  near_duplicate_candidate_method: perceptual_hash_hamming_distance_at_most_4
+  near_duplicate_confirmation: documented_blinded_human_review_before_split_freeze
+  confirmed_cross_id_duplicate_action: merge_split_groups_by_connected_component
+  label_conflict_action: fail_and_adjudicate_before_split; never_silently_drop
+  required_audit: [index_counts, label_counts, group_counts, exact_duplicates, near_duplicate_decisions, missing_ids]
+
+splits:
+  split_ids: [split_01, split_02, split_03, split_04, split_05, split_06, split_07, split_08, split_09, split_10]
+  split_seeds: [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010]
+  type: repeated_stratified_grouped_holdout
+  target_fraction: {train: 0.70, validation: 0.15, test: 0.15}
+  candidate_algorithm: two_stage_group_shuffle_search_v1
+  candidates_per_split: 512
+  candidate_index_range: 0_to_511_inclusive
+  candidate_seed_formula: split_seed_times_1000_plus_candidate_index
+  test_group_fraction: 0.15
+  validation_fraction_of_remaining_groups: 0.17647058823529413
+  test_shuffle_random_state: candidate_seed
+  validation_shuffle_random_state: candidate_seed_plus_500000
+  selection_rule: minimize_predeclared_balance_score_then_smallest_candidate_index
+  balance_score:
+    count_unit: image_for_isic_study_for_mura
+    fraction_deviation_weight: 0.5
+    class_fraction_deviation_weight: 0.4
+    body_region_fraction_deviation_weight: {isic2019: 0.0, mura: 0.1}
+    definition: >-
+      For target t=(0.70,0.15,0.15), overall term is mean_p abs(N_p/N-t_p).
+      Class term is mean_{class,p} abs(N_{class,p}/N_class-t_p).
+      Region term is mean_{region,p} abs(N_{region,p}/N_region-t_p),
+      where N counts images for ISIC and studies for MURA. Score is the
+      weighted sum of these terms; ties select the smallest candidate index.
+  hard_constraints:
+    - no_group_crosses_train_validation_test
+    - every_partition_contains_every_primary_class
+    - every_mura_partition_contains_all_seven_body_regions
+    - absolute_primary_unit_fraction_error_at_most_0.03_per_partition
+  on_no_valid_candidate: fail_without_changing_seed_threshold_or_candidate_count
+  output_contract:
+    - dataset_index.csv
+    - data_quality_audit.json
+    - split_01.csv_through_split_10.csv
+    - split_hashes.csv
+    - source_and_output_sha256_manifest.txt
+    - zero_group_leakage_report.json
+
+preprocessing:
+  common:
+    size: [224, 224]
+    channels: 3
+    imagenet_mean: [0.485, 0.456, 0.406]
+    imagenet_std: [0.229, 0.224, 0.225]
+    PIL_input_before_ToTensor: true
+    resize_interpolation: BILINEAR
+    random_rotation_degrees: 10
+    random_rotation_interpolation: NEAREST # actual submitted script default
+    random_rotation_fill: 0
+    train_order: dataset_specific_geometry_then_ToTensor_then_ImagenetNormalize
+    evaluation_is_deterministic: true
+    same_preprocessing_for_all_five_models_within_dataset: true
+    model_weight_specific_eval_transforms_used: false
+  isic2019:
+    decode: RGB
+    train_geometry: [RandomResizedCrop_224_scale_0.8_to_1.0_ratio_0.75_to_1.3333333333, RandomHorizontalFlip_p_0.5, RandomRotation_plus_minus_10]
+    eval_geometry: [Resize_direct_to_224_by_224]
+    strong_color_jitter: false
+  mura:
+    decode: L_then_repeat_to_RGB
+    pad_square: centered_black_fill_0_before_resize
+    train_geometry: [PadSquare, Resize_direct_to_224_by_224, RandomRotation_plus_minus_10]
+    eval_geometry: [PadSquare, Resize_direct_to_224_by_224]
+    random_resized_crop: false # anatomical preservation; predeclared dataset exception
+    horizontal_flip: false # laterality and anatomical direction
+
+models:
+  common_pretrained_weight_enum: IMAGENET1K_V1
+  shared_cnn_ids: [resnet18, resnet50, densenet121, efficientnet_b0]
+  model_pool_sensitivity_id: swin_t
+  trainable_scope:
+    resnet18: [layer4, fc]
+    resnet50: [layer4, fc]
+    densenet121: [features.denseblock4, features.norm5, classifier]
+    efficientnet_b0: [features.last_stage, classifier]
+    swin_t: [features.last_stage, norm, head]
+  frozen_parameter_batchnorm_behavior: retain_original_model_train_mode_and_running_buffer_updates
+  report_total_and_trainable_parameter_counts: true
+
+training:
+  optimizer: AdamW
+  loss: unweighted_cross_entropy
+  class_weighting: none
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  batch_size: 32
+  gradient_accumulation: 1
+  scheduler: none
+  max_epochs: 60
+  mixed_precision: false
+  gradient_clipping: none
+  num_workers: 4
+  pin_memory: true
+  seed_policy: original_training_seed_and_worker_seed_formula
+  cudnn_deterministic: true
+  cudnn_benchmark: false
+  per_model_or_per_dataset_performance_based_tuning: prohibited
+  on_oom: stop_and_issue_protocol_amendment_before_any_batch_change
+  checkpoint_rule_A:
+    improvement: current_validation_loss_less_than_recorded_best_minus_0.001
+    patience_non_improving_epochs: 7
+    selected_checkpoint: last_recorded_significant_improvement
+    isic_validation_loss: unweighted_mean_of_batch_cross_entropy_like_original_script
+    mura_validation_loss: unweighted_mean_cross_entropy_over_study_mean_logits
+  checkpoint_rule_B_for_new_data: not_run
+
+matrix:
+  E0:
+    datasets: [isic2019, mura]
+    models: [resnet18, resnet50, densenet121, efficientnet_b0, swin_t]
+    splits: [split_01, split_02, split_03, split_04, split_05]
+    training_seeds: [42, 52, 62]
+    checkpoint_policy: A
+    expected_runs: 150
+  E1_increment:
+    datasets: [isic2019, mura]
+    models: [resnet18, resnet50, densenet121, efficientnet_b0]
+    splits: [split_06, split_07, split_08, split_09, split_10]
+    training_seeds: [42, 52, 62]
+    checkpoint_policy: A
+    additional_runs: 120
+    cumulative_runs: 270
+  E2_increment:
+    datasets: [isic2019, mura]
+    models: [resnet18, resnet50, densenet121, efficientnet_b0]
+    splits: [split_01, split_02, split_03, split_04, split_05, split_06, split_07, split_08, split_09, split_10]
+    training_seeds: [72, 82]
+    checkpoint_policy: A
+    additional_runs: 160
+    cumulative_runs: 430
+  resource_gate: decide_E0_E1_E2_only_from_predeclared_single_4090_throughput_memory_disk_and_deadline_metrics
+  outcome_driven_matrix_change: prohibited
+
+analysis:
+  original_comparison_subset: original_two_datasets_rule_A_same_four_CNNs_and_matching_split_seed_budget
+  cross_dataset_claim: descriptive_benchmark_stage_robustness_not_pure_dataset_difficulty_causation
+  within_dataset_model_comparisons: paired_by_identical_split_and_seed_contexts
+  primary_ranking_metric: balanced_accuracy
+  comparator: completed_grid_empirical_comparator_not_gold_standard
+  main_margin_predictor: log10_top_two_balanced_accuracy_margin_plus_0.000001
+  margin_standardization: pooled_context_mean_and_SD_before_regression
+  margin_outcome: discordance_against_leave_one_split_out_comparator
+  margin_model: logistic_with_dataset_fixed_effects_and_dataset_by_split_cluster_robust_CI
+  margin_effect_report: odds_ratio_per_one_SD_decrease_in_log10_margin
+  margin_interpretation: association_not_causal_or_independent_of_winner_flip_definition
+  resampling: split_first_then_seed_hierarchical_paired_bootstrap
+  bootstrap_resamples: 10000
+  bootstrap_rng_seed: 20260926
+  ranking_tie_break: alphabetical_model_id
+  report: [mean_BA, SD, split_cluster_CI, top_model, top_two_margin, observed_selection_frequency, bootstrap_selection_frequency, in_grid_agreement, split_block_cross_fitted_agreement_if_10_splits, epochs, wall_clock, trainable_parameters]
+  swin_analysis: only_paired_5_split_by_3_seed_contexts_separate_from_four_CNN_main_analysis
+  mura_body_region_analysis: descriptive_seven_strata_with_sample_count_and_CI
+  saturation_check: report_observed_performance_and_margins_even_if_datasets_are_saturated
+
+environment_target:
+  python: '3.10'
+  torch: '2.4.1+cu121'
+  torchvision: '0.19.1'
+  pillow: '10.4.0'
+  numpy: '1.26.4'
+  pandas: '2.3.3'
+  scikit_learn: '1.7.2'
+  pyyaml: '6.0.2'
+  rationale: closest_to_original_SIPaKMeD_run_environment_with_supported_Swin_T_V1_weights
+  one_environment_for_all_new_runs: true
+  one_independent_run_per_GPU: true
+  multi_GPU_model_parallel_or_DDP: false
+  capture_exact_package_driver_CUDA_GPU_weight_checksums_at_runtime: true
+
+run_output_contract:
+  unique_manifest_row_per_dataset_model_split_seed: true
+  required_per_run_files: [run_config.json, run_status.json, history.csv, metrics.json, predictions.csv, checkpoint_manifest.json, timing.json]
+  required_identity_fields: [protocol_hash, dataset_index_hash, split_hash, model_weight_hash, script_hash, environment_lock_hash]
+  no_overwrite_completed_runs: true
+  failed_run_retry_requires_same_manifest_row_and_audit_trail: true
+
+freeze_gate:
+  author_design_decisions_resolved: true
+  blocked_until:
+    - exact_and_near_duplicate_audit_adjudicated
+    - dataset_indices_and_ten_grouped_splits_generated_and_hashed
+    - extension_runner_implements_this_protocol_and_schema
+    - study_and_lesion_aggregation_unit_tests_pass
+    - full_10_combination_schema_smoke_passes
+    - one_4090_complete_run_per_dataset_validates_memory_and_checkpoint_path
+    - environment_lock_and_code_hash_recorded
+  formal_training_allowed_now: false

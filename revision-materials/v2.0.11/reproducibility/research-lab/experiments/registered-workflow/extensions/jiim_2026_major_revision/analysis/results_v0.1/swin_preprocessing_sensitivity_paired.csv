@@ -1,0 +1,3 @@
+dataset,paired_contexts,mean_BA_difference_weight_specific_minus_shared,split_cluster_bootstrap_95CI_low,split_cluster_bootstrap_95CI_high,fraction_contexts_weight_specific_BA_higher,interpretation
+isic2019,15,0.019596199743108826,0.014210615380525779,0.025961643453152793,0.9333333333333333,same Swin-T weights and architecture; sensitivity to evaluation input recipe
+mura,15,-0.0007684623648081053,-0.005258869157523997,0.004322282387440051,0.4,same Swin-T weights and architecture; sensitivity to evaluation input recipe

@@ -1,0 +1,28 @@
+{
+  "analysis_output_dir": "research-lab/experiments/registered-workflow/outputs/primary/analysis_io",
+  "created_at_utc": "2026-05-13T11:34:42+00:00",
+  "figures": [
+    "research-lab/experiments/registered-workflow/stats/figures/selection_probability_by_workflow_context.png",
+    "research-lab/experiments/registered-workflow/stats/figures/ranking_flip_rate_by_workflow_context.png",
+    "research-lab/experiments/registered-workflow/stats/figures/paired_uncertainty_resnet18_vs_resnet50.png",
+    "research-lab/experiments/registered-workflow/stats/figures/mixed_effects_variance_attribution.png"
+  ],
+  "figures_dir": "research-lab/experiments/registered-workflow/stats/figures",
+  "interpretation_boundary": "Follow-up outputs are derived methodology-oriented summaries. They do not change the registered primary analysis matrix or the primary outcome construct.",
+  "metric": "balanced_accuracy",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "python": "3.9.6",
+  "row_counts": {
+    "checkpoint_policy_paired_comparison_table.csv": 8,
+    "checkpoint_policy_ranking_shift_summary.csv": 13,
+    "experimental_workflow_matrix.csv": 3,
+    "manuscript_table_inventory.csv": 10,
+    "multiplicity_comparison_family_record.csv": 2,
+    "single_context_fragility_examples.csv": 12,
+    "workflow_factor_comparison_aggregate.csv": 16,
+    "workflow_factor_comparison_summary.csv": 264
+  },
+  "script": "07_methodology_followup_analyses.py",
+  "status": "completed",
+  "tables_dir": "research-lab/experiments/registered-workflow/stats/tables"
+}

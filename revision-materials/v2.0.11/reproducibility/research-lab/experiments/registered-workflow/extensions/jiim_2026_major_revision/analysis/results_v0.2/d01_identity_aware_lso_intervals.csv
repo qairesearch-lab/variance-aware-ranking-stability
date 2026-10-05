@@ -1,0 +1,5 @@
+dataset,splits,seeds_per_split,contexts,observed_LSO_agreement,identity_aware_bootstrap_CI_low,identity_aware_bootstrap_CI_high,bootstrap_replicates,bootstrap_seed,degenerate_draws_resampled,conditioning
+isic2019,10,3,30,0.9,0.7333333333333333,1.0,10000,20261003,0,bootstrap draw contains at least two distinct original split identities
+mura,10,3,30,0.6,0.13333333333333333,0.8,10000,20261003,0,bootstrap draw contains at least two distinct original split identities
+organamnist,10,5,50,0.62,0.28,0.8,10000,20261003,0,bootstrap draw contains at least two distinct original split identities
+sipakmed,10,5,50,0.52,0.12,0.76,10000,20261003,0,bootstrap draw contains at least two distinct original split identities

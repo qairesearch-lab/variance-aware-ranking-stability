@@ -1,0 +1,8 @@
+{
+  "source": "research-lab/experiments/registered-workflow/stats/tables/top_two_context_gap_table.csv",
+  "outputs": {
+    "top_two_set_stability_summary.csv": 4,
+    "top_two_set_stability_detail.csv": 200
+  },
+  "method": "For each single split seed context, the unordered set containing the top ranked and second ranked models was compared with the unordered top two set under the full repeated evaluation reference. Jaccard similarity was |intersection|/|union|. Exact set agreement ignored order, while exact ordered agreement required both first and second ranks to match."
+}

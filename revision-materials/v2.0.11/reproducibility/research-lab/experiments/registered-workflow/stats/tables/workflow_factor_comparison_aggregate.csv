@@ -1,0 +1,17 @@
+evidence_level,dataset,checkpoint_policy,units,matching_units,changed_units,match_rate
+full_repeated_split_seed_workflow,organamnist,A,1,1,0,1.0
+full_repeated_split_seed_workflow,organamnist,B,1,1,0,1.0
+full_repeated_split_seed_workflow,sipakmed,A,1,1,0,1.0
+full_repeated_split_seed_workflow,sipakmed,B,1,1,0,1.0
+seed_aggregated_across_splits,organamnist,A,5,4,1,0.8
+seed_aggregated_across_splits,organamnist,B,5,4,1,0.8
+seed_aggregated_across_splits,sipakmed,A,5,4,1,0.8
+seed_aggregated_across_splits,sipakmed,B,5,3,2,0.6
+single_split_seed_context,organamnist,A,50,31,19,0.62
+single_split_seed_context,organamnist,B,50,30,20,0.6
+single_split_seed_context,sipakmed,A,50,26,24,0.52
+single_split_seed_context,sipakmed,B,50,22,28,0.44
+split_aggregated_across_seeds,organamnist,A,10,7,3,0.7
+split_aggregated_across_seeds,organamnist,B,10,6,4,0.6
+split_aggregated_across_seeds,sipakmed,A,10,6,4,0.6
+split_aggregated_across_seeds,sipakmed,B,10,5,5,0.5

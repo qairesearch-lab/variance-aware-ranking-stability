@@ -1,0 +1,8 @@
+body_region,model_with_highest_mean_BA_descriptive,top_two_mean_BA_gap,study_units_per_context_mean,models,interpretation
+XR_ELBOW,resnet50,0.004534074177306335,285.2,4,descriptive subgroup; no multiplicity-adjusted significance claim
+XR_FINGER,densenet121,0.0008144642075572639,312.3,4,descriptive subgroup; no multiplicity-adjusted significance claim
+XR_FOREARM,densenet121,0.0034363946156520386,151.6,4,descriptive subgroup; no multiplicity-adjusted significance claim
+XR_HAND,densenet121,0.006675569854711294,328.8,4,descriptive subgroup; no multiplicity-adjusted significance claim
+XR_HUMERUS,densenet121,0.0019004568038846203,110.0,4,descriptive subgroup; no multiplicity-adjusted significance claim
+XR_SHOULDER,resnet50,0.005848259162529179,451.7,4,descriptive subgroup; no multiplicity-adjusted significance claim
+XR_WRIST,densenet121,0.00052180745441055,557.7,4,descriptive subgroup; no multiplicity-adjusted significance claim

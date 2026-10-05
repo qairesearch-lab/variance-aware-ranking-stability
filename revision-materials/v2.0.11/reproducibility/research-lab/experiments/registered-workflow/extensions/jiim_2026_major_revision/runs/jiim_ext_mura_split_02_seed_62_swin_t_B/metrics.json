@@ -1,0 +1,21 @@
+{
+  "balanced_accuracy": 0.8003265192698473,
+  "confusion_matrix": [
+    [
+      1234,
+      105
+    ],
+    [
+      276,
+      584
+    ]
+  ],
+  "dataset": "mura",
+  "prediction_unit": "study",
+  "run_id": "jiim_ext_mura_split_02_seed_62_swin_t_B",
+  "selected_epoch": 5,
+  "technical_smoke_not_research_result": false,
+  "test_loss": 0.41507062315940857,
+  "test_units": 2199,
+  "variant": "swin_weight_eval"
+}

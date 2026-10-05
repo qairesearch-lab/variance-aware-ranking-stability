@@ -1,0 +1,21 @@
+dataset,checkpoint_policy,tie_type,tie_count,denominator,affected_models_or_note
+organamnist,A,exact_metric_tie_within_context,0,50,any equal balanced_accuracy values within a split-seed context
+organamnist,A,exact_metric_top_tie_within_context,0,50,multiple models share context-level maximum balanced_accuracy
+organamnist,A,full_reference_mean_balanced_accuracy_tie,0,1,any duplicated model-level full-reference mean
+organamnist,A,full_reference_top_mean_tie,0,1,multiple models share full-reference maximum mean
+organamnist,A,top_count_tie,0,1,resnet18
+organamnist,B,exact_metric_tie_within_context,0,50,any equal balanced_accuracy values within a split-seed context
+organamnist,B,exact_metric_top_tie_within_context,0,50,multiple models share context-level maximum balanced_accuracy
+organamnist,B,full_reference_mean_balanced_accuracy_tie,0,1,any duplicated model-level full-reference mean
+organamnist,B,full_reference_top_mean_tie,0,1,multiple models share full-reference maximum mean
+organamnist,B,top_count_tie,0,1,resnet50
+sipakmed,A,exact_metric_tie_within_context,0,50,any equal balanced_accuracy values within a split-seed context
+sipakmed,A,exact_metric_top_tie_within_context,0,50,multiple models share context-level maximum balanced_accuracy
+sipakmed,A,full_reference_mean_balanced_accuracy_tie,0,1,any duplicated model-level full-reference mean
+sipakmed,A,full_reference_top_mean_tie,0,1,multiple models share full-reference maximum mean
+sipakmed,A,top_count_tie,0,1,resnet18
+sipakmed,B,exact_metric_tie_within_context,0,50,any equal balanced_accuracy values within a split-seed context
+sipakmed,B,exact_metric_top_tie_within_context,0,50,multiple models share context-level maximum balanced_accuracy
+sipakmed,B,full_reference_mean_balanced_accuracy_tie,0,1,any duplicated model-level full-reference mean
+sipakmed,B,full_reference_top_mean_tie,0,1,multiple models share full-reference maximum mean
+sipakmed,B,top_count_tie,1,1,resnet18|resnet50

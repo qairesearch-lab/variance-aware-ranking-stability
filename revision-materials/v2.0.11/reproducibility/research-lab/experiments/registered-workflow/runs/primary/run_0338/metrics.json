@@ -1,0 +1,102 @@
+{
+  "accuracy": 0.9638157894736842,
+  "analysis_role": "primary_analysis",
+  "balanced_accuracy": 0.9643012678365899,
+  "brier_score_multiclass": 0.00998368373798186,
+  "calibration_intercept": null,
+  "calibration_slope": null,
+  "checkpoint_policy": "B",
+  "config_hash": "5e203de9913a10ae47f75aab7d778e21e9a142a0699f4a4a6c374b725d67c1ae",
+  "confusion_matrix": [
+    [
+      118,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      125,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      107,
+      8,
+      7
+    ],
+    [
+      0,
+      0,
+      3,
+      119,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      117
+    ]
+  ],
+  "dataset": "sipakmed",
+  "metric_source": "primary_train",
+  "model": "resnet18",
+  "per_class_metrics": {
+    "0": {
+      "f1-score": 0.9957805907172996,
+      "precision": 0.9915966386554622,
+      "recall": 1.0,
+      "support": 118.0
+    },
+    "1": {
+      "f1-score": 0.9960159362549801,
+      "precision": 0.9920634920634921,
+      "recall": 1.0,
+      "support": 125.0
+    },
+    "2": {
+      "f1-score": 0.9106382978723404,
+      "precision": 0.963963963963964,
+      "recall": 0.8629032258064516,
+      "support": 124.0
+    },
+    "3": {
+      "f1-score": 0.952,
+      "precision": 0.9296875,
+      "recall": 0.9754098360655737,
+      "support": 122.0
+    },
+    "4": {
+      "f1-score": 0.9629629629629629,
+      "precision": 0.9435483870967742,
+      "recall": 0.9831932773109243,
+      "support": 119.0
+    },
+    "accuracy": 0.9638157894736842,
+    "macro avg": {
+      "f1-score": 0.9634795575615167,
+      "precision": 0.9641719963559385,
+      "recall": 0.9643012678365899,
+      "support": 608.0
+    },
+    "weighted avg": {
+      "f1-score": 0.9632563211599945,
+      "precision": 0.9642302705021853,
+      "recall": 0.9638157894736842,
+      "support": 608.0
+    }
+  },
+  "pr_auc_macro": 0.9962139579335577,
+  "roc_auc_macro_ovr": 0.998977213248257,
+  "run_id": "run_0338",
+  "split_hash": "5775fa9742fe4ba5b3b00421c334680b09c515e10558be41184572255b45215b",
+  "split_id": "split_09",
+  "split_seed": "1009",
+  "training_seed": "62"
+}

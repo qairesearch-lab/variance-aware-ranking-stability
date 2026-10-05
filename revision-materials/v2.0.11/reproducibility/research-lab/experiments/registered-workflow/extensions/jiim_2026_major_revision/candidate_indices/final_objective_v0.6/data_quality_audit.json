@@ -1,0 +1,45 @@
+{
+  "data_quality_amendment_sha256": "20431f979a781e84b44e9b964ce95839159061af1cc2e7b4e1f89b1fd34785ed",
+  "data_quality_policy_id": "jiim_2026_extension_data_quality_v0.6",
+  "dataset_index_sha256": {
+    "isic2019": "71b08c44e6284500f28dd07457c02441930fb82861ec6051d52b7071e35c7d6a",
+    "mura": "21397d3465aa89fe4b6b8b7e48471bfe781282b331817c4ad621d674fe46f1c5"
+  },
+  "exact_cross_group_pairs_in_final_cohort": {
+    "isic2019": 8,
+    "mura": 4
+  },
+  "exact_duplicate_group_merges_complete": true,
+  "groups_reassigned": 5,
+  "isic2019_excluded_group_ids": [
+    "BCN_0003560",
+    "BCN_0000237"
+  ],
+  "isic2019_excluded_image_count": 4,
+  "isic2019_excluded_records_sha256": "3ef3a3e14edeb41903e028e53de03a93715077c65551ca2323aadfa7f4bb3a5d",
+  "near_duplicate_phash_max_distance_inclusive": 4,
+  "near_duplicate_role": "descriptive_risk_screen_only_no_manual_same_source_adjudication",
+  "near_pairs_by_dataset": {
+    "isic2019": 1150,
+    "mura": 1870
+  },
+  "near_pairs_screened": 3020,
+  "near_risk_file_sha256": {
+    "isic2019": "bb2c93ce9c8d699ff713a223b9c8e9434fc440a81a902f110f39052b250b2f6e",
+    "mura": "e6b1cd1bc0d1fe9d814ce54df3ff756c71a9d0a275a294148e278293e5bb5c04"
+  },
+  "source_candidate_audit_sha256": "e7b0afc3cc3e7334f70aa4f3f8d2627c88a97db4cf578341b87acbd6e712a171",
+  "source_candidate_file_sha256": {
+    "isic2019": {
+      "exact_pairs": "5699005f0563e19acf2dd0a1fb19997e06fd645ef025c33c9163f6b9218f4ee9",
+      "fingerprints": "353b589b230ba8ce657f1eceb8852f8ffa81dd3193fea95140fcdaeb675ab212",
+      "near_pairs": "bb2c93ce9c8d699ff713a223b9c8e9434fc440a81a902f110f39052b250b2f6e"
+    },
+    "mura": {
+      "exact_pairs": "9620f44d963eb81e0364049127c03b3cc27d7c47c4ffc061117aada53ae8df38",
+      "fingerprints": "39a0342533c82bac232c97ba3466d0aa278392f84d4dd9e84ffcf6d5c4c46880",
+      "near_pairs": "e6b1cd1bc0d1fe9d814ce54df3ff756c71a9d0a275a294148e278293e5bb5c04"
+    }
+  },
+  "status": "objective_data_quality_passed"
+}

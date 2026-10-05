@@ -1,0 +1,5 @@
+dataset,checkpoint_policy,reference_ordering,reference_top_model,contexts,selection_frequency_reference_top,ranking_flip_rate
+organamnist,A,resnet18|resnet50|densenet121|efficientnet_b0,resnet18,50,0.62,0.38
+organamnist,B,resnet50|resnet18|densenet121|efficientnet_b0,resnet50,50,0.6,0.4
+sipakmed,A,resnet18|resnet50|densenet121|efficientnet_b0,resnet18,50,0.52,0.48
+sipakmed,B,resnet50|resnet18|densenet121|efficientnet_b0,resnet50,50,0.44,0.56

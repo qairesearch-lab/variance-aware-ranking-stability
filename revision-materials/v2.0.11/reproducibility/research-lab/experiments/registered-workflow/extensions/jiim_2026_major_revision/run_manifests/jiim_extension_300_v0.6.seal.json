@@ -1,0 +1,32 @@
+{
+  "audit_sha256": "b0983645ed2a2ec6aaee1283358d3de7e51af6a95eae6e07afe2575866d241b2",
+  "data_quality_amendment_sha256": "20431f979a781e84b44e9b964ce95839159061af1cc2e7b4e1f89b1fd34785ed",
+  "design_lock_sha256": "e8b6a2e5ed9845a753d370fc27ae07d4b740e3c10e7801fe40d16199fcc582be",
+  "manifest_sha256": "0f27ea6240e2570e035d5226faa3216ea32b3cc8eca69833bab011162e1d28b9",
+  "run_count": 300,
+  "split_hashes": {
+    "isic2019/split_01": "f5f83662b92865c0da3fa59b606b3e13eec64d0fa9c8148c8a817f3ecbbe32cd",
+    "isic2019/split_02": "51767f30ee4d3651f9d51ac5ed5ba9df05539b9ca1070368d5e25a3813730427",
+    "isic2019/split_03": "6093993b0dbdf836412d085cd953da1f2bca1d332bee692a4e22a4dc2f69f6be",
+    "isic2019/split_04": "92483abbc0e83a93668c31f6a51e76f9c5435efa9fbd17045f113322c7c19803",
+    "isic2019/split_05": "ee4a99fb0518ac44c2317ee130a347966a18edda9f81af3c772690b7a7b7638a",
+    "isic2019/split_06": "fb0da4cf3637c64ad950d8259044ff93b0ebe4e9ddbcef3cd5f696f2dc58adf6",
+    "isic2019/split_07": "9496238160864114ad5bf3564f7fbf3dc6af500c330ffe1a3271e21d3135bb63",
+    "isic2019/split_08": "dc5a2578deaf2f04c32c7a4977cd9be8e1b21a1c20daca278266a12776299e56",
+    "isic2019/split_09": "dad9ecc9c26dc3cca515b91114b9fd9a328f25906531ecb68156488bb40dd7a7",
+    "isic2019/split_10": "05ce483d132ac34a948241a73e25e6b6d4015ebb3c4acbcb16717d743a59a293",
+    "mura/split_01": "53ef3632899a84841a6a594368c3e224d97201a086e578de0b911c5647bce228",
+    "mura/split_02": "2701cc3a90dd777eef53e4e014bf4e599c6d6eaf3403a39ae2d0ad79fd69cc36",
+    "mura/split_03": "b758c516f851bf732488463a50be6471cbb11886e78cbe0425cbef4739db7882",
+    "mura/split_04": "ec1437c12ae386adf3ca586c38116c0aa52bda1842fefc767505643ea954fe2e",
+    "mura/split_05": "e827b9c3feb9ba18e74b306edc073e765646604ce9f359f169ce6b8de2979061",
+    "mura/split_06": "802de3622377b082a9fca637a66f439a42f069aeaf936ade5052d73c383b1233",
+    "mura/split_07": "ee607258093f9e2bff4c0c7d42aa1d9bb2388473e488711b56654100bba2abfb",
+    "mura/split_08": "a6185707fc3bc27da285cfcf187bf3ce66d6bf730ae5d7800b86e05214effc29",
+    "mura/split_09": "4b9e641218fae7e66e46fe64f0a56410a39f230fd0bd2620e8c44ff7aff49d30",
+    "mura/split_10": "7524ee2626ac4a24bd3b5ce8a188076a13f9b970c8a8f0fe7f0578c11530dff8"
+  },
+  "status": "sealed_after_data_quality_audit",
+  "swin_sensitivity_decision_sha256": "6299bcf7d6edbfe8ebd1e9ec838f5a9624cc802dbd15d00a0ac491f2b3bc67d2",
+  "swin_weight_eval_run_count": 30
+}

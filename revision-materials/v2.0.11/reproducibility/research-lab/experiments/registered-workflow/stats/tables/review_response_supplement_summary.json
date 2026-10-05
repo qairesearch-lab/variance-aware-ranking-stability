@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-05-14T01:34:34+00:00",
+  "interpretation_boundary": "Reviewer-response supplement tables are derived from frozen split definitions and existing 800-run analysis outputs; they do not add training runs or change the registered analysis matrix.",
+  "outputs": {
+    "dataset_feature_comparison_summary.csv": 2,
+    "performance_gap_boundary_summary.csv": 4
+  },
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "python": "3.9.6",
+  "script": "09_review_response_supplement.py",
+  "splits_dir": "research-lab/experiments/registered-workflow/splits",
+  "status": "completed",
+  "tables_dir": "research-lab/experiments/registered-workflow/stats/tables"
+}
