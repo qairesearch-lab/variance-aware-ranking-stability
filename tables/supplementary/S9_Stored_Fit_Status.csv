@@ -1,0 +1,9 @@
+analysis_scope,model_spec,dataset,checkpoint_policy,rows,models,splits,seeds,formula,fit_type,ok,singular,message,role
+dataset_checkpoint_policy_stratified,sap_full_formula_attempt,sipakmed,A,200,4,10,5,metric_value ~ model + (1 | split) + (1 | seed) + (1 | model:split),lmer,True,True,,exploratory_sensitivity_not_primary_replacement
+dataset_checkpoint_policy_stratified,primary_reported_fallback_model,sipakmed,A,200,4,10,5,metric_value ~ model + (1 | split) + (1 | model:split),lmer,True,False,,exploratory_sensitivity_not_primary_replacement
+dataset_checkpoint_policy_stratified,sap_full_formula_attempt,sipakmed,B,200,4,10,5,metric_value ~ model + (1 | split) + (1 | seed) + (1 | model:split),lmer,True,True,,exploratory_sensitivity_not_primary_replacement
+dataset_checkpoint_policy_stratified,primary_reported_fallback_model,sipakmed,B,200,4,10,5,metric_value ~ model + (1 | split) + (1 | model:split),lmer,True,False,,exploratory_sensitivity_not_primary_replacement
+dataset_checkpoint_policy_stratified,sap_full_formula_attempt,organamnist,A,200,4,10,5,metric_value ~ model + (1 | split) + (1 | seed) + (1 | model:split),lmer,True,True,,exploratory_sensitivity_not_primary_replacement
+dataset_checkpoint_policy_stratified,primary_reported_fallback_model,organamnist,A,200,4,10,5,metric_value ~ model + (1 | split) + (1 | model:split),lmer,True,False,,exploratory_sensitivity_not_primary_replacement
+dataset_checkpoint_policy_stratified,sap_full_formula_attempt,organamnist,B,200,4,10,5,metric_value ~ model + (1 | split) + (1 | seed) + (1 | model:split),lmer,True,True,,exploratory_sensitivity_not_primary_replacement
+dataset_checkpoint_policy_stratified,primary_reported_fallback_model,organamnist,B,200,4,10,5,metric_value ~ model + (1 | split) + (1 | model:split),lmer,True,False,,exploratory_sensitivity_not_primary_replacement

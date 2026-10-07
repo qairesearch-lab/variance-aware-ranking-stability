@@ -1,0 +1,11 @@
+﻿Dataset,Model,Statistic,Estimate,95% crossed paired CI
+OrganAMNIST,DenseNet-121,Selection frequency B−A,0.000,"[0.000, 0.000]"
+OrganAMNIST,EfficientNet-B0,Selection frequency B−A,0.000,"[0.000, 0.000]"
+OrganAMNIST,ResNet-18,Selection frequency B−A,-0.220,"[-0.460, 0.040]"
+OrganAMNIST,ResNet-50,Selection frequency B−A,0.220,"[-0.040, 0.460]"
+OrganAMNIST,Any selected model changed,Changed winner fraction,0.460,"[0.220, 0.720]"
+SIPaKMeD,DenseNet-121,Selection frequency B−A,0.020,"[-0.160, 0.220]"
+SIPaKMeD,EfficientNet-B0,Selection frequency B−A,0.000,"[0.000, 0.000]"
+SIPaKMeD,ResNet-18,Selection frequency B−A,-0.080,"[-0.400, 0.240]"
+SIPaKMeD,ResNet-50,Selection frequency B−A,0.060,"[-0.200, 0.320]"
+SIPaKMeD,Any selected model changed,Changed winner fraction,0.560,"[0.340, 0.780]"

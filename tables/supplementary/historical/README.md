@@ -1,0 +1,1 @@
+Historical numerical summaries retained for the computational dependency chain. Adopted manuscript statistics are in the crossed summary directory and the current supplementary tables. These historical files are not the current manuscript intervals.

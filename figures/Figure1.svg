@@ -181,7 +181,7 @@ L 249.59952 25.685719
      </g>
     </g>
     <g id="text_11">
-     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="13.757344" y="96.826225" transform="rotate(-90 13.757344 96.826225)">Observed frequency f</text>
+     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="13.757344" y="96.826225" transform="rotate(-90 13.757344 96.826225)">Observed selection frequency f</text>
     </g>
    </g>
    <g id="patch_3">
@@ -415,7 +415,7 @@ L 497.99952 25.685719
      </g>
     </g>
     <g id="text_23">
-     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="262.157344" y="96.826225" transform="rotate(-90 262.157344 96.826225)">Observed frequency f</text>
+     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="262.157344" y="96.826225" transform="rotate(-90 262.157344 96.826225)">Observed selection frequency f</text>
     </g>
    </g>
    <g id="patch_10">
@@ -649,7 +649,7 @@ L 249.59952 212.88402
      </g>
     </g>
     <g id="text_35">
-     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="13.757344" y="284.024526" transform="rotate(-90 13.757344 284.024526)">Observed frequency f</text>
+     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="13.757344" y="284.024526" transform="rotate(-90 13.757344 284.024526)">Observed selection frequency f</text>
     </g>
    </g>
    <g id="patch_17">
@@ -883,7 +883,7 @@ L 497.99952 212.88402
      </g>
     </g>
     <g id="text_47">
-     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="262.157344" y="284.024526" transform="rotate(-90 262.157344 284.024526)">Observed frequency f</text>
+     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="262.157344" y="284.024526" transform="rotate(-90 262.157344 284.024526)">Observed selection frequency f</text>
     </g>
    </g>
    <g id="patch_24">
@@ -1117,7 +1117,7 @@ L 249.59952 400.082321
      </g>
     </g>
     <g id="text_59">
-     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="13.757344" y="471.222826" transform="rotate(-90 13.757344 471.222826)">Observed frequency f</text>
+     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="13.757344" y="471.222826" transform="rotate(-90 13.757344 471.222826)">Observed selection frequency f</text>
     </g>
    </g>
    <g id="patch_31">
@@ -1351,7 +1351,7 @@ L 497.99952 400.082321
      </g>
     </g>
     <g id="text_71">
-     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="262.157344" y="471.222826" transform="rotate(-90 262.157344 471.222826)">Observed frequency f</text>
+     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="262.157344" y="471.222826" transform="rotate(-90 262.157344 471.222826)">Observed selection frequency f</text>
     </g>
    </g>
    <g id="patch_38">

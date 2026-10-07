@@ -1,0 +1,9 @@
+﻿Dataset,Model,B−A ΔBA (pp),95% crossed paired CI (pp),Conditional p,Holm p (eight pairs)
+OrganAMNIST,DenseNet-121,0.201,"[0.107, 0.306]",0.0020,0.0156
+OrganAMNIST,EfficientNet-B0,0.072,"[-0.050, 0.198]",0.1641,0.3281
+OrganAMNIST,ResNet-18,0.124,"[0.062, 0.198]",0.0020,0.0156
+OrganAMNIST,ResNet-50,0.171,"[0.091, 0.252]",0.0039,0.0234
+SIPaKMeD,DenseNet-121,0.316,"[-0.083, 0.678]",0.0391,0.1562
+SIPaKMeD,EfficientNet-B0,0.091,"[-0.263, 0.519]",0.5801,0.5801
+SIPaKMeD,ResNet-18,0.324,"[0.061, 0.597]",0.0117,0.0586
+SIPaKMeD,ResNet-50,0.361,"[-0.091, 0.797]",0.0547,0.1641

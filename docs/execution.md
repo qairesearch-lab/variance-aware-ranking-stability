@@ -28,7 +28,8 @@ Compare numeric tables with `results_saved`. This export changes paths and packa
 With matplotlib 3.11.2 in the analysis environment:
 
 ```bash
-python tools/render_figures.py
+python tools/render_figure1.py
+python tools/render_figure3.py
 python tools/render_figure2.py
 ```
 
@@ -47,3 +48,17 @@ CUDA_VISIBLE_DEVICES=0 python research-lab/experiments/registered-workflow/exten
 ```
 
 Use a new output checkout rather than the restored completed records. The runner checks the frozen manifest, data, preprocessing, environment and weight identities. A few frozen configuration/split filenames retain their original identifiers because changing them would invalidate those checks. These are execution identifiers, not manuscript revision numbers. Original training follows `research-lab/experiments/scripts/train_one_run.py` and the original manifest/configuration files.
+
+## Recalculate the adopted crossed summaries
+
+The distributed historical analysis is retained separately from the adopted crossed results. In a disposable checkout, move each existing output directory to a saved name, then execute the five scripts below in this order. Raw inputs must first be restored from the archive. The scripts reject an existing output directory. The last script computes all 16 strata, 112 fixed-model contrasts, the exploratory association and 190 budget sensitivity summaries. The association uses a 200-iteration cap with the recorded Newton updates, ridge and tolerance; all 10,000 draws are retained. Earlier local completion of 11 draws is documented by the final numerical results, without distributing internal revision logs.
+
+```bash
+python research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/run_crossed_agreement_completion.py
+python research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/run_crossed_paired_BA_completion.py
+python research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/run_crossed_AB_completion.py
+python research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/run_crossed_pool_input_completion.py
+python research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/complete_statistical_object_audit.py
+```
+
+Compare resulting numerical tables with the saved crossed summaries. Timestamps, public paths and audit metadata may differ. Main budget enumeration and its partition bands are unchanged. Bootstrap q is a descriptive selection frequency; its Monte Carlo standard error is conditional simulation precision. The public core's iteration cap is the completed cap rather than the earlier attempt's cap.

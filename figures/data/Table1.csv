@@ -1,7 +1,7 @@
-﻿Dataset / rule,Reference top model,Single-context agreement (95% CI),Discordance (95% CI),Paired bootstrap frequency q,5×3 budget agreement
-OrganAMNIST / A (10×5; 4 models),ResNet-18,"0.620 [0.440, 0.800]","0.380 [0.200, 0.560]",0.9088,0.890
-OrganAMNIST / B (10×5; 4 models),ResNet-50,"0.600 [0.400, 0.780]","0.400 [0.220, 0.600]",0.7825,0.587
-SIPaKMeD / A (10×5; 4 models),ResNet-18,"0.520 [0.360, 0.740]","0.480 [0.260, 0.640]",0.8494,0.694
-SIPaKMeD / B (10×5; 4 models),ResNet-50,"0.440 [0.380, 0.680]","0.560 [0.320, 0.620]",0.5377,0.204
-ISIC2019 / A (10×3; 4 models),ResNet-50,"0.900 [0.733, 1.000]","0.100 [0.000, 0.267]",1.0000,1.000
-MURA / A (10×3; 4 models),ResNet-50,"0.600 [0.300, 0.800]","0.400 [0.200, 0.700]",0.7687,0.571
+Dataset / rule,Reference top model,Single-context agreement (95% CI),Discordance (95% CI),Paired bootstrap selection frequency q,5×3 budget agreement
+OrganAMNIST / A (10×5; 4 models),ResNet-18,"0.620 [0.440, 0.840]","0.380 [0.160, 0.560]",0.9088,0.890
+OrganAMNIST / B (10×5; 4 models),ResNet-50,"0.600 [0.400, 0.800]","0.400 [0.200, 0.600]",0.7825,0.587
+SIPaKMeD / A (10×5; 4 models),ResNet-18,"0.520 [0.360, 0.760]","0.480 [0.240, 0.640]",0.8494,0.694
+SIPaKMeD / B (10×5; 4 models),ResNet-50,"0.440 [0.380, 0.700]","0.560 [0.300, 0.620]",0.5377,0.204
+ISIC2019 / A (10×3; 4 models),ResNet-50,"0.900 [0.700, 1.000]","0.100 [0.000, 0.300]",1.0000,1.000
+MURA / A (10×3; 4 models),ResNet-50,"0.600 [0.267, 0.900]","0.400 [0.100, 0.733]",0.7687,0.571

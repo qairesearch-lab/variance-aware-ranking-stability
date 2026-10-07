@@ -1,0 +1,12 @@
+{
+  "output_hashes": {
+    "sipakmed_A_cnn4_all5_draws.npz": "185a4dcb1aa18d7c24c90978bacb1fe0e98543f0061545b9c06c9aef410206ce",
+    "Crossed_Agreement_Summary.csv": "03d1643af8e1d78e478108ceac381d05d5ff411e8f4549fd272f347d7bb5be8b",
+    "sipakmed_B_cnn4_all5_draws.npz": "16ae4255b2309775ca1852a2e81d8ef4ee8703b6226987e12a95c3d4aa53adcd",
+    "Crossed_Reference_Draw_Counts.csv": "9e682216f1983946f8ef13ba4a1fbefbcf6bf57f306688c7fe6945d0ec63c6bf",
+    "organamnist_A_cnn4_all5_draws.npz": "8e5a03247f4c20daa67d3ed9a273e976c67d3138cf474d707d624d90881ffe47",
+    "organamnist_B_cnn4_all5_draws.npz": "ade6151c24d36ed353108c80f7858a313f14a8078e41693e5383d70e30625954",
+    "isic2019_A_cnn4_all3_draws.npz": "1f0ff55f08c3f50f01301e48af9f7316809916935498e419dcc635693090e74d",
+    "mura_A_cnn4_all3_draws.npz": "5882a44b4c13e45e5a5b8c99708c1959f1f33f4fc47bb7c6764e2c34b5be61c6"
+  }
+}
