@@ -6,7 +6,9 @@ The study evaluates model selection stability across repeated medical image clas
 
 The original datasets, OrganAMNIST and SIPaKMeD, use four ImageNet-initialized CNNs, ten splits, five seeds and two checkpoint policies. ISIC2019 and MURA use the same four CNNs, ten grouped splits, three seeds and early stopping. Additional Swin-T runs use five matched splits and three seeds per extension dataset, with shared-input and weight-specific evaluation-input conditions. The latter is an input sensitivity comparison, not fixed-epoch checkpoint policy B. ISIC2019 is evaluated at image level and MURA at study level. Subset analyses reuse completed runs.
 
-## Paired resampling and statistical comparisons
+## Historical analyses: paired resampling and statistical comparisons
+
+This section describes the retained earlier analyses. The current manuscript uses the [adopted statistical reporting](#adopted-statistical-reporting) described below. To reproduce those results, follow [Recalculate the adopted crossed summaries](execution.md#recalculate-the-adopted-crossed-summaries).
 
 Model and checkpoint comparisons preserve identical split–seed contexts. The analysis uses 10,000 bootstrap replicates and percentile 95% intervals. Crossed resampling samples split and seed levels independently and reuses the seed indices across sampled splits. It is used for the reported aggregate bootstrap selection frequency, model mean-BA intervals and observed selection-frequency intervals. Split-then-seed resampling is retained for the existing paired BA contrasts, checkpoint effects and selection sensitivity intervals; split-only results provide sensitivity comparisons. The empirical reference model is re-estimated when the estimand requires it.
 
