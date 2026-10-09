@@ -1,4 +1,4 @@
-# Evaluation design and model selection stability in medical image classification benchmarks
+# Evaluation design and model selection stability in medical image classification benchmarks: a multi-dataset study
 
 Reproducibility materials for the multi-dataset study: 800 original runs on OrganAMNIST and SIPaKMeD, and 300 extension runs on ISIC2019 and MURA. The analyses address evaluation design and the stability of model selection.
 
@@ -8,8 +8,8 @@ Reproducibility materials for the multi-dataset study: 800 original runs on Orga
 - [Analysis methods](docs/analysis_methods.md)
 - [Dataset sources](docs/datasets.md)
 - [Recorded software environments](environment/training_environment.csv)
-- [Selected main figures and their data](figures/)
-- [Supplementary numerical materials](tables/supplementary/)
+- [Selected figures and their data](figures/README.md)
+- [Supplementary numerical materials](tables/supplementary/README.md)
 
 `research-lab/experiments/` contains the training/analysis programs, frozen configurations, dataset indices, splits and saved statistics. `run_records.zip` contains the recorded inputs used to verify the 1,100 completed runs. `checksums.txt` verifies the distributed files.
 

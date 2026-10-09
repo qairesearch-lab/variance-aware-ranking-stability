@@ -11,7 +11,7 @@ b=pd.read_csv(ROOT/'figures/data/Figure3.csv',float_precision='round_trip');b=b[
 figures=[]
 def sha(p):return ''
 def rel(p):return str(p.relative_to(ROOT))
-colors=['#0072B2','#D55E00','#009E73','#CC79A7','#666666'];markers=['o','s','^','D','v'];labels=['1 seed','2 seeds','3 seeds','4 seeds','5 seeds'];panels=[('organamnist','A','OrganAMNIST / A'),('organamnist','B','OrganAMNIST / B'),('sipakmed','A','SIPaKMeD / A'),('sipakmed','B','SIPaKMeD / B'),('isic2019','A','ISIC2019 / A'),('mura','A','MURA / A')]
+colors=['#0072B2','#D55E00','#009E73','#CC79A7','#666666'];markers=['o','s','^','D','v'];labels=['1 seed','2 seeds','3 seeds','4 seeds','5 seeds'];panels=[('organamnist','A','OrganAMNIST / A'),('organamnist','B','OrganAMNIST / B'),('sipakmed','A','SIPaKMeD / A'),('sipakmed','B','SIPaKMeD / B'),('isic2019','A','ISIC 2019 / A (1–3 seeds)'),('mura','A','MURA / A (1–3 seeds)')]
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.labelcolor':'black','text.color':'black','axes.edgecolor':'black','axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':42,'svg.fonttype':'none'})
 fig,axes=plt.subplots(3,2,figsize=(9.6,10.2));fig.subplots_adjust(left=.10,right=.98,bottom=.07,top=.905,hspace=.43,wspace=.28);curves=[]
 for ax,(ds,policy,title) in zip(axes.ravel(),panels):

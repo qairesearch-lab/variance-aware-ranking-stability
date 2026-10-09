@@ -51,7 +51,7 @@ Use a new output checkout rather than the restored completed records. The runner
 
 ## Recalculate the adopted crossed summaries
 
-The distributed historical analysis is retained separately from the adopted crossed results. In a disposable checkout, move each existing output directory to a saved name, then execute the five scripts below in this order. Raw inputs must first be restored from the archive. The scripts reject an existing output directory. The last script computes all 16 strata, 112 fixed-model contrasts, the exploratory association and 190 budget sensitivity summaries. The association uses a 200-iteration cap with the recorded Newton updates, ridge and tolerance; all 10,000 draws are retained. Earlier local completion of 11 draws is documented by the final numerical results, without distributing internal revision logs.
+The distributed historical analysis is retained separately from the adopted crossed results. In a disposable checkout, move each existing output directory to a saved name, then execute the five scripts below in this order. Raw inputs must first be restored from the archive. The scripts reject an existing output directory. The last script computes all 16 strata, 112 fixed-model contrasts, the exploratory association and 190 budget sensitivity summaries. The association uses a 200-iteration cap with the recorded Newton updates, ridge and tolerance; all 10,000 draws are retained.
 
 ```bash
 python research-lab/experiments/registered-workflow/extensions/jiim_2026_major_revision/analysis/run_crossed_agreement_completion.py
